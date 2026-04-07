@@ -134,3 +134,38 @@
 
 - 이 문서는 과거 게임 시스템 설계 아티팩트로 분류했다.
 - 핵심은 `분석과 적용 사이의 시간을 줄이기 위해`, 로그와 Google Analytics를 이용해 난이도를 자동 보정하는 구조다.
+
+## 2026-04-07 Run 006
+
+### 입력
+
+- `Inbox/Telegram`
+  - [942071250.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071250.md)
+  - [942071251.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071251.md)
+  - [942071252.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071252.md)
+  - [942071253.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071253.md)
+  - [942071254.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071254.md)
+  - [942071255.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071255.md)
+  - [942071256.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071256.md)
+  - [942071257.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071257.md)
+  - [942071258.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071258.md)
+  - [942071259.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071259.md)
+  - [942071260.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071260.md)
+  - [942071261.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071261.md)
+  - [942071262.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071262.md)
+
+### 출력
+
+- `Wiki/Self`
+  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
+- `Wiki/Themes`
+  - [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
+  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+- `Wiki/Timeline`
+  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+
+### 메모
+
+- 식사, 음료, 장보기처럼 단회성 소비 메모는 `Daily`에만 남기고 `Wiki`로는 승격하지 않았다.
+- 미애, 재윤님, 성욱 관련 오후 메모는 아직 반복성이 충분하지 않아 `People`이나 `Projects` 새 문서를 만들지 않고 `Timeline/2026.md`에 먼저 묶었다.
+- `브랜드`, `해저드커브`, `RFM`은 일상 메모 안에서도 반복되는 분석 언어의 신호로 보고 `일-진로-창업.md`에 반영했다.
