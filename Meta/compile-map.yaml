@@ -1,0 +1,107 @@
+version: 1
+
+source_roots:
+  - Inbox/Telegram
+  - Inbox/Text
+
+intermediate_outputs:
+  - Daily
+
+knowledge_targets:
+  - id: self_profile
+    path: Wiki/Self/Profile.md
+    purpose: Stable self-descriptions, motives, strengths, constraints
+  - id: self_tensions
+    path: Wiki/Self/Tensions.md
+    purpose: Repeating dilemmas, contradictions, unresolved friction
+  - id: self_questions
+    path: Wiki/Self/Open Questions.md
+    purpose: Open identity questions and unfinished inquiry
+  - id: themes
+    path: Wiki/Themes/*.md
+    purpose: Recurring topics such as health, work, family, money, habits
+  - id: people
+    path: Wiki/People/*.md
+    purpose: Relationship knowledge and repeated references to people
+  - id: events
+    path: Wiki/Events/*.md
+    purpose: Date-bound events and turning points
+  - id: projects
+    path: Wiki/Projects/*.md
+    purpose: Ongoing work, plans, goals, execution notes
+  - id: timeline
+    path: Wiki/Timeline/*.md
+    purpose: Period summaries and time-ordered transitions
+
+compile_units:
+  - name: stable_self_claim
+    detect:
+      - first-person descriptions of traits
+      - repeated motives or values
+      - self-assessed strengths or limitations
+    emit:
+      - self_profile
+  - name: recurring_tension
+    detect:
+      - conflict between two desires
+      - gap between ideal and behavior
+      - repeated frustration or contradiction
+    emit:
+      - self_tensions
+  - name: open_question
+    detect:
+      - identity question
+      - unresolved direction question
+      - repeated why/how prompt
+    emit:
+      - self_questions
+  - name: theme_signal
+    detect:
+      - repeated subject area
+      - durable topic-specific lesson
+      - health, work, family, money, habit, emotion signals
+    emit:
+      - themes
+  - name: person_signal
+    detect:
+      - repeated references to a person
+      - relational change or remembered interaction
+    emit:
+      - people
+  - name: event_signal
+    detect:
+      - one-time event with date significance
+      - turning point or memorable episode
+    emit:
+      - events
+  - name: project_signal
+    detect:
+      - explicit goal
+      - continuing effort or work thread
+    emit:
+      - projects
+  - name: timeline_signal
+    detect:
+      - change over time
+      - before/after comparison
+      - period summary
+    emit:
+      - timeline
+
+link_handling:
+  preserve_url: true
+  summarize_when_present: true
+  summary_fields:
+    - topic
+    - key_point
+    - why_it_matters_here
+  write_back:
+    - Daily
+    - related Wiki page
+
+merge_policy:
+  prefer_update_existing_page: true
+  create_new_page_only_when_topic_is_distinct: true
+  keep_evidence_links: true
+  separate_fact_and_interpretation: true
+
