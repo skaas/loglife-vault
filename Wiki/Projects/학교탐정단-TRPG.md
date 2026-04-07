@@ -1,0 +1,67 @@
+# 학교탐정단 TRPG
+
+이 문서는 아이들과 함께 하는 `학교탐정단 TRPG 세계관` 프로젝트를 다룬다.
+
+## 현재 상태
+
+- Google Docs 원본 문서가 존재하고, 현재는 읽을 수 있는 상태다.
+  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md)
+- 문서 성격은 추상적인 세계관 메모보다는 `아이들과 함께 바로 플레이할 수 있는 GM 룰북`에 가깝다.
+  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md)
+- 첫 번째 사건 `급식실에서 우유가 사라졌다!`가 완성된 시나리오 형태로 들어 있다.
+  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md)
+
+## 프로젝트 성격
+
+- 성격:
+  가족과 함께 하는 창작/놀이 프로젝트
+- 형식:
+  학교 배경의 추리형 TRPG
+- 진행 방식:
+  두 명의 탐정이 학교 안을 돌아다니며 단서를 수집하고 범인을 추리
+
+## 현재 구조
+
+- 탐정 캐릭터 2명
+- 능력치 3종:
+  매력, 체력, 지능
+- 총 능력치 10점 자유 분배
+- d6 판정 기반 성공/실패 구조
+- 조사 장소 6개:
+  교실, 급식실, 체육관, 도서관, 복도, 운동장
+- 각 장소마다 `조사대상 / 주요스탯 / 육하원칙 / 성공시 / 실패시`가 붙어 있다.
+
+## 사건 1 요약
+
+- 사건명:
+  `급식실에서 우유가 사라졌다!`
+- 정답 구조:
+  운동부 학생 이해온이 아침 운동 후 배가 고파서 우유 2개를 훔쳤고, 하나는 이동 중 터뜨렸다.
+- 추리 방식:
+  탐정들이 육하원칙을 채워 최종 설명을 완성하면 해결
+
+## 강점으로 보이는 부분
+
+- 학교라는 익숙한 공간을 사용해 아이들이 바로 이해하기 쉽다.
+- 육하원칙 기반이라 추리 구조가 단순하고 명확하다.
+- 능력치 3개와 d6 규칙만으로 운영되어 진입 장벽이 낮다.
+- 장소, NPC, 오브젝트, 단서가 분리되어 있어 사건 확장이 쉽다.
+
+## 다음 확장 아이디어
+
+- 사건 2, 사건 3처럼 학교 안의 반복 시나리오 추가
+- 탐정 배지, 학년별 능력, 팀 별명 같은 성장 요소 추가
+- 선생님, 친구, 운동부처럼 반복 등장 인물 정리
+- 학교 탐정단만의 세계관 규칙과 연속 사건선 만들기
+- 아이들 연령대에 맞춘 실패 완화 규칙 추가
+
+## 관련 맥락
+
+- 아이들과 함께 하는 프로젝트라는 점에서 단순 창작보다 `가족 놀이 설계` 성격도 있다.
+- 추리, 이동, 인터뷰, 단서 조합 구조를 보면 발표 자료에서 반복된 `맵 만들기`, `행동 단위로 쪼개기`, `구조화` 성향과도 닿아 있다.
+
+## 연결
+
+- [하이레시스.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/하이레시스.md)
+- [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
+- [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)

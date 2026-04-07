@@ -14,8 +14,11 @@
   자기지식의 전체 지도
 - `Profile.md`:
   비교적 안정적인 자기서술
+- `Career.md`:
+  이력서와 경력 문서에서 추출한 직업 정체성
+- `Speaking.md`:
+  강연과 발표 자료에서 추출한 설명 주제와 방식
 - `Tensions.md`:
   반복되는 내적 충돌
 - `Open Questions.md`:
   아직 닫히지 않은 질문
-

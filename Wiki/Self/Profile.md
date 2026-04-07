@@ -50,6 +50,8 @@
 
 - 시험 실패와 우회 진입 이후 게임 업계에서 약 15년간 일한 이력이 핵심 전환점으로 보인다.
   근거: [sansawon-safe-deposit-note.pdf](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/sansawon-safe-deposit-note.pdf)
+- 이력서 기준으로는 `20년 이상의 라이브 서비스 경험`을 가진 데이터 기반 Product 기획자로 자신을 소개한다.
+  근거: [resume-google-docs-1XnCSR81-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md)
 - 두 번의 창업 실패 이후에도 창업 목표 자체는 접지 않고 방향을 수정한다.
   근거: [sansawon-safe-deposit-note.pdf](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/sansawon-safe-deposit-note.pdf)
 - 게임보다 플랫폼 쪽이 창업 꿈에 더 가깝다고 판단해 진로를 옮긴다.

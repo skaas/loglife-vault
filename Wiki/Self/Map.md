@@ -6,6 +6,10 @@
 
 - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md):
   비교적 안정적인 자기서술, 욕구, 강점, 제약
+- [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md):
+  이력서 기반 직업 정체성과 대표 성과
+- [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md):
+  외부 강연과 발표에서 반복되는 주제와 설명 방식
 - [Tensions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Tensions.md):
   자주 부딪히는 내적 충돌과 모순
 - [Open Questions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Open%20Questions.md):
@@ -23,6 +27,7 @@
 
 - [Projects/하이레시스.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/하이레시스.md)
 - [Timeline/전환점.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/전환점.md)
+- [Timeline/커리어.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/커리어.md)
 
 ## 컴파일 규칙
 
