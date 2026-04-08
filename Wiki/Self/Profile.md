@@ -5,11 +5,11 @@
 ## 욕구와 방향
 
 - 자유에 대한 욕구가 강하게 나타난다.
-  근거: [나는 무엇일까?.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까?.txt)
+  근거: [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
 - 인정받고 싶은 욕구가 함께 등장한다.
-  근거: [나는 무엇일까?.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까?.txt)
+  근거: [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
 - 창업을 자기 방향과 연결해서 본다.
-  근거: [나는 무엇일까?.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까?.txt)
+  근거: [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
 - 기록상 꿈은 `성공한 창업`으로 점점 구체화된다.
   근거: [sansawon-safe-deposit-note.pdf](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/sansawon-safe-deposit-note.pdf)
 
@@ -40,7 +40,7 @@
 - 공감과 사람 다루기에서 약점이 있다고 본다.
   근거: [나의 성격.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나의%20성격.txt)
 - 리더십은 성격 문제라서 자신에게 어렵다고 해석한다.
-  근거: [나는 무엇일까?.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까?.txt)
+  근거: [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
 - 학력과 제도적 장벽을 오래 남는 제약으로 경험한 흔적이 있다.
   근거: [sansawon-safe-deposit-note.pdf](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/sansawon-safe-deposit-note.pdf)
 - 아이 건강 문제처럼 결과를 기다려야 하는 상황에서 강한 무기력과 불안을 경험한다.

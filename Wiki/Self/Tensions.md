@@ -5,9 +5,9 @@
 ## 현재 보이는 긴장
 
 - 성공하고 싶은 마음, 자유롭고 싶은 마음, 인정받고 싶은 마음이 동시에 존재한다.
-  근거: [나는 무엇일까?.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까?.txt)
+  근거: [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
 - 창업과 리더십에 끌리지만, 성격상 리딩은 어렵다고 스스로 판단한다.
-  근거: [나는 무엇일까?.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까?.txt)
+  근거: [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
 - 무뚝뚝함은 멘탈 강점으로 느끼지만, 동시에 관계 운영의 약점으로도 본다.
   근거: [나의 성격.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나의%20성격.txt)
 - 건강을 위한 행동이 다른 문제를 만들 수 있다는 경험이 있다.

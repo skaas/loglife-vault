@@ -6,7 +6,7 @@
 
 - `Inbox/Text`
   - [건강.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/건강.txt)
-  - [나는 무엇일까?.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까?.txt)
+  - [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
   - [나의 성격.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나의%20성격.txt)
   - [생각의 변화.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/생각의%20변화.txt)
   - [육아와 병원.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/육아와%20병원.txt)
@@ -376,3 +376,37 @@
 - 미애, 재윤님, 성욱 관련 오후 메모는 아직 반복성이 충분하지 않아 `People`이나 `Projects` 새 문서를 만들지 않고 `Timeline/2026.md`에 먼저 묶었다.
 - `브랜드`, `해저드커브`, `RFM`은 일상 메모 안에서도 반복되는 분석 언어의 신호로 보고 `일-진로-창업.md`에 반영했다.
 - 이 항목은 나중에 `origin/codex/compile-run-006` 브랜치를 병합하면서 로그 끝에 보존했다.
+
+## 2026-04-08 Run 015
+
+### 입력
+
+- 운영 정의 재검토
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
+  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+- Windows 호환 점검
+  - [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
+
+### 출력
+
+- 운영 문서
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
+  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [setup-check.md](/Users/user/Documents/loglife/loglife-vault/Meta/setup-check.md)
+- 참조 갱신
+  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
+  - [Open Questions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Open%20Questions.md)
+  - [Tensions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Tensions.md)
+  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+- 검사 도구
+  - [check-windows-paths.sh](/Users/user/Documents/loglife/loglife-vault/scripts/check-windows-paths.sh)
+  - [pre-commit](/Users/user/Documents/loglife/loglife-vault/.githooks/pre-commit)
+
+### 메모
+
+- 저장소의 목표를 `원본 -> 자기지식 -> 공개 프로필`로 이어지는 개인 컴파일 시스템으로 다시 정의했다.
+- `개인 로그 보관소`보다 `자기지식과 공개 프로필을 분리해 축적하는 시스템`이라는 설명을 앞에 두었다.
+- Windows에서 `git pull`을 막던 `?` 포함 파일명을 안전한 이름으로 바꾸고 관련 링크를 함께 수정했다.
+- 이후 커밋 전에는 Windows 금지 문자와 예약어를 검사하는 훅이 자동으로 실행되게 맞췄다.
