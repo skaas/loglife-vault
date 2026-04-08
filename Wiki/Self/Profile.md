@@ -64,6 +64,8 @@
 - 가족의 작은 시작과 순간을 기념하려는 태도가 보인다.
   근거: [942071247.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071247.md)
   근거: [942071249.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071249.md)
+- 배우자와의 메시지에서도 감정 표현과 비업무 대화를 의식적으로 챙기려는 메모가 보인다.
+  근거: [942071260.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071260.md)
 
 ## 메타 인식
 

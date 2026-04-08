@@ -340,3 +340,39 @@
 - 대표 직함은 `데이터 분석과 사용자 행동 로그를 바탕으로 서비스 구조를 설계하는 Product 기획자`로 고정했다.
 - 핵심 강점 설명은 `사용자 행동 로그를 바탕으로 서비스 구조와 운영 기준을 설계한다`로 묶었다.
 - 경력 범위 소개는 `게임, 부동산, 공간 기획`으로 재컴파일했다.
+
+## 2026-04-07 Run 014
+
+### 입력
+
+- `Inbox/Telegram`
+  - [942071250.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071250.md)
+  - [942071251.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071251.md)
+  - [942071252.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071252.md)
+  - [942071253.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071253.md)
+  - [942071254.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071254.md)
+  - [942071255.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071255.md)
+  - [942071256.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071256.md)
+  - [942071257.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071257.md)
+  - [942071258.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071258.md)
+  - [942071259.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071259.md)
+  - [942071260.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071260.md)
+  - [942071261.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071261.md)
+  - [942071262.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071262.md)
+
+### 출력
+
+- `Wiki/Self`
+  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
+- `Wiki/Themes`
+  - [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
+  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+- `Wiki/Timeline`
+  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+
+### 메모
+
+- 식사, 음료, 장보기처럼 단회성 소비 메모는 `Daily`에만 남기고 `Wiki`로는 승격하지 않았다.
+- 미애, 재윤님, 성욱 관련 오후 메모는 아직 반복성이 충분하지 않아 `People`이나 `Projects` 새 문서를 만들지 않고 `Timeline/2026.md`에 먼저 묶었다.
+- `브랜드`, `해저드커브`, `RFM`은 일상 메모 안에서도 반복되는 분석 언어의 신호로 보고 `일-진로-창업.md`에 반영했다.
+- 이 항목은 나중에 `origin/codex/compile-run-006` 브랜치를 병합하면서 로그 끝에 보존했다.
