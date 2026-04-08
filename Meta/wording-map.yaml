@@ -1,0 +1,100 @@
+version: 1
+
+source_of_truth: Meta/wording-conflicts.md
+
+purpose: >
+  Keep public and semi-public wording consistent across resume, wiki, and site
+  outputs. Treat same-meaning different-wording cases as compile conflicts.
+  Prefer an approved canonical phrase when available; otherwise record an open
+  wording conflict instead of silently rewriting source documents.
+
+canonical_phrases:
+  - concept_id: live_service_experience
+    canonical: 20년 이상의 라이브 서비스 경험
+    use_in:
+      - public bio
+      - career summary
+      - speaking intro
+    variants:
+      - 15년간 게임 업계에서 일한 이력
+      - 20년동안 쉬지 않고 개발
+      - 오랜 라이브 서비스 운영 경험
+    status: approved
+
+  - concept_id: public_role
+    canonical: 데이터 분석과 사용자 행동 로그를 바탕으로 서비스 구조를 설계하는 Product 기획자
+    use_in:
+      - site hero
+      - public introduction
+      - profile summary
+    variants:
+      - 데이터 기반 Product 기획자
+      - 로그 기반 기획자
+      - Product Owner
+      - Product Manager
+      - World Service Product Manager
+    status: approved
+    conflict_ref: wording_conflict_001
+    selected: 데이터 분석과 사용자 행동 로그를 바탕으로 서비스 구조를 설계하는 Product 기획자
+
+  - concept_id: log_driven_method
+    canonical: 사용자 행동 로그를 바탕으로 서비스 구조와 운영 기준을 설계한다
+    use_in:
+      - capability summary
+      - working style
+      - project descriptions
+    variants:
+      - 로그 설계
+      - 행동 데이터 분석
+      - 데이터 기반 기획
+      - 로그 기반 기획
+    status: approved
+    conflict_ref: wording_conflict_002
+    selected: 사용자 행동 로그를 바탕으로 서비스 구조와 운영 기준을 설계한다
+
+  - concept_id: domain_span
+    canonical: 게임, 부동산, 공간 기획
+    use_in:
+      - career summary
+      - public intro
+    variants:
+      - 게임·플랫폼·부동산 서비스
+      - 게임, 부동산, 소셜 월드 플랫폼
+      - 게임에서 플랫폼까지
+    status: approved
+    conflict_ref: wording_conflict_003
+    selected: 게임, 부동산, 공간 기획
+
+conflict_templates:
+  - id: same_meaning_different_role
+    prompt: 같은 역할을 가리키는 여러 직함이 보인다. 공개 기본 직함을 무엇으로 고정할까?
+  - id: same_meaning_different_method
+    prompt: 같은 강점을 다른 표현으로 쓰고 있다. 어떤 문장을 대표 표현으로 삼을까?
+  - id: same_meaning_different_domain_span
+    prompt: 경력 범위를 설명하는 문장이 여러 개다. 대외 소개에서 어떤 범위를 기본으로 보여줄까?
+
+workflow:
+  detect:
+    - same role with different titles
+    - same strength with different phrases
+    - same achievement rewritten in multiple tones
+  when_detected:
+    - read Meta/wording-conflicts.md first
+    - if status is approved, use selected as the canonical wording
+    - if status is keep_distinct, do not merge the variants
+    - if status is open, keep compiling with warning state
+    - source documents stay unchanged
+    - rewrite only the listed targets when a conflict entry changes
+
+compile_policy:
+  treat_as: compile_conflict
+  scope:
+    - Wiki compile
+    - site compile
+  severity:
+    approved_canonical_exists: auto_resolved
+    no_approved_canonical: warning
+  on_warning:
+    - keep compile running
+    - record the conflict
+    - ask the user to edit Meta/wording-conflicts.md

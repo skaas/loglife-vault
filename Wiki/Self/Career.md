@@ -7,10 +7,14 @@
 - 두 이력서 모두 `20년 이상의 라이브 서비스 경험`을 핵심 자기소개로 둔다.
   근거: [resume-google-docs-1EXYD4Lz-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1EXYD4Lz-2026-04-07.md)
   근거: [resume-google-docs-1XnCSR81-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md)
-- 직업적 강점은 `로그 설계`, `행동 데이터 분석`, `라이브 서비스 운영`, `콘텐츠/서비스 구조 기획`으로 반복된다.
+- 공개용 워딩 기준 대표 직함은 `데이터 분석과 사용자 행동 로그를 바탕으로 서비스 구조를 설계하는 Product 기획자`로 고정한다.
+  근거: [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+- 핵심 강점은 `사용자 행동 로그를 바탕으로 서비스 구조와 운영 기준을 설계한다`는 문장으로 묶어 정리한다.
   근거: [resume-google-docs-1EXYD4Lz-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1EXYD4Lz-2026-04-07.md)
   근거: [resume-google-docs-1XnCSR81-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md)
-- 게임에서 출발했지만, 부동산과 소셜 월드 플랫폼까지 영역을 넓힌 Product 기획자로 자신을 재정의하고 있다.
+- 공개용 경력 범위는 `게임, 부동산, 공간 기획`으로 요약한다.
+  근거: [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+- 게임에서 출발했지만, 게임, 부동산, 공간 기획을 오가는 Product 기획자로 자신을 재정의하고 있다.
   근거: [resume-google-docs-1XnCSR81-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md)
 
 ## 대표 성과 주장

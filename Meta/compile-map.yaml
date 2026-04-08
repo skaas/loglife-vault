@@ -32,6 +32,9 @@ knowledge_targets:
   - id: timeline
     path: Wiki/Timeline/*.md
     purpose: Period summaries and time-ordered transitions
+  - id: public_profile
+    path: site/index.html
+    purpose: Public-facing profile page compiled from selected wiki pages only
 
 compile_units:
   - name: stable_self_claim
@@ -105,3 +108,56 @@ merge_policy:
   keep_evidence_links: true
   separate_fact_and_interpretation: true
 
+public_profile_sources:
+  - Wiki/Self/Profile.md
+  - Wiki/Self/Career.md
+  - Wiki/Self/Speaking.md
+  - Wiki/Timeline/커리어.md
+  - Wiki/Projects/스테이지-난이도-마법사.md
+  - Wiki/Projects/학교탐정단-TRPG.md
+  - Wiki/Projects/하이레시스.md
+
+public_profile_rules:
+  include:
+    - stable public bio
+    - selected career outcomes
+    - speaking history
+    - public-safe projects
+    - working style and strengths
+  exclude:
+    - Inbox raw notes
+    - Daily pages
+    - family and child details
+    - health records
+    - unresolved internal tensions
+    - open questions
+    - direct phone number
+  presentation:
+    - keep site output separate from Wiki
+    - prefer concise resume-like language
+    - soften unresolved date discrepancies
+    - leave a provenance note in the public page
+
+wording_handling:
+  human_input: Meta/wording-conflicts.md
+  canonical_source: Meta/wording-map.yaml
+  conflict_queue: Meta/wording-conflicts.md
+  policy:
+    - wording-conflicts.md is the source of truth for conflict decisions
+    - if status is approved, use selected as canonical wording
+    - if status is keep_distinct, preserve separate wording
+    - if status is open, keep compiling with warning state
+    - rewrite only listed targets when a conflict entry changes
+
+compile_conflicts:
+  types:
+    - wording_conflict
+  wording_conflict:
+    definition: same meaning, different wording, and wording-conflicts.md has no approved decision for the current target
+    resolution:
+      approved_selection: auto_resolve
+      keep_distinct: do_not_merge
+      open: keep compiling and append to conflict queue
+    scope:
+      - Wiki
+      - site

@@ -134,3 +134,209 @@
 
 - 이 문서는 과거 게임 시스템 설계 아티팩트로 분류했다.
 - 핵심은 `분석과 적용 사이의 시간을 줄이기 위해`, 로그와 Google Analytics를 이용해 난이도를 자동 보정하는 구조다.
+
+## 2026-04-07 Run 006
+
+### 입력
+
+- `Wiki/Self`
+  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
+  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
+  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
+- `Wiki/Timeline`
+  - [커리어.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/커리어.md)
+- `Wiki/Projects`
+  - [스테이지-난이도-마법사.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80-%EB%82%9C%EC%9D%B4%EB%8F%84-%EB%A7%88%EB%B2%95%EC%82%AC.md)
+  - [학교탐정단-TRPG.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/%ED%95%99%EA%B5%90%ED%83%90%EC%A0%95%EB%8B%A8-TRPG.md)
+  - [하이레시스.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/하이레시스.md)
+
+### 출력
+
+- `site`
+  - [index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)
+  - [styles.css](/Users/user/Documents/loglife/loglife-vault/site/styles.css)
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/site/README.md)
+- `Meta`
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+- `Wiki`
+  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+
+### 메모
+
+- `Wiki` 전체를 공개하지 않고, 공개 가능한 항목만 골라 `site/index.html`로 다시 컴파일하는 규칙을 추가했다.
+- 가족, 건강, 내적 충돌, 원본 `Inbox` 파일은 공개 프로필에서 제외했다.
+- 최근 경력처럼 버전 차이가 있는 구간은 단정적 표현보다 완화된 공개용 문장으로 정리했다.
+
+## 2026-04-07 Run 007
+
+### 입력
+
+- 외부 링크
+  - [NDC Replay 2015](https://ndcreplay.nexon.com/NDC2015/sessions/NDC2015_0040.html#k%5B%5D=%ED%99%A9%EC%B0%AC%EC%A3%BC)
+  - [NDC Replay 2016](https://ndcreplay.nexon.com/NDC2016/sessions/NDC2016_0013.html#k%5B%5D=%ED%99%A9%EC%B0%AC%EC%A3%BC)
+
+### 출력
+
+- `Wiki/Self`
+  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
+- `site`
+  - [index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)
+
+### 메모
+
+- NDC 2015, NDC 2016 발표 항목에 외부 발표 자료 링크를 직접 연결했다.
+- 공개용 프로필 페이지에서도 같은 링크를 따라갈 수 있게 `Speaking` 섹션에 반영했다.
+
+## 2026-04-07 Run 008
+
+### 입력
+
+- `Wiki/Self`
+  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
+  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
+- `site`
+  - [index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)
+
+### 출력
+
+- `Meta`
+  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+  - [wording-questions.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-questions.md)
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+- 루트/운영 문서
+  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
+  - [site/README.md](/Users/user/Documents/loglife/loglife-vault/site/README.md)
+
+### 메모
+
+- 같은 의미를 다른 워딩으로 쓸 때 자동 통일하지 않고, 정규 표현 사전과 질문 큐로 관리하는 규칙을 추가했다.
+- 현재 충돌 중인 대표 직함, 로그/데이터 강점 설명, 경력 범위 문장을 `Pending` 질문으로 먼저 등록했다.
+
+## 2026-04-07 Run 009
+
+### 입력
+
+- `Meta`
+  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+- 운영 규칙 문서
+  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+
+### 출력
+
+- `Meta`
+  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+  - [compile-log.md](/Users/user/Documents/loglife/loglife-vault/Meta/compile-log.md)
+- 루트/운영 문서
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
+  - [site/README.md](/Users/user/Documents/loglife/loglife-vault/site/README.md)
+  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
+
+### 메모
+
+- 워딩 문제를 `질문 큐`가 아니라 `compile conflict queue`로 재정의했다.
+- 이제 같은 의미의 다른 표현은 컴파일 과정에서 `wording conflict`로 감지한다.
+- 승인된 정규 표현이 없으면 컴파일은 계속되지만, 상태는 `warning`으로 본다.
+
+## 2026-04-07 Run 010
+
+### 입력
+
+- `Meta`
+  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+
+### 출력
+
+- `Meta`
+  - [wording-conflicts.html](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.html)
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/Meta/README.md)
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+- `site`
+  - [styles.css](/Users/user/Documents/loglife/loglife-vault/site/styles.css)
+
+### 메모
+
+- 현재 열린 wording conflict를 한 번에 보는 HTML 대시보드를 추가했다.
+- 이 대시보드는 open conflict 수, 상태, 추천 정규 표현, 영향 파일을 카드 형태로 보여준다.
+
+## 2026-04-07 Run 011
+
+### 입력
+
+- `Meta`
+  - [wording-state.json](/Users/user/Documents/loglife/loglife-vault/Meta/wording-state.json)
+  - [wording-conflicts.html](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.html)
+
+### 출력
+
+- `Meta`
+  - [wording-state.json](/Users/user/Documents/loglife/loglife-vault/Meta/wording-state.json)
+  - [wording-conflicts.html](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.html)
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/Meta/README.md)
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+- `site`
+  - [styles.css](/Users/user/Documents/loglife/loglife-vault/site/styles.css)
+
+### 메모
+
+- wording conflict 대시보드를 `읽기 전용 뷰`에서 `선택 저장 가능한 로컬 편집기`로 확장했다.
+- 브라우저에서 `Vault 연결` 후 충돌 표현을 고르면 `wording-state.json`, `wording-map.yaml`, `wording-conflicts.md`를 함께 갱신하도록 설계했다.
+
+## 2026-04-07 Run 012
+
+### 입력
+
+- `Meta`
+  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+
+### 출력
+
+- `Meta`
+  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/Meta/README.md)
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+- `Wiki`
+  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+
+### 메모
+
+- wording 관련 웹 편집기 실험은 롤백했다.
+- 이제 사용자가 직접 수정하는 파일은 `Meta/wording-conflicts.md` 하나다.
+- 각 conflict 블록에서 `selected`와 `status`를 바꾸면, 이후 컴파일은 그 항목의 `targets`만 다시 쓰는 구조로 정리했다.
+
+## 2026-04-07 Run 013
+
+### 입력
+
+- `Meta`
+  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+
+### 출력
+
+- `Meta`
+  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+- `Wiki/Self`
+  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
+  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
+- `site`
+  - [index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)
+
+### 메모
+
+- 사용자가 `wording-conflicts.md`에서 세 conflict 모두를 `approved`로 선택했다.
+- 대표 직함은 `데이터 분석과 사용자 행동 로그를 바탕으로 서비스 구조를 설계하는 Product 기획자`로 고정했다.
+- 핵심 강점 설명은 `사용자 행동 로그를 바탕으로 서비스 구조와 운영 기준을 설계한다`로 묶었다.
+- 경력 범위 소개는 `게임, 부동산, 공간 기획`으로 재컴파일했다.

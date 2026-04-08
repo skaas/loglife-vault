@@ -6,9 +6,13 @@
 
 - NDC 2015:
   Google Analytics 기반 게임 분석
+  발표 자료:
+  [NDC Replay 2015](https://ndcreplay.nexon.com/NDC2015/sessions/NDC2015_0040.html#k%5B%5D=%ED%99%A9%EC%B0%AC%EC%A3%BC)
   근거: [resume-google-docs-1EXYD4Lz-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1EXYD4Lz-2026-04-07.md)
 - NDC 2016:
   기획자 중심 게임 데이터 분석 방법
+  발표 자료:
+  [NDC Replay 2016](https://ndcreplay.nexon.com/NDC2016/sessions/NDC2016_0013.html#k%5B%5D=%ED%99%A9%EC%B0%AC%EC%A3%BC)
   근거: [resume-google-docs-1XnCSR81-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md)
 - 2022 Wanted Con:
   서비스를 성공시키는 방법
@@ -25,7 +29,7 @@
 - 아이디어를 실제 상품으로 만드는 과정
 - PO, PM, 리더십, 관리 역할의 해석
 - 제네럴리스트와 스페셜리스트 사이의 긴장
-- 로그, 데이터, 실험, 구조화된 실행
+- 사용자 행동 로그를 바탕으로 서비스 구조와 운영 기준을 설계하는 방식
 - 상품화 과정에서 드러나는 현실 제약과 비용
 
 ## 말하는 방식

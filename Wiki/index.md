@@ -13,6 +13,10 @@
 
 ## 핵심 목차
 
+- [../site/index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html):
+  공개 가능한 내용만 다시 컴파일한 HTML 프로필
+- [../Meta/wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md):
+  사용자가 직접 수정하는 wording compile conflict 승인 파일
 - [Self/Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md):
   자기지식 전체 지도
 - [Self/Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md):
@@ -71,3 +75,4 @@
 
 - 이 문서는 현재까지 컴파일된 결과를 요약한 것이고, 새 기록이 들어오면 갱신된다.
 - 단정적인 성격 진단보다 `기록상 반복되는 패턴`을 우선해 정리한다.
+- 공개용 소개 페이지는 `Wiki` 전체가 아니라 [site/index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)처럼 별도 산출물로 관리한다.
