@@ -11,12 +11,21 @@ knowledge_targets:
   - id: self_profile
     path: Wiki/Self/Profile.md
     purpose: Stable self-descriptions, motives, strengths, constraints
+  - id: self_current_diagnosis
+    path: Wiki/Self/Current Diagnosis.md
+    purpose: Recent pattern shifts, issue signals, and current interpretation
+  - id: self_todo
+    path: Wiki/Self/TODO.md
+    purpose: Follow-up actions derived from raw notes and recent diagnosis
   - id: self_tensions
     path: Wiki/Self/Tensions.md
     purpose: Repeating dilemmas, contradictions, unresolved friction
   - id: self_questions
     path: Wiki/Self/Open Questions.md
     purpose: Open identity questions and unfinished inquiry
+  - id: concept_questions
+    path: Wiki/Questions/*.md
+    purpose: Concept notes, study summaries, and follow-up thinking prompts
   - id: themes
     path: Wiki/Themes/*.md
     purpose: Recurring topics such as health, work, family, money, habits
@@ -58,6 +67,27 @@ compile_units:
       - repeated why/how prompt
     emit:
       - self_questions
+  - name: current_diagnosis
+    detect:
+      - recent pattern shift across the last few days
+      - possible issue signal or absence of acute issue signal
+      - near-term interpretation worth tracking
+    emit:
+      - self_current_diagnosis
+  - name: next_action
+    detect:
+      - explicit todo
+      - action implied by recent diagnosis
+      - obvious next step after study or reflection
+    emit:
+      - self_todo
+  - name: concept_note
+    detect:
+      - studied concept in a link or memo
+      - idea worth restating in your own words
+      - follow-up thinking prompts attached to a concept
+    emit:
+      - concept_questions
   - name: theme_signal
     detect:
       - repeated subject area

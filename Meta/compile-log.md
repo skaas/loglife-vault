@@ -438,3 +438,39 @@
 - 저녁 식사, 기상, 몸무게, 출근 같은 단회성 생활 기록은 `Daily`에만 두고 별도 주제 문서로는 승격하지 않았다.
 - `미분은 트렌드를 보는건데 x축이 시간이 아니라면?`이라는 질문은 단순 메모보다 분석 프레임 신호로 보고 `Timeline`과 `일-진로-창업`에 반영했다.
 - 공유된 ChatGPT 링크는 제목 `미분의 변수 해석`으로 확인했고, 핵심은 미분을 시간의 변화가 아니라 변수 간 반응과 민감도의 기울기로 설명하는 내용이었다.
+
+## 2026-04-09 Run 017
+
+### 입력
+
+- 최근 컴파일 결과 해석 요청
+  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+  - [2026-04-08.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-08.md)
+  - [2026-04-09.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-09.md)
+  - [942071274.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071274.md)
+  - [942071276.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071276.md)
+
+### 출력
+
+- `Wiki/Self`
+  - [Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md)
+  - [TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md)
+- `Wiki/Questions`
+  - [미분의-변수-해석.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/%EB%AF%B8%EB%B6%84%EC%9D%98-%EB%B3%80%EC%88%98-%ED%95%B4%EC%84%9D.md)
+- 규칙 문서
+  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
+  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
+  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+  - [Self/README.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/README.md)
+  - [Self/Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md)
+  - [Questions/README.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/README.md)
+  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+
+### 메모
+
+- 컴파일 결과를 단순 요약이 아니라 `최근 진단`, `다음 행동`, `공부한 개념 정리`, `더 생각할 질문`까지 포함하는 출력으로 확장했다.
+- 최근 기록 범위에서는 큰 위기 신호보다 생활 리듬과 분석 모드가 전면에 나온다고 해석했다.
+- 다만 측정과 링크 저장이 아직 행동 루프나 요약 습관으로 충분히 이어지지 않는 점을 현재 문제 후보로 남겼다.
+- `미분의 변수 해석`은 시간 변화가 아니라 변수 간 반응과 민감도로 보는 개념 메모로 다시 정리했다.

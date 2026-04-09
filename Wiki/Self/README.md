@@ -14,6 +14,10 @@
   자기지식의 전체 지도
 - `Profile.md`:
   비교적 안정적인 자기서술
+- `Current Diagnosis.md`:
+  최근 기록 기준 현재 상태 진단
+- `TODO.md`:
+  최근 기록과 진단에서 나온 다음 행동
 - `Career.md`:
   이력서와 경력 문서에서 추출한 직업 정체성
 - `Speaking.md`:

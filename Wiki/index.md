@@ -21,6 +21,10 @@
   자기지식 전체 지도
 - [Self/Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md):
   비교적 안정적인 자기서술
+- [Self/Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md):
+  최근 기록 기준 현재 상태 진단과 문제 후보
+- [Self/TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md):
+  최근 진단과 기록에서 나온 다음 행동
 - [Self/Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md):
   이력서 기반 직업 정체성과 대표 성과
 - [Self/Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md):
@@ -42,6 +46,11 @@
   금연, 체중, 건강 판단 혼란
 - [Themes/생각의-변화.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/생각의-변화.md):
   관점 변화와 편견에 대한 자각
+
+## 최근 생각거리
+
+- [Questions/미분의-변수-해석.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/%EB%AF%B8%EB%B6%84%EC%9D%98-%EB%B3%80%EC%88%98-%ED%95%B4%EC%84%9D.md):
+  미분을 시간 대신 변수 간 반응과 민감도로 해석한 개념 메모
 
 ## 시간 흐름
 

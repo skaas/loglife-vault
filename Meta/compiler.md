@@ -42,12 +42,18 @@
 
 - 자기서술:
   `Wiki/Self/Profile.md`
+- 최근 상태 진단:
+  `Wiki/Self/Current Diagnosis.md`
+- 다음 행동과 후속 TODO:
+  `Wiki/Self/TODO.md`
 - 자기 안의 충돌:
   `Wiki/Self/Tensions.md`
 - 아직 답을 못 낸 질문:
   `Wiki/Self/Open Questions.md`
 - 주제별 반복 패턴:
   `Wiki/Themes/*.md`
+- 공부한 개념 정리와 확장 질문:
+  `Wiki/Questions/*.md`
 - 공개용 프로필:
   `site/index.html`
 
@@ -132,6 +138,29 @@
 - `keep_distinct`면 통합하지 않는다
 - `open`이면 아직 선택이 없는 상태로 본다
 - 사용자가 `wording-conflicts.md`를 고치면 그 항목의 `targets`만 다시 컴파일한다
+
+## 진단과 후속 행동
+
+컴파일은 요약만 만드는 작업이 아니라, 최근 기록을 해석해 현재 상태와 다음 행동까지 드러내는 작업으로 본다.
+
+### 최근 진단
+
+- 최근 3~7일 기록에서 문제 신호가 약한지 강한지 본다.
+- 반복 패턴이 유지되는지, 초점이 바뀌었는지 본다.
+- 단정 대신 `최근 기록 범위에서는`, `이 시점에는` 같은 표현을 쓴다.
+- 결과는 `Wiki/Self/Current Diagnosis.md`에 모은다.
+
+### 해야 할 일
+
+- 원문에 TODO가 직접 있으면 `Wiki/Self/TODO.md`에 옮긴다.
+- 진단에서 바로 행동으로 바뀔 수 있는 항목이 있으면 TODO로 등록한다.
+- 할 일은 짧고 검증 가능한 문장으로 쓴다.
+
+### 공부한 개념과 더 생각할 것
+
+- 링크나 메모 안에 공부한 개념이 있으면 한 번 더 짧게 정리한다.
+- 그 개념이 현재 일, 삶, 프로젝트와 어떻게 연결되는지 한 줄 이상 남긴다.
+- 이어서 생각해볼 질문이 있으면 `Wiki/Questions/*.md`에 남긴다.
 
 ## 파일명 호환 규칙
 
