@@ -410,3 +410,31 @@
 - `개인 로그 보관소`보다 `자기지식과 공개 프로필을 분리해 축적하는 시스템`이라는 설명을 앞에 두었다.
 - Windows에서 `git pull`을 막던 `?` 포함 파일명을 안전한 이름으로 바꾸고 관련 링크를 함께 수정했다.
 - 이후 커밋 전에는 Windows 금지 문자와 예약어를 검사하는 훅이 자동으로 실행되게 맞췄다.
+
+## 2026-04-09 Run 016
+
+### 입력
+
+- `Inbox/Telegram`
+  - [942071271.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-08/942071271.md)
+  - [942071272.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071272.md)
+  - [942071273.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071273.md)
+  - [942071274.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071274.md)
+  - [942071275.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071275.md)
+  - [942071276.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071276.md)
+- `Daily`
+  - [2026-04-08.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-08.md)
+  - [2026-04-09.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-09.md)
+
+### 출력
+
+- `Wiki/Themes`
+  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+- `Wiki/Timeline`
+  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+
+### 메모
+
+- 저녁 식사, 기상, 몸무게, 출근 같은 단회성 생활 기록은 `Daily`에만 두고 별도 주제 문서로는 승격하지 않았다.
+- `미분은 트렌드를 보는건데 x축이 시간이 아니라면?`이라는 질문은 단순 메모보다 분석 프레임 신호로 보고 `Timeline`과 `일-진로-창업`에 반영했다.
+- 공유된 ChatGPT 링크는 제목 `미분의 변수 해석`으로 확인했고, 핵심은 미분을 시간의 변화가 아니라 변수 간 반응과 민감도의 기울기로 설명하는 내용이었다.
