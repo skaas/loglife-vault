@@ -23,3 +23,9 @@
   근거: [육아와 병원.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/육아와%20병원.txt)
 - 나는 왜 `좌절`을 단순한 실패보다 성장의 필수 통과의례처럼 보는가.
   근거: [메이웨더일본전.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/메이웨더일본전.txt)
+- 내가 원하는 리더십은 `강한 목표와 실행력`인데, 왜 실무에서는 혼자 떠안는 선택을 반복하는가.
+  근거: [942071278.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071278.md)
+  근거: [942071280.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071280.md)
+- 결제 빈도 관련 프레임을 메모로 끝내지 않고 실제 제품 실험 하나로 바꾸려면 어떤 최소 단위부터 시작해야 하는가.
+  근거: [942071277.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071277.md)
+  근거: [942071283.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071283.md)

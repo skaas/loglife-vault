@@ -8,7 +8,9 @@
 - 스스로를 무뚝뚝하고 감정에 쉽게 휘둘리지 않는 사람으로 이해한다.
 - 실패와 좌절을 단순 손실보다 다음 성장의 재료로 해석하는 경향이 있다.
 - 일과 진로에서는 `20년 이상의 라이브 서비스 경험`, 로그 기반 기획, 창업 경험, 플랫폼으로의 방향 수정이 큰 축이다.
+- 최근 메모에서는 `리더십 지향`과 `혼자 떠안는 실행 패턴`의 간극이 새 긴장으로 드러난다.
 - 가족 기록에서는 돌봄의 책임감과 결과를 기다리는 무기력이 함께 나타난다.
+- 최근 4일 기록에서는 가족 일정 실행(속초 이동/산책)과 생활 루틴 추적(기상/체중/조깅)이 함께 강화된다.
 - 창작에서는 논리, 철학, 자기이해의 한계를 서사로 길게 탐구하는 성향이 보인다.
 
 ## 핵심 목차
@@ -43,7 +45,7 @@
 - [Themes/가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/가족-돌봄.md):
   아이 건강, 불안, 가족 순간 기록
 - [Themes/건강.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/건강.md):
-  금연, 체중, 건강 판단 혼란
+  금연 이력, 체중 추적, 수면-활동 루틴
 - [Themes/생각의-변화.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/생각의-변화.md):
   관점 변화와 편견에 대한 자각
 
@@ -51,6 +53,8 @@
 
 - [Questions/미분의-변수-해석.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/%EB%AF%B8%EB%B6%84%EC%9D%98-%EB%B3%80%EC%88%98-%ED%95%B4%EC%84%9D.md):
   미분을 시간 대신 변수 간 반응과 민감도로 해석한 개념 메모
+- [Questions/구매-주기-빈도-프레임.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/구매-주기-빈도-프레임.md):
+  구매 주기, 빈도, 타이밍을 액션 프레임으로 정리한 메모
 
 ## 시간 흐름
 
@@ -59,7 +63,7 @@
 - [Timeline/커리어.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/커리어.md):
   이력서 버전 기준 회사/직함/기간 연표
 - [Timeline/2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md):
-  최근 생활과 가족 관련 단서
+  최근 생활, 가족 일정, 루틴 관련 단서
 
 ## 프로젝트와 확장 축
 

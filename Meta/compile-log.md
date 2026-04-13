@@ -474,3 +474,88 @@
 - 최근 기록 범위에서는 큰 위기 신호보다 생활 리듬과 분석 모드가 전면에 나온다고 해석했다.
 - 다만 측정과 링크 저장이 아직 행동 루프나 요약 습관으로 충분히 이어지지 않는 점을 현재 문제 후보로 남겼다.
 - `미분의 변수 해석`은 시간 변화가 아니라 변수 간 반응과 민감도로 보는 개념 메모로 다시 정리했다.
+
+## 2026-04-10 Run 018
+
+### 입력
+
+- `Inbox/Telegram`
+  - [942071277.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071277.md)
+  - [942071278.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071278.md)
+  - [942071279.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071279.md)
+  - [942071280.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071280.md)
+  - [942071281.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071281.md)
+  - [942071283.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071283.md)
+  - [942071287.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071287.md)
+  - [942071288.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071288.md)
+  - [942071289.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071289.md)
+  - [942071291.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071291.md)
+- `Daily`
+  - [2026-04-09.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-09.md)
+  - [2026-04-10.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-10.md)
+
+### 출력
+
+- `Wiki/Timeline`
+  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+- `Wiki/Themes`
+  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+  - [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
+- `Wiki/Self`
+  - [Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md)
+  - [TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md)
+  - [Tensions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Tensions.md)
+  - [Open Questions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Open%20Questions.md)
+- `Wiki/Questions`
+  - [구매-주기-빈도-프레임.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/구매-주기-빈도-프레임.md)
+- `Wiki`
+  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+
+### 메모
+
+- 이번 입력에서는 분석 메모가 `개념 설명`보다 `실행 프레임`으로 이동한 점을 핵심 변화로 반영했다.
+- 리더십 지향과 실제 실행 습관 간 간극(혼자 떠안는 패턴)을 `Tensions`, `Current Diagnosis`, `TODO`에 동시에 연결했다.
+- `[] 네이버 플레이스...` 메모는 포맷은 불완전하지만 의미가 명확해 TODO 후보로 승격했다.
+
+## 2026-04-13 Run 019
+
+### 입력
+
+- `Inbox/Telegram`
+  - [942071294.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071294.md)
+  - [942071295.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071295.md)
+  - [942071297.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071297.md)
+  - [942071299.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071299.md)
+  - [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
+  - [942071303.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071303.md)
+  - [942071305.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071305.md)
+  - [942071306.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071306.md)
+  - [942071308.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071308.md)
+  - [942071309.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071309.md)
+  - [942071311.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071311.md)
+  - [942071312.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-13/942071312.md)
+  - [942071313.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-13/942071313.md)
+- `Daily`
+  - [2026-04-10.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-10.md)
+  - [2026-04-11.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-11.md)
+  - [2026-04-12.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-12.md)
+  - [2026-04-13.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-13.md)
+
+### 출력
+
+- `Wiki/Timeline`
+  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+- `Wiki/Themes`
+  - [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
+  - [건강.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B1%B4%EA%B0%95.md)
+- `Wiki/Self`
+  - [Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md)
+  - [TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md)
+- `Wiki`
+  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+
+### 메모
+
+- 4/10~4/13 입력은 업무 분석보다 `가족 일정 실행`과 `생활 루틴 추적` 신호가 강해 그 축으로 재컴파일했다.
+- `민하 수면 이슈 -> 본인 수면/컨디션 영향` 패턴을 현재 진단의 교란 변수로 추가했다.
+- 체중 로그는 연속성이 생겼지만 표본이 아직 짧아 단기 해석 과잉을 피하도록 TODO를 보강했다.

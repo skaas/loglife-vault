@@ -22,6 +22,9 @@
   근거: [육아와 병원.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/육아와%20병원.txt)
 - 예측과 통제에 대한 욕구가 크지만, 스스로도 완전한 이해의 불가능성을 오래 붙든다.
   근거: [하이레시스로그.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/%5B%EC%86%8C%EC%84%A4%5D%ED%95%98%EC%9D%B4%EB%A0%88%EC%8B%9C%EC%8A%A4%EB%A1%9C%EA%B7%B8.md)
+- `사람을 끌어들이는 리더십`을 지향하지만, 실제 행동은 혼자 시도하고 부담을 떠안는 쪽으로 기운다는 피드백이 붙는다.
+  근거: [942071278.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071278.md)
+  근거: [942071280.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071280.md)
 
 ## 해석 규칙
 

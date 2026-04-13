@@ -2,47 +2,50 @@
 
 이 문서는 최근 3~7일 기록을 기준으로 현재 상태를 짧게 진단한다.
 
-## 2026-04-09 기준
+## 2026-04-13 기준
 
 ### 최근 크게 문제로 보이지 않는 부분
 
-- 최근 기록 범위에서는 급한 갈등, 큰 불안, 관계 위기 신호가 전면에 나타나지는 않는다.
-  근거: [942071272.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071272.md)
-  근거: [942071273.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071273.md)
-  근거: [942071275.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071275.md)
+- 최근 기록 범위에서는 급한 갈등, 업무 위기, 관계 충돌 신호가 전면에 나타나지는 않는다.
+  근거: [942071295.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071295.md)
+  근거: [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
+  근거: [942071311.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071311.md)
+- 가족 이벤트를 `점심(부모님) + 저녁(옥상 파티)`로 미리 구조화하고, 실제로 속초 이동과 가족 활동 기록으로 이어진다.
+  근거: [942071288.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071288.md)
+  근거: [942071294.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071294.md)
+  근거: [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
 
 ### 패턴이 달라진 부분
 
-- 2026-04-07의 기록이 가족, 관계, 기억 보존 쪽에 가까웠다면, 2026-04-09의 기록은 생활 리듬과 일 관련 사고 메모 쪽으로 초점이 이동했다.
-  근거: [942071247.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071247.md)
-  근거: [942071249.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071249.md)
-  근거: [942071272.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071272.md)
-  근거: [942071274.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071274.md)
-- 몸 상태와 생활 리듬을 `기상 시간`, `몸무게`, `출근 시간`처럼 짧은 수치와 시간 단서로 남기는 흐름이 다시 붙고 있다.
-  근거: [942071272.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071272.md)
-  근거: [942071273.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071273.md)
-  근거: [942071275.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071275.md)
-- 개념을 그냥 메모로 끝내지 않고 바로 제품, 밸런스, UX 같은 문제로 번역하려는 분석 습관은 유지되고 있다.
-  근거: [942071257.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071257.md)
-  근거: [942071258.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071258.md)
-  근거: [942071259.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071259.md)
-  근거: [942071274.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071274.md)
-  근거: [942071276.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071276.md)
+- 2026-04-09의 분석 중심 메모 이후, 2026-04-10~13은 가족 일정과 회복 루틴 중심의 기록으로 초점이 이동했다.
+  근거: [942071277.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071277.md)
+  근거: [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
+  근거: [942071303.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071303.md)
+- `기상/체중` 기록이 4일 이상 이어지고, 중간에 `조깅 5km`가 추가돼 단순 관찰에서 활동 루틴까지 연결되는 모습이 보인다.
+  근거: [942071289.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071289.md)
+  근거: [942071297.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071297.md)
+  근거: [942071306.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071306.md)
+  근거: [942071313.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-13/942071313.md)
+- 사진/캡션 기록이 붙은 날에는 가족 시간의 회고 단서가 더 구체적으로 남는다.
+  근거: [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
+  근거: [942071303.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071303.md)
 
 ### 현재 문제 후보
 
-- 생활 리듬을 기록하기 시작했지만, 아직 누적 기준이나 해석 기준은 붙어 있지 않다. 기록은 있는데 판단 루프는 약하다.
-  근거: [942071272.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071272.md)
+- 자녀 수면 이슈가 있던 날에는 본인 수면과 다음날 컨디션이 같이 흔들린다. 이 변수는 현재 루틴 해석의 주요 교란 요인이다.
+  근거: [942071305.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071305.md)
+  근거: [942071308.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071308.md)
+- 체중 기록은 이어지고 있지만 표본이 짧아(82.9 -> 84.12 -> 83.3 -> 83.1) 단기 변동 해석이 과도해질 수 있다.
   근거: [942071273.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071273.md)
-  근거: [942071275.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071275.md)
-- 링크만 저장한 메모는 당시의 핵심이 빠르게 증발할 수 있다. 이번에는 링크를 다시 읽어 의미를 복원했지만, 다음에도 항상 가능하다고 보긴 어렵다.
-  근거: [942071276.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071276.md)
+  근거: [942071291.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071291.md)
+  근거: [942071297.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071297.md)
+  근거: [942071313.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-13/942071313.md)
 
 ### 해석
 
-- 최근 기록만 보면 `불안/갈등 처리`보다 `측정/관찰/해석` 모드가 앞에 나와 있다.
-- 이건 상태가 좋아졌다는 단정이라기보다, 적어도 기록의 표면이 위기 서사보다 루틴과 사고 정리에 더 가까워졌다는 뜻이다.
-- 다만 수치와 개념 메모가 늘어도 실제 행동 변화나 의사결정 기준으로 이어지지 않으면, 기록은 많아지고 효과는 얕아질 수 있다.
+- 최근 기록은 `업무 분석 모드`보다 `가족 일정 실행 + 회복 루틴 유지` 쪽 비중이 크다.
+- 루틴 자체는 끊기지 않았고(기상/체중/조깅), 남은 과제는 수면 교란 변수까지 포함해 해석 축을 정교화하는 것이다.
+- 다음 컴파일에서는 수면 상태, 활동량, 체중을 같은 축으로 묶어 보는 편이 더 유효하다.
 
 ### 해석의 한계
 
