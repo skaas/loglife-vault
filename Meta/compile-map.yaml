@@ -14,6 +14,9 @@ knowledge_targets:
   - id: self_current_diagnosis
     path: Wiki/Self/Current Diagnosis.md
     purpose: Recent pattern shifts, issue signals, and current interpretation
+  - id: self_today
+    path: Wiki/Self/Today.md
+    purpose: One daily focus chosen from todo, open questions, or recent diagnosis
   - id: self_todo
     path: Wiki/Self/TODO.md
     purpose: Follow-up actions derived from raw notes and recent diagnosis
@@ -81,6 +84,20 @@ compile_units:
       - obvious next step after study or reflection
     emit:
       - self_todo
+  - name: today_focus
+    detect:
+      - first current todo when actionable work exists
+      - otherwise first open question worth writing about
+      - otherwise first recent diagnosis point worth observing
+    emit:
+      - self_today
+  - name: completed_action
+    detect:
+      - explicit done marker
+      - completed checkbox
+      - completion note tied to an earlier todo
+    emit:
+      - self_todo
   - name: concept_note
     detect:
       - studied concept in a link or memo
@@ -131,6 +148,18 @@ link_handling:
   write_back:
     - Daily
     - related Wiki page
+
+task_markers:
+  open:
+    - "TODO:"
+    - "- [ ]"
+  done:
+    - "DONE:"
+    - "- [x]"
+  completion_policy:
+    - only explicit done markers close a task
+    - move matched task from current todo to completed section
+    - preserve completion note when available
 
 merge_policy:
   prefer_update_existing_page: true

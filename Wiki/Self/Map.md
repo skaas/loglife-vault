@@ -8,6 +8,8 @@
   비교적 안정적인 자기서술, 욕구, 강점, 제약
 - [Current Diagnosis.md](<Current Diagnosis.md>):
   최근 3~7일 기록 기준 현재 상태 진단
+- [Today.md](<Today.md>):
+  오늘 하나만 잡는 실행 포커스 또는 짧은 글쓰기 프롬프트
 - [TODO.md](<TODO.md>):
   최근 기록과 진단에서 나온 다음 행동
 - [Career.md](<Career.md>):
@@ -37,6 +39,7 @@
 
 - `Inbox`에서 나에 대한 비교적 안정적인 문장은 `Profile`로 간다.
 - 최근 변화와 문제 후보는 `Current Diagnosis`로 간다.
+- 오늘 당장 움직일 일 또는 짧게 써볼 질문은 `Today`로 간다.
 - 진단에서 바로 행동으로 바뀌는 항목은 `TODO`로 간다.
 - 충돌, 망설임, 자기 모순은 `Tensions`로 간다.
 - 답이 닫히지 않은 질문은 `Open Questions`로 간다.

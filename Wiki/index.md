@@ -25,6 +25,8 @@
   비교적 안정적인 자기서술
 - [Self/Current Diagnosis.md](<Self/Current Diagnosis.md>):
   최근 기록 기준 현재 상태 진단과 문제 후보
+- [Self/Today.md](<Self/Today.md>):
+  오늘 하나만 잡는 실행 포커스 또는 짧은 생각 프롬프트
 - [Self/TODO.md](<Self/TODO.md>):
   최근 진단과 기록에서 나온 다음 행동
 - [Self/Career.md](<Self/Career.md>):
@@ -51,6 +53,8 @@
 
 ## 최근 생각거리
 
+- [Questions/헤일메리-프로젝트-독후감.md](<Questions/헤일메리-프로젝트-독후감.md>):
+  예상 밖 전개, 첫 조우 긴장감, 로키 이후 몰입을 중심으로 정리한 독후감 메모
 - [Questions/미분의-변수-해석.md](<Questions/미분의-변수-해석.md>):
   미분을 시간 대신 변수 간 반응과 민감도로 해석한 개념 메모
 - [Questions/구매-주기-빈도-프레임.md](<Questions/구매-주기-빈도-프레임.md>):

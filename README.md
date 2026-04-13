@@ -6,6 +6,7 @@
 - `Daily`에는 날짜 맥락을 정리한다.
 - `Wiki`에는 반복되는 자기지식을 축적한다.
 - `Wiki`에는 최근 진단, 해야 할 일, 개념 정리 같은 해석 결과도 함께 축적한다.
+- `Wiki`에는 오늘 하나만 잡는 포커스도 별도 문서로 남긴다.
 - `site`에는 외부 공개 가능한 결과물만 다시 컴파일한다.
 - `Meta`에는 이 과정을 안정적으로 유지하기 위한 규칙을 둔다.
 
@@ -41,9 +42,10 @@
 4. 하루 단위 요약과 맥락은 `Daily`에 반영한다.
 5. 실행할 일은 `TODO:` 또는 `- [ ]` 같은 표식으로 적는다.
 6. 완료한 일은 `DONE:` 또는 `- [x]` 같은 표식으로 적는다.
-7. 반복되는 인물, 사건, 주제, 질문은 `Wiki` 문서로 승격한다.
-8. 필요하면 최근 진단, 다음 행동, 개념 정리와 추가 질문도 `Wiki`에 함께 남긴다.
-9. 공개해도 되는 자기소개 정보만 골라 `site/index.html` 같은 공개용 산출물로 다시 컴파일한다.
+7. 컴파일할 때는 `Wiki/Self/Today.md`에 오늘 한 가지 TODO 또는 짧은 글쓰기 프롬프트 1개를 만든다.
+8. 반복되는 인물, 사건, 주제, 질문은 `Wiki` 문서로 승격한다.
+9. 필요하면 최근 진단, 다음 행동, 개념 정리와 추가 질문도 `Wiki`에 함께 남긴다.
+10. 공개해도 되는 자기소개 정보만 골라 `site/index.html` 같은 공개용 산출물로 다시 컴파일한다.
 
 ## TODO 표식 규칙
 
@@ -67,6 +69,22 @@
 - 공백이나 특수 문자가 있는 경로는 `[label](<relative/path>)` 형식을 쓴다.
 - 외부 웹 링크만 `https://...` 절대 URL을 유지한다.
 - 이 규칙을 지키면 Obsidian에서 바로 열리고, Mac과 Windows 사이에서도 링크 형식이 깨지지 않는다.
+
+## 수동 TODO 알림
+
+- compile 결과 중 `오늘 한 가지`는 `scripts/compile-today-focus.sh`로 `Wiki/Self/Today.md`에 만든다.
+- 컴파일을 수동으로 끝낸 뒤 `scripts/send-post-compile-todo.sh`를 실행하면 `Wiki/Self/TODO.md`의 `현재 할 일`만 텔레그램으로 보낼 수 있다.
+- 실제 전송 전에는 `scripts/send-post-compile-todo.sh --dry-run`으로 메시지를 먼저 확인한다.
+- 전송에는 `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`가 필요하다.
+- 로컬에서는 [`.env.local`](</Users/user/Documents/loglife/loglife-vault/.env.local>) 파일에 넣는 방식을 기본으로 쓴다.
+- 예시는 [`.env.example`](</Users/user/Documents/loglife/loglife-vault/.env.example>) 에 있다.
+- 일반적인 흐름은 아래와 같다.
+
+```bash
+scripts/compile-today-focus.sh
+scripts/send-post-compile-todo.sh --dry-run
+scripts/send-post-compile-todo.sh
+```
 
 ## Windows 호환 규칙
 

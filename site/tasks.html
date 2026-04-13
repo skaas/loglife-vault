@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loglife TODO Board</title>
+    <meta
+      name="description"
+      content="Wiki/Self/Today.md와 Wiki/Self/TODO.md를 읽고 실행과 짧은 생각을 Inbox/Text에 기록하는 개인 실행 보드"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./tasks.css" />
+  </head>
+  <body>
+    <main class="todo-page">
+      <header class="top">
+        <div>
+          <p class="eyebrow">Execution Layer</p>
+          <h1>TODO Board</h1>
+          <p class="subtitle">
+            <code>Wiki/Self/Today.md</code>와 <code>Wiki/Self/TODO.md</code>를 읽고,
+            실행과 짧은 생각을 <code>Inbox/Text</code>에 기록합니다.
+          </p>
+        </div>
+        <div class="actions">
+          <button id="connect-btn" class="btn primary">Vault 연결</button>
+          <button id="reload-btn" class="btn ghost" disabled>다시 읽기</button>
+        </div>
+      </header>
+
+      <section class="status-panel">
+        <article>
+          <p class="label">상태</p>
+          <p id="status-text" class="value">Vault 미연결</p>
+        </article>
+        <article>
+          <p class="label">현재 할 일</p>
+          <p id="open-count" class="value">0</p>
+        </article>
+        <article>
+          <p class="label">완료 처리됨</p>
+          <p id="done-count" class="value">0</p>
+        </article>
+      </section>
+
+      <section class="focus-board">
+        <div class="board-head">
+          <h2>오늘 한 가지</h2>
+          <p>
+            <code>Wiki/Self/Today.md</code>를 우선 읽고, 없으면
+            <code>TODO/Open Questions</code>에서 즉석으로 계산합니다.
+          </p>
+        </div>
+        <div id="today-focus-card" class="today-focus-card">
+          <p class="empty">Vault를 연결하면 오늘의 포커스를 계산합니다.</p>
+        </div>
+      </section>
+
+      <section class="board">
+        <div class="board-head">
+          <h2>현재 TODO</h2>
+          <p>카드를 완료하면 첨부/링크와 함께 Inbox에 기록 파일을 생성합니다.</p>
+        </div>
+        <div id="task-list" class="task-list"></div>
+      </section>
+    </main>
+
+    <dialog id="complete-dialog" class="dialog">
+      <form id="complete-form" method="dialog">
+        <h3>완료 처리</h3>
+        <p id="dialog-task-text" class="dialog-task"></p>
+
+        <label>
+          완료 메모
+          <textarea
+            id="done-note"
+            rows="4"
+            placeholder="무엇을 했는지 짧게 적으세요"
+          ></textarea>
+        </label>
+
+        <label>
+          첨부 링크 (한 줄에 하나)
+          <textarea
+            id="done-links"
+            rows="3"
+            placeholder="https://example.com"
+          ></textarea>
+        </label>
+
+        <label>
+          파일 첨부
+          <input id="done-files" type="file" multiple />
+        </label>
+
+        <p class="hint">
+          저장 시 <code>Inbox/Text/web-todo-complete-*.md</code> 파일이 생기고, 첨부
+          파일은 <code>Inbox/Text/attachments</code>로 복사됩니다.
+        </p>
+
+        <div class="dialog-actions">
+          <button type="button" id="cancel-complete" class="btn ghost">취소</button>
+          <button type="submit" class="btn primary">완료 저장</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="today-note-dialog" class="dialog">
+      <form id="today-note-form" method="dialog">
+        <h3>짧은 생각 저장</h3>
+        <p id="today-dialog-focus-text" class="dialog-task"></p>
+
+        <label>
+          짧은 생각
+          <textarea
+            id="today-note"
+            rows="5"
+            placeholder="오늘 떠오른 생각, 관찰, 다음 질문을 짧게 적으세요"
+          ></textarea>
+        </label>
+
+        <label>
+          첨부 링크 (한 줄에 하나)
+          <textarea
+            id="today-links"
+            rows="3"
+            placeholder="https://example.com"
+          ></textarea>
+        </label>
+
+        <label>
+          파일 첨부
+          <input id="today-files" type="file" multiple />
+        </label>
+
+        <p class="hint">
+          저장 시 <code>Inbox/Text/web-today-note-*.md</code> 파일이 생기고, 첨부
+          파일은 <code>Inbox/Text/attachments</code>로 복사됩니다.
+        </p>
+
+        <div class="dialog-actions">
+          <button type="button" id="cancel-today-note" class="btn ghost">취소</button>
+          <button type="submit" class="btn primary">생각 저장</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="./tasks.js"></script>
+  </body>
+</html>

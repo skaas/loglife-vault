@@ -21,5 +21,11 @@
 
 - `index.html`
   공개용 프로필 겸 자기소개 페이지
+- `tasks.html`
+  `Wiki/Self/TODO.md`와 `Wiki/Self/Today.md` 기반 실행 보드. 완료 기록과 짧은 생각 기록을 `Inbox/Text`에 생성
 - `styles.css`
   공개 페이지 전용 스타일
+- `tasks.css`
+  실행 보드 전용 스타일
+- `tasks.js`
+  Vault 연결, Today/TODO 파싱, 짧은 생각 저장, 완료 기록 저장 로직

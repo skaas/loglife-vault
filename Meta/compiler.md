@@ -44,6 +44,8 @@
   `Wiki/Self/Profile.md`
 - 최근 상태 진단:
   `Wiki/Self/Current Diagnosis.md`
+- 오늘 한 가지 포커스:
+  `Wiki/Self/Today.md`
 - 다음 행동과 후속 TODO:
   `Wiki/Self/TODO.md`
 - 자기 안의 충돌:
@@ -150,6 +152,14 @@
 - 단정 대신 `최근 기록 범위에서는`, `이 시점에는` 같은 표현을 쓴다.
 - 결과는 `Wiki/Self/Current Diagnosis.md`에 모은다.
 
+### 오늘 한 가지 포커스
+
+- `Wiki/Self/TODO.md`의 `현재 할 일`이 있으면 첫 항목을 오늘 포커스로 뽑는다.
+- `현재 할 일`이 비어 있으면 `Wiki/Self/Open Questions.md`의 첫 질문을 오늘의 글쓰기 프롬프트로 뽑는다.
+- 열린 질문도 비어 있으면 `Current Diagnosis`의 첫 문제 후보나 관찰 포인트를 짧은 기록 프롬프트로 쓴다.
+- 결과는 `Wiki/Self/Today.md`에 모은다.
+- 이 문서는 하루에 하나만 잡는 실행점 또는 사고점이어야 한다.
+
 ### 해야 할 일
 
 - 원문에 TODO가 직접 있으면 `Wiki/Self/TODO.md`에 옮긴다.
@@ -185,6 +195,15 @@
 - 공백이나 `[` 같은 문자가 포함된 경로는 `[label](<relative/path>)` 형식을 쓴다.
 - 외부 사이트로 나갈 때만 `https://` 절대 URL을 사용한다.
 - 이유는 단순하다. 이 형식만 Obsidian에서 바로 열리고, Mac과 Windows에서도 동일하게 유지된다.
+
+## 수동 post-compile TODO 알림
+
+- compile 직후 `scripts/compile-today-focus.sh`로 `Wiki/Self/Today.md`를 갱신한다.
+- 자동화 전 단계에서는 compile 자체는 계속 수동으로 돌린다.
+- compile 직후 `scripts/send-post-compile-todo.sh`를 실행해 `Wiki/Self/TODO.md`의 `현재 할 일`만 텔레그램으로 보낸다.
+- 메시지 생성은 `scripts/build-todo-digest.sh`, 전송은 `scripts/send-telegram-message.sh`가 담당한다.
+- 실제 전송 전에는 `--dry-run`으로 메시지를 먼저 확인한다.
+- 토큰과 채팅 ID는 커밋하지 않고 `.env.local` 또는 쉘 환경 변수로만 넣는다.
 
 ## 컴파일 예시
 
