@@ -8,21 +8,21 @@
   Google Analytics 기반 게임 분석
   발표 자료:
   [NDC Replay 2015](https://ndcreplay.nexon.com/NDC2015/sessions/NDC2015_0040.html#k%5B%5D=%ED%99%A9%EC%B0%AC%EC%A3%BC)
-  근거: [resume-google-docs-1EXYD4Lz-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1EXYD4Lz-2026-04-07.md)
+  근거: [resume-google-docs-1EXYD4Lz-2026-04-07.md](<../../Inbox/Text/resume-google-docs-1EXYD4Lz-2026-04-07.md>)
 - NDC 2016:
   기획자 중심 게임 데이터 분석 방법
   발표 자료:
   [NDC Replay 2016](https://ndcreplay.nexon.com/NDC2016/sessions/NDC2016_0013.html#k%5B%5D=%ED%99%A9%EC%B0%AC%EC%A3%BC)
-  근거: [resume-google-docs-1XnCSR81-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md)
+  근거: [resume-google-docs-1XnCSR81-2026-04-07.md](<../../Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md>)
 - 2022 Wanted Con:
   서비스를 성공시키는 방법
-  근거: [resume-google-docs-1XnCSR81-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md)
+  근거: [resume-google-docs-1XnCSR81-2026-04-07.md](<../../Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md>)
 - `아이디어를 상품으로 만들기까지` 시리즈:
   1주차부터 4주차까지 공개 자료가 남아 있다.
-  근거: [talk-google-slides-1Vj3Yi2N-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/talk-google-slides-1Vj3Yi2N-2026-04-07.md)
-  근거: [talk-google-slides-1WrW0Ctx-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/talk-google-slides-1WrW0Ctx-2026-04-07.md)
-  근거: [talk-google-slides-1HqOONUr-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/talk-google-slides-1HqOONUr-2026-04-07.md)
-  근거: [talk-google-slides-1e2lMz4k-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/talk-google-slides-1e2lMz4k-2026-04-07.md)
+  근거: [talk-google-slides-1Vj3Yi2N-2026-04-07.md](<../../Inbox/Text/talk-google-slides-1Vj3Yi2N-2026-04-07.md>)
+  근거: [talk-google-slides-1WrW0Ctx-2026-04-07.md](<../../Inbox/Text/talk-google-slides-1WrW0Ctx-2026-04-07.md>)
+  근거: [talk-google-slides-1HqOONUr-2026-04-07.md](<../../Inbox/Text/talk-google-slides-1HqOONUr-2026-04-07.md>)
+  근거: [talk-google-slides-1e2lMz4k-2026-04-07.md](<../../Inbox/Text/talk-google-slides-1e2lMz4k-2026-04-07.md>)
 
 ## 반복 주제
 
@@ -52,5 +52,5 @@
 
 ## 연결
 
-- [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
-- [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/일-진로-창업.md)
+- [Career.md](<Career.md>)
+- [일-진로-창업.md](<../Themes/일-진로-창업.md>)

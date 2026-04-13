@@ -156,6 +156,15 @@
 - 진단에서 바로 행동으로 바뀔 수 있는 항목이 있으면 TODO로 등록한다.
 - 할 일은 짧고 검증 가능한 문장으로 쓴다.
 
+### TODO와 완료 처리
+
+- `Inbox/Text`에서 `TODO:` 또는 `- [ ]`를 발견하면 `현재 할 일` 후보로 본다.
+- `Inbox/Text`에서 `DONE:` 또는 `- [x]`를 발견하면 `완료 신호`로 본다.
+- 완료 신호는 새 일을 만드는 것이 아니라 기존 할 일을 닫는 쪽을 우선한다.
+- 같은 일을 가리키는 것으로 보이면 [TODO.md](<../Wiki/Self/TODO.md>) 의 `현재 할 일`에서 내리고 `최근 완료`에 옮긴다.
+- 완료 메모가 있으면 `최근 완료` 항목에 한 줄로 덧붙인다.
+- 추측만으로 완료 처리하지 않는다. `DONE:` 또는 `- [x]` 같은 명시 신호가 있을 때만 완료로 본다.
+
 ### 공부한 개념과 더 생각할 것
 
 - 링크나 메모 안에 공부한 개념이 있으면 한 번 더 짧게 정리한다.
@@ -169,12 +178,20 @@
 - 새 파일을 커밋하기 전에는 `scripts/check-windows-paths.sh --staged`를 실행한다.
 - 이 저장소에서는 `.githooks/pre-commit`이 같은 검사를 자동으로 수행한다.
 
+## Vault 링크 규칙
+
+- `Wiki`, `Meta`, `README` 같은 Vault 내부 Markdown 문서에서는 OS 절대경로를 쓰지 않는다.
+- 내부 파일 링크는 현재 문서를 기준으로 한 상대경로 Markdown 링크로 쓴다.
+- 공백이나 `[` 같은 문자가 포함된 경로는 `[label](<relative/path>)` 형식을 쓴다.
+- 외부 사이트로 나갈 때만 `https://` 절대 URL을 사용한다.
+- 이유는 단순하다. 이 형식만 Obsidian에서 바로 열리고, Mac과 Windows에서도 동일하게 유지된다.
+
 ## 컴파일 예시
 
 ### 1. 욕구와 방향
 
 원본:
-[나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
+[나는 무엇일까.txt](<../Inbox/Text/나는 무엇일까.txt>)
 
 추출:
 
@@ -191,7 +208,7 @@
 ### 2. 성격과 대인관계
 
 원본:
-[나의 성격.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나의%20성격.txt)
+[나의 성격.txt](<../Inbox/Text/나의 성격.txt>)
 
 추출:
 
@@ -207,7 +224,7 @@
 ### 3. 건강과 행동 변화
 
 원본:
-[건강.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/건강.txt)
+[건강.txt](<../Inbox/Text/건강.txt>)
 
 추출:
 
@@ -223,7 +240,7 @@
 ### 4. 생각의 전환
 
 원본:
-[생각의 변화.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/생각의%20변화.txt)
+[생각의 변화.txt](<../Inbox/Text/생각의 변화.txt>)
 
 추출:
 

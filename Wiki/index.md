@@ -15,77 +15,77 @@
 
 ## 핵심 목차
 
-- [../site/index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html):
+- [../site/index.html](<../site/index.html>):
   공개 가능한 내용만 다시 컴파일한 HTML 프로필
-- [../Meta/wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md):
+- [../Meta/wording-conflicts.md](<../Meta/wording-conflicts.md>):
   사용자가 직접 수정하는 wording compile conflict 승인 파일
-- [Self/Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md):
+- [Self/Map.md](<Self/Map.md>):
   자기지식 전체 지도
-- [Self/Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md):
+- [Self/Profile.md](<Self/Profile.md>):
   비교적 안정적인 자기서술
-- [Self/Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md):
+- [Self/Current Diagnosis.md](<Self/Current Diagnosis.md>):
   최근 기록 기준 현재 상태 진단과 문제 후보
-- [Self/TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md):
+- [Self/TODO.md](<Self/TODO.md>):
   최근 진단과 기록에서 나온 다음 행동
-- [Self/Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md):
+- [Self/Career.md](<Self/Career.md>):
   이력서 기반 직업 정체성과 대표 성과
-- [Self/Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md):
+- [Self/Speaking.md](<Self/Speaking.md>):
   외부 강연에서 반복되는 주제와 설명 방식
-- [Self/Tensions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Tensions.md):
+- [Self/Tensions.md](<Self/Tensions.md>):
   반복되는 내적 충돌
-- [Self/Open Questions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Open%20Questions.md):
+- [Self/Open Questions.md](<Self/Open Questions.md>):
   아직 닫히지 않은 질문
 
 ## 주제별 보기
 
-- [Themes/일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/일-진로-창업.md):
+- [Themes/일-진로-창업.md](<Themes/일-진로-창업.md>):
   경력, 실패, 방향 수정, 창업 욕구
-- [Themes/도전-좌절-성장.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/도전-좌절-성장.md):
+- [Themes/도전-좌절-성장.md](<Themes/도전-좌절-성장.md>):
   부딪힘과 좌절을 해석하는 방식
-- [Themes/가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/가족-돌봄.md):
+- [Themes/가족-돌봄.md](<Themes/가족-돌봄.md>):
   아이 건강, 불안, 가족 순간 기록
-- [Themes/건강.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/건강.md):
+- [Themes/건강.md](<Themes/건강.md>):
   금연 이력, 체중 추적, 수면-활동 루틴
-- [Themes/생각의-변화.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/생각의-변화.md):
+- [Themes/생각의-변화.md](<Themes/생각의-변화.md>):
   관점 변화와 편견에 대한 자각
 
 ## 최근 생각거리
 
-- [Questions/미분의-변수-해석.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/%EB%AF%B8%EB%B6%84%EC%9D%98-%EB%B3%80%EC%88%98-%ED%95%B4%EC%84%9D.md):
+- [Questions/미분의-변수-해석.md](<Questions/미분의-변수-해석.md>):
   미분을 시간 대신 변수 간 반응과 민감도로 해석한 개념 메모
-- [Questions/구매-주기-빈도-프레임.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/구매-주기-빈도-프레임.md):
+- [Questions/구매-주기-빈도-프레임.md](<Questions/구매-주기-빈도-프레임.md>):
   구매 주기, 빈도, 타이밍을 액션 프레임으로 정리한 메모
 
 ## 시간 흐름
 
-- [Timeline/전환점.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/전환점.md):
+- [Timeline/전환점.md](<Timeline/전환점.md>):
   어린 시절, 경력 시작, 창업 실패, 진로 수정
-- [Timeline/커리어.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/커리어.md):
+- [Timeline/커리어.md](<Timeline/커리어.md>):
   이력서 버전 기준 회사/직함/기간 연표
-- [Timeline/2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md):
+- [Timeline/2026.md](<Timeline/2026.md>):
   최근 생활, 가족 일정, 루틴 관련 단서
 
 ## 프로젝트와 확장 축
 
-- [Projects/하이레시스.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/하이레시스.md):
+- [Projects/하이레시스.md](<Projects/하이레시스.md>):
   철학적 질문이 반영된 창작 프로젝트
-- [Projects/스테이지-난이도-마법사.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80-%EB%82%9C%EC%9D%B4%EB%8F%84-%EB%A7%88%EB%B2%95%EC%82%AC.md):
+- [Projects/스테이지-난이도-마법사.md](<Projects/스테이지-난이도-마법사.md>):
   유저 로그 기반 자동 난이도 조정 시스템 설계
-- [Projects/학교탐정단-TRPG.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/%ED%95%99%EA%B5%90%ED%83%90%EC%A0%95%EB%8B%A8-TRPG.md):
+- [Projects/학교탐정단-TRPG.md](<Projects/학교탐정단-TRPG.md>):
   아이들과 함께 하는 학교탐정단 세계관 프로젝트
-- [Self/Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md):
+- [Self/Speaking.md](<Self/Speaking.md>):
   과거 강연과 발표 자료 요약
 
 ## 추천 읽기 순서
 
-1. [Self/Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md)
-2. [Self/Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
-3. [Self/Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
-4. [Self/Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
-5. [Timeline/커리어.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/커리어.md)
+1. [Self/Map.md](<Self/Map.md>)
+2. [Self/Profile.md](<Self/Profile.md>)
+3. [Self/Career.md](<Self/Career.md>)
+4. [Self/Speaking.md](<Self/Speaking.md>)
+5. [Timeline/커리어.md](<Timeline/커리어.md>)
 
 ## 메모
 
 - 이 문서는 현재까지 컴파일된 결과를 요약한 것이고, 새 기록이 들어오면 갱신된다.
 - 단정적인 성격 진단보다 `기록상 반복되는 패턴`을 우선해 정리한다.
-- 공개용 소개 페이지는 `Wiki` 전체가 아니라 [site/index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)처럼 별도 산출물로 관리한다.
+- 공개용 소개 페이지는 `Wiki` 전체가 아니라 [site/index.html](<../site/index.html>)처럼 별도 산출물로 관리한다.

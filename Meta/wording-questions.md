@@ -3,7 +3,7 @@
 이 문서는 더 이상 기본 운영 문서가 아니다.
 
 - 현재 기준 문서:
-  [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+  [wording-conflicts.md](<wording-conflicts.md>)
 - 변경 이유:
   워딩 문제를 단순 질문이 아니라 `컴파일 충돌`로 다루도록 규칙이 바뀌었다.
 

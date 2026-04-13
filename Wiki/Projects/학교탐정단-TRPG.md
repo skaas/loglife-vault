@@ -5,11 +5,11 @@
 ## 현재 상태
 
 - Google Docs 원본 문서가 존재하고, 현재는 읽을 수 있는 상태다.
-  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md)
+  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](<../../Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md>)
 - 문서 성격은 추상적인 세계관 메모보다는 `아이들과 함께 바로 플레이할 수 있는 GM 룰북`에 가깝다.
-  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md)
+  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](<../../Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md>)
 - 첫 번째 사건 `급식실에서 우유가 사라졌다!`가 완성된 시나리오 형태로 들어 있다.
-  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md)
+  근거: [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](<../../Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md>)
 
 ## 프로젝트 성격
 
@@ -62,6 +62,6 @@
 
 ## 연결
 
-- [하이레시스.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/하이레시스.md)
-- [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
-- [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+- [하이레시스.md](<하이레시스.md>)
+- [가족-돌봄.md](<../Themes/가족-돌봄.md>)
+- [index.md](<../index.md>)

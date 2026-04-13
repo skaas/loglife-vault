@@ -7,39 +7,39 @@
 ### 최근 크게 문제로 보이지 않는 부분
 
 - 최근 기록 범위에서는 급한 갈등, 업무 위기, 관계 충돌 신호가 전면에 나타나지는 않는다.
-  근거: [942071295.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071295.md)
-  근거: [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
-  근거: [942071311.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071311.md)
+  근거: [942071295.md](<../../Inbox/Telegram/2026-04-11/942071295.md>)
+  근거: [942071300.md](<../../Inbox/Telegram/2026-04-11/942071300.md>)
+  근거: [942071311.md](<../../Inbox/Telegram/2026-04-12/942071311.md>)
 - 가족 이벤트를 `점심(부모님) + 저녁(옥상 파티)`로 미리 구조화하고, 실제로 속초 이동과 가족 활동 기록으로 이어진다.
-  근거: [942071288.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071288.md)
-  근거: [942071294.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071294.md)
-  근거: [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
+  근거: [942071288.md](<../../Inbox/Telegram/2026-04-09/942071288.md>)
+  근거: [942071294.md](<../../Inbox/Telegram/2026-04-10/942071294.md>)
+  근거: [942071300.md](<../../Inbox/Telegram/2026-04-11/942071300.md>)
 
 ### 패턴이 달라진 부분
 
 - 2026-04-09의 분석 중심 메모 이후, 2026-04-10~13은 가족 일정과 회복 루틴 중심의 기록으로 초점이 이동했다.
-  근거: [942071277.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071277.md)
-  근거: [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
-  근거: [942071303.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071303.md)
+  근거: [942071277.md](<../../Inbox/Telegram/2026-04-09/942071277.md>)
+  근거: [942071300.md](<../../Inbox/Telegram/2026-04-11/942071300.md>)
+  근거: [942071303.md](<../../Inbox/Telegram/2026-04-11/942071303.md>)
 - `기상/체중` 기록이 4일 이상 이어지고, 중간에 `조깅 5km`가 추가돼 단순 관찰에서 활동 루틴까지 연결되는 모습이 보인다.
-  근거: [942071289.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071289.md)
-  근거: [942071297.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071297.md)
-  근거: [942071306.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071306.md)
-  근거: [942071313.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-13/942071313.md)
+  근거: [942071289.md](<../../Inbox/Telegram/2026-04-10/942071289.md>)
+  근거: [942071297.md](<../../Inbox/Telegram/2026-04-11/942071297.md>)
+  근거: [942071306.md](<../../Inbox/Telegram/2026-04-12/942071306.md>)
+  근거: [942071313.md](<../../Inbox/Telegram/2026-04-13/942071313.md>)
 - 사진/캡션 기록이 붙은 날에는 가족 시간의 회고 단서가 더 구체적으로 남는다.
-  근거: [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
-  근거: [942071303.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071303.md)
+  근거: [942071300.md](<../../Inbox/Telegram/2026-04-11/942071300.md>)
+  근거: [942071303.md](<../../Inbox/Telegram/2026-04-11/942071303.md>)
 
 ### 현재 문제 후보
 
 - 자녀 수면 이슈가 있던 날에는 본인 수면과 다음날 컨디션이 같이 흔들린다. 이 변수는 현재 루틴 해석의 주요 교란 요인이다.
-  근거: [942071305.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071305.md)
-  근거: [942071308.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071308.md)
+  근거: [942071305.md](<../../Inbox/Telegram/2026-04-12/942071305.md>)
+  근거: [942071308.md](<../../Inbox/Telegram/2026-04-12/942071308.md>)
 - 체중 기록은 이어지고 있지만 표본이 짧아(82.9 -> 84.12 -> 83.3 -> 83.1) 단기 변동 해석이 과도해질 수 있다.
-  근거: [942071273.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071273.md)
-  근거: [942071291.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071291.md)
-  근거: [942071297.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071297.md)
-  근거: [942071313.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-13/942071313.md)
+  근거: [942071273.md](<../../Inbox/Telegram/2026-04-09/942071273.md>)
+  근거: [942071291.md](<../../Inbox/Telegram/2026-04-10/942071291.md>)
+  근거: [942071297.md](<../../Inbox/Telegram/2026-04-11/942071297.md>)
+  근거: [942071313.md](<../../Inbox/Telegram/2026-04-13/942071313.md>)
 
 ### 해석
 

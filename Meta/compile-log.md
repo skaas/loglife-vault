@@ -5,38 +5,38 @@
 ### 입력
 
 - `Inbox/Text`
-  - [건강.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/건강.txt)
-  - [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
-  - [나의 성격.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나의%20성격.txt)
-  - [생각의 변화.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/생각의%20변화.txt)
-  - [육아와 병원.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/육아와%20병원.txt)
-  - [메이웨더일본전.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/메이웨더일본전.txt)
-  - [하이레시스로그.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/%5B%EC%86%8C%EC%84%A4%5D%ED%95%98%EC%9D%B4%EB%A0%88%EC%8B%9C%EC%8A%A4%EB%A1%9C%EA%B7%B8.md)
-  - [sansawon-safe-deposit-note.pdf](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/sansawon-safe-deposit-note.pdf)
+  - [건강.txt](<../Inbox/Text/건강.txt>)
+  - [나는 무엇일까.txt](<../Inbox/Text/나는 무엇일까.txt>)
+  - [나의 성격.txt](<../Inbox/Text/나의 성격.txt>)
+  - [생각의 변화.txt](<../Inbox/Text/생각의 변화.txt>)
+  - [육아와 병원.txt](<../Inbox/Text/육아와 병원.txt>)
+  - [메이웨더일본전.txt](<../Inbox/Text/메이웨더일본전.txt>)
+  - [하이레시스로그.md](<../Inbox/Text/[소설]하이레시스로그.md>)
+  - [sansawon-safe-deposit-note.pdf](<../Inbox/Text/sansawon-safe-deposit-note.pdf>)
 - `Inbox/Telegram`
-  - [942071246.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071246.md)
-  - [942071247.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071247.md)
-  - [942071248.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071248.md)
-  - [942071249.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071249.md)
+  - [942071246.md](<../Inbox/Telegram/2026-04-07/942071246.md>)
+  - [942071247.md](<../Inbox/Telegram/2026-04-07/942071247.md>)
+  - [942071248.md](<../Inbox/Telegram/2026-04-07/942071248.md>)
+  - [942071249.md](<../Inbox/Telegram/2026-04-07/942071249.md>)
 
 ### 출력
 
 - `Wiki/Self`
-  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
-  - [Tensions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Tensions.md)
-  - [Open Questions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Open%20Questions.md)
-  - [Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md)
+  - [Profile.md](<../Wiki/Self/Profile.md>)
+  - [Tensions.md](<../Wiki/Self/Tensions.md>)
+  - [Open Questions.md](<../Wiki/Self/Open Questions.md>)
+  - [Map.md](<../Wiki/Self/Map.md>)
 - `Wiki/Themes`
-  - [건강.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/건강.md)
-  - [생각의-변화.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/생각의-변화.md)
-  - [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/가족-돌봄.md)
-  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/일-진로-창업.md)
-  - [도전-좌절-성장.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/도전-좌절-성장.md)
+  - [건강.md](<../Wiki/Themes/건강.md>)
+  - [생각의-변화.md](<../Wiki/Themes/생각의-변화.md>)
+  - [가족-돌봄.md](<../Wiki/Themes/가족-돌봄.md>)
+  - [일-진로-창업.md](<../Wiki/Themes/일-진로-창업.md>)
+  - [도전-좌절-성장.md](<../Wiki/Themes/도전-좌절-성장.md>)
 - `Wiki/Projects`
-  - [하이레시스.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/하이레시스.md)
+  - [하이레시스.md](<../Wiki/Projects/하이레시스.md>)
 - `Wiki/Timeline`
-  - [전환점.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/전환점.md)
-  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+  - [전환점.md](<../Wiki/Timeline/전환점.md>)
+  - [2026.md](<../Wiki/Timeline/2026.md>)
 
 ### 메모
 
@@ -49,22 +49,22 @@
 ### 입력
 
 - `Inbox/Text`
-  - [resume-google-docs-1EXYD4Lz-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1EXYD4Lz-2026-04-07.md)
-  - [resume-google-docs-1XnCSR81-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md)
+  - [resume-google-docs-1EXYD4Lz-2026-04-07.md](<../Inbox/Text/resume-google-docs-1EXYD4Lz-2026-04-07.md>)
+  - [resume-google-docs-1XnCSR81-2026-04-07.md](<../Inbox/Text/resume-google-docs-1XnCSR81-2026-04-07.md>)
 
 ### 출력
 
 - `Wiki/Self`
-  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
-  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
-  - [Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md)
+  - [Career.md](<../Wiki/Self/Career.md>)
+  - [Profile.md](<../Wiki/Self/Profile.md>)
+  - [Map.md](<../Wiki/Self/Map.md>)
 - `Wiki/Themes`
-  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/일-진로-창업.md)
+  - [일-진로-창업.md](<../Wiki/Themes/일-진로-창업.md>)
 - `Wiki/Timeline`
-  - [전환점.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/전환점.md)
-  - [커리어.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/커리어.md)
+  - [전환점.md](<../Wiki/Timeline/전환점.md>)
+  - [커리어.md](<../Wiki/Timeline/커리어.md>)
 - `Wiki`
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 
@@ -76,19 +76,19 @@
 ### 입력
 
 - `Inbox/Text`
-  - [talk-google-slides-1Vj3Yi2N-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/talk-google-slides-1Vj3Yi2N-2026-04-07.md)
-  - [talk-google-slides-1WrW0Ctx-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/talk-google-slides-1WrW0Ctx-2026-04-07.md)
-  - [talk-google-slides-1HqOONUr-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/talk-google-slides-1HqOONUr-2026-04-07.md)
-  - [talk-google-slides-1e2lMz4k-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/talk-google-slides-1e2lMz4k-2026-04-07.md)
+  - [talk-google-slides-1Vj3Yi2N-2026-04-07.md](<../Inbox/Text/talk-google-slides-1Vj3Yi2N-2026-04-07.md>)
+  - [talk-google-slides-1WrW0Ctx-2026-04-07.md](<../Inbox/Text/talk-google-slides-1WrW0Ctx-2026-04-07.md>)
+  - [talk-google-slides-1HqOONUr-2026-04-07.md](<../Inbox/Text/talk-google-slides-1HqOONUr-2026-04-07.md>)
+  - [talk-google-slides-1e2lMz4k-2026-04-07.md](<../Inbox/Text/talk-google-slides-1e2lMz4k-2026-04-07.md>)
 
 ### 출력
 
 - `Wiki/Self`
-  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
-  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
-  - [Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md)
+  - [Speaking.md](<../Wiki/Self/Speaking.md>)
+  - [Career.md](<../Wiki/Self/Career.md>)
+  - [Map.md](<../Wiki/Self/Map.md>)
 - `Wiki`
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 
@@ -100,14 +100,14 @@
 ### 입력
 
 - `Inbox/Text`
-  - [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md)
+  - [trpg-world-google-doc-1LA0_yFj-2026-04-07.md](<../Inbox/Text/trpg-world-google-doc-1LA0_yFj-2026-04-07.md>)
 
 ### 출력
 
 - `Wiki/Projects`
-  - [학교탐정단-TRPG.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/%ED%95%99%EA%B5%90%ED%83%90%EC%A0%95%EB%8B%A8-TRPG.md)
+  - [학교탐정단-TRPG.md](<../Wiki/Projects/학교탐정단-TRPG.md>)
 - `Wiki`
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 
@@ -119,16 +119,16 @@
 ### 입력
 
 - `Inbox/Text`
-  - [game-system-google-doc-1udABcBr-2026-04-07.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/game-system-google-doc-1udABcBr-2026-04-07.md)
+  - [game-system-google-doc-1udABcBr-2026-04-07.md](<../Inbox/Text/game-system-google-doc-1udABcBr-2026-04-07.md>)
 
 ### 출력
 
 - `Wiki/Projects`
-  - [스테이지-난이도-마법사.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80-%EB%82%9C%EC%9D%B4%EB%8F%84-%EB%A7%88%EB%B2%95%EC%82%AC.md)
+  - [스테이지-난이도-마법사.md](<../Wiki/Projects/스테이지-난이도-마법사.md>)
 - `Wiki/Self`
-  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
+  - [Career.md](<../Wiki/Self/Career.md>)
 - `Wiki`
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 
@@ -140,27 +140,27 @@
 ### 입력
 
 - `Wiki/Self`
-  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
-  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
-  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
+  - [Profile.md](<../Wiki/Self/Profile.md>)
+  - [Career.md](<../Wiki/Self/Career.md>)
+  - [Speaking.md](<../Wiki/Self/Speaking.md>)
 - `Wiki/Timeline`
-  - [커리어.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/커리어.md)
+  - [커리어.md](<../Wiki/Timeline/커리어.md>)
 - `Wiki/Projects`
-  - [스테이지-난이도-마법사.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80-%EB%82%9C%EC%9D%B4%EB%8F%84-%EB%A7%88%EB%B2%95%EC%82%AC.md)
-  - [학교탐정단-TRPG.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/%ED%95%99%EA%B5%90%ED%83%90%EC%A0%95%EB%8B%A8-TRPG.md)
-  - [하이레시스.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/하이레시스.md)
+  - [스테이지-난이도-마법사.md](<../Wiki/Projects/스테이지-난이도-마법사.md>)
+  - [학교탐정단-TRPG.md](<../Wiki/Projects/학교탐정단-TRPG.md>)
+  - [하이레시스.md](<../Wiki/Projects/하이레시스.md>)
 
 ### 출력
 
 - `site`
-  - [index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)
-  - [styles.css](/Users/user/Documents/loglife/loglife-vault/site/styles.css)
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/site/README.md)
+  - [index.html](<../site/index.html>)
+  - [styles.css](<../site/styles.css>)
+  - [README.md](<../site/README.md>)
 - `Meta`
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
-  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+  - [compiler.md](<compiler.md>)
+  - [compile-map.yaml](<compile-map.yaml>)
 - `Wiki`
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 
@@ -179,9 +179,9 @@
 ### 출력
 
 - `Wiki/Self`
-  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
+  - [Speaking.md](<../Wiki/Self/Speaking.md>)
 - `site`
-  - [index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)
+  - [index.html](<../site/index.html>)
 
 ### 메모
 
@@ -193,22 +193,22 @@
 ### 입력
 
 - `Wiki/Self`
-  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
-  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
+  - [Career.md](<../Wiki/Self/Career.md>)
+  - [Speaking.md](<../Wiki/Self/Speaking.md>)
 - `site`
-  - [index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)
+  - [index.html](<../site/index.html>)
 
 ### 출력
 
 - `Meta`
-  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
-  - [wording-questions.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-questions.md)
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
-  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+  - [wording-map.yaml](<wording-map.yaml>)
+  - [wording-questions.md](<wording-questions.md>)
+  - [compiler.md](<compiler.md>)
+  - [compile-map.yaml](<compile-map.yaml>)
 - 루트/운영 문서
-  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
-  - [site/README.md](/Users/user/Documents/loglife/loglife-vault/site/README.md)
+  - [AGENTS.md](<../AGENTS.md>)
+  - [README.md](<../README.md>)
+  - [site/README.md](<../site/README.md>)
 
 ### 메모
 
@@ -220,23 +220,23 @@
 ### 입력
 
 - `Meta`
-  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
-  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+  - [wording-map.yaml](<wording-map.yaml>)
+  - [wording-conflicts.md](<wording-conflicts.md>)
 - 운영 규칙 문서
-  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
-  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+  - [AGENTS.md](<../AGENTS.md>)
+  - [compiler.md](<compiler.md>)
+  - [compile-map.yaml](<compile-map.yaml>)
 
 ### 출력
 
 - `Meta`
-  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
-  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
-  - [compile-log.md](/Users/user/Documents/loglife/loglife-vault/Meta/compile-log.md)
+  - [wording-map.yaml](<wording-map.yaml>)
+  - [wording-conflicts.md](<wording-conflicts.md>)
+  - [compile-log.md](<compile-log.md>)
 - 루트/운영 문서
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
-  - [site/README.md](/Users/user/Documents/loglife/loglife-vault/site/README.md)
-  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
+  - [README.md](<../README.md>)
+  - [site/README.md](<../site/README.md>)
+  - [AGENTS.md](<../AGENTS.md>)
 
 ### 메모
 
@@ -249,18 +249,18 @@
 ### 입력
 
 - `Meta`
-  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
-  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+  - [wording-conflicts.md](<wording-conflicts.md>)
+  - [wording-map.yaml](<wording-map.yaml>)
 
 ### 출력
 
 - `Meta`
-  - [wording-conflicts.html](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.html)
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/Meta/README.md)
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
-  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+  - [wording-conflicts.html](<wording-conflicts.html>)
+  - [README.md](<README.md>)
+  - [compiler.md](<compiler.md>)
+  - [compile-map.yaml](<compile-map.yaml>)
 - `site`
-  - [styles.css](/Users/user/Documents/loglife/loglife-vault/site/styles.css)
+  - [styles.css](<../site/styles.css>)
 
 ### 메모
 
@@ -272,20 +272,20 @@
 ### 입력
 
 - `Meta`
-  - [wording-state.json](/Users/user/Documents/loglife/loglife-vault/Meta/wording-state.json)
-  - [wording-conflicts.html](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.html)
+  - [wording-state.json](<wording-state.json>)
+  - [wording-conflicts.html](<wording-conflicts.html>)
 
 ### 출력
 
 - `Meta`
-  - [wording-state.json](/Users/user/Documents/loglife/loglife-vault/Meta/wording-state.json)
-  - [wording-conflicts.html](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.html)
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/Meta/README.md)
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
-  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
-  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+  - [wording-state.json](<wording-state.json>)
+  - [wording-conflicts.html](<wording-conflicts.html>)
+  - [README.md](<README.md>)
+  - [compiler.md](<compiler.md>)
+  - [compile-map.yaml](<compile-map.yaml>)
+  - [wording-conflicts.md](<wording-conflicts.md>)
 - `site`
-  - [styles.css](/Users/user/Documents/loglife/loglife-vault/site/styles.css)
+  - [styles.css](<../site/styles.css>)
 
 ### 메모
 
@@ -297,19 +297,19 @@
 ### 입력
 
 - `Meta`
-  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
-  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+  - [wording-conflicts.md](<wording-conflicts.md>)
+  - [wording-map.yaml](<wording-map.yaml>)
 
 ### 출력
 
 - `Meta`
-  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
-  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/Meta/README.md)
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
-  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
+  - [wording-conflicts.md](<wording-conflicts.md>)
+  - [wording-map.yaml](<wording-map.yaml>)
+  - [README.md](<README.md>)
+  - [compiler.md](<compiler.md>)
+  - [compile-map.yaml](<compile-map.yaml>)
 - `Wiki`
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 
@@ -322,17 +322,17 @@
 ### 입력
 
 - `Meta`
-  - [wording-conflicts.md](/Users/user/Documents/loglife/loglife-vault/Meta/wording-conflicts.md)
+  - [wording-conflicts.md](<wording-conflicts.md>)
 
 ### 출력
 
 - `Meta`
-  - [wording-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/wording-map.yaml)
+  - [wording-map.yaml](<wording-map.yaml>)
 - `Wiki/Self`
-  - [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md)
-  - [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md)
+  - [Career.md](<../Wiki/Self/Career.md>)
+  - [Speaking.md](<../Wiki/Self/Speaking.md>)
 - `site`
-  - [index.html](/Users/user/Documents/loglife/loglife-vault/site/index.html)
+  - [index.html](<../site/index.html>)
 
 ### 메모
 
@@ -346,29 +346,29 @@
 ### 입력
 
 - `Inbox/Telegram`
-  - [942071250.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071250.md)
-  - [942071251.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071251.md)
-  - [942071252.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071252.md)
-  - [942071253.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071253.md)
-  - [942071254.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071254.md)
-  - [942071255.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071255.md)
-  - [942071256.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071256.md)
-  - [942071257.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071257.md)
-  - [942071258.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071258.md)
-  - [942071259.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071259.md)
-  - [942071260.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071260.md)
-  - [942071261.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071261.md)
-  - [942071262.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071262.md)
+  - [942071250.md](<../Inbox/Telegram/2026-04-07/942071250.md>)
+  - [942071251.md](<../Inbox/Telegram/2026-04-07/942071251.md>)
+  - [942071252.md](<../Inbox/Telegram/2026-04-07/942071252.md>)
+  - [942071253.md](<../Inbox/Telegram/2026-04-07/942071253.md>)
+  - [942071254.md](<../Inbox/Telegram/2026-04-07/942071254.md>)
+  - [942071255.md](<../Inbox/Telegram/2026-04-07/942071255.md>)
+  - [942071256.md](<../Inbox/Telegram/2026-04-07/942071256.md>)
+  - [942071257.md](<../Inbox/Telegram/2026-04-07/942071257.md>)
+  - [942071258.md](<../Inbox/Telegram/2026-04-07/942071258.md>)
+  - [942071259.md](<../Inbox/Telegram/2026-04-07/942071259.md>)
+  - [942071260.md](<../Inbox/Telegram/2026-04-07/942071260.md>)
+  - [942071261.md](<../Inbox/Telegram/2026-04-07/942071261.md>)
+  - [942071262.md](<../Inbox/Telegram/2026-04-07/942071262.md>)
 
 ### 출력
 
 - `Wiki/Self`
-  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
+  - [Profile.md](<../Wiki/Self/Profile.md>)
 - `Wiki/Themes`
-  - [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
-  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+  - [가족-돌봄.md](<../Wiki/Themes/가족-돌봄.md>)
+  - [일-진로-창업.md](<../Wiki/Themes/일-진로-창업.md>)
 - `Wiki/Timeline`
-  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+  - [2026.md](<../Wiki/Timeline/2026.md>)
 
 ### 메모
 
@@ -382,27 +382,27 @@
 ### 입력
 
 - 운영 정의 재검토
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
-  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
+  - [README.md](<../README.md>)
+  - [AGENTS.md](<../AGENTS.md>)
+  - [compiler.md](<compiler.md>)
 - Windows 호환 점검
-  - [나는 무엇일까.txt](/Users/user/Documents/loglife/loglife-vault/Inbox/Text/나는%20무엇일까.txt)
+  - [나는 무엇일까.txt](<../Inbox/Text/나는 무엇일까.txt>)
 
 ### 출력
 
 - 운영 문서
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
-  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
-  - [setup-check.md](/Users/user/Documents/loglife/loglife-vault/Meta/setup-check.md)
+  - [README.md](<../README.md>)
+  - [AGENTS.md](<../AGENTS.md>)
+  - [compiler.md](<compiler.md>)
+  - [setup-check.md](<setup-check.md>)
 - 참조 갱신
-  - [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md)
-  - [Open Questions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Open%20Questions.md)
-  - [Tensions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Tensions.md)
-  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+  - [Profile.md](<../Wiki/Self/Profile.md>)
+  - [Open Questions.md](<../Wiki/Self/Open Questions.md>)
+  - [Tensions.md](<../Wiki/Self/Tensions.md>)
+  - [일-진로-창업.md](<../Wiki/Themes/일-진로-창업.md>)
 - 검사 도구
-  - [check-windows-paths.sh](/Users/user/Documents/loglife/loglife-vault/scripts/check-windows-paths.sh)
-  - [pre-commit](/Users/user/Documents/loglife/loglife-vault/.githooks/pre-commit)
+  - [check-windows-paths.sh](<../scripts/check-windows-paths.sh>)
+  - [pre-commit](<../.githooks/pre-commit>)
 
 ### 메모
 
@@ -416,22 +416,22 @@
 ### 입력
 
 - `Inbox/Telegram`
-  - [942071271.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-08/942071271.md)
-  - [942071272.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071272.md)
-  - [942071273.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071273.md)
-  - [942071274.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071274.md)
-  - [942071275.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071275.md)
-  - [942071276.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071276.md)
+  - [942071271.md](<../Inbox/Telegram/2026-04-08/942071271.md>)
+  - [942071272.md](<../Inbox/Telegram/2026-04-09/942071272.md>)
+  - [942071273.md](<../Inbox/Telegram/2026-04-09/942071273.md>)
+  - [942071274.md](<../Inbox/Telegram/2026-04-09/942071274.md>)
+  - [942071275.md](<../Inbox/Telegram/2026-04-09/942071275.md>)
+  - [942071276.md](<../Inbox/Telegram/2026-04-09/942071276.md>)
 - `Daily`
-  - [2026-04-08.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-08.md)
-  - [2026-04-09.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-09.md)
+  - [2026-04-08.md](<../Daily/2026/2026-04-08.md>)
+  - [2026-04-09.md](<../Daily/2026/2026-04-09.md>)
 
 ### 출력
 
 - `Wiki/Themes`
-  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
+  - [일-진로-창업.md](<../Wiki/Themes/일-진로-창업.md>)
 - `Wiki/Timeline`
-  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+  - [2026.md](<../Wiki/Timeline/2026.md>)
 
 ### 메모
 
@@ -444,29 +444,29 @@
 ### 입력
 
 - 최근 컴파일 결과 해석 요청
-  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
-  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
-  - [2026-04-08.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-08.md)
-  - [2026-04-09.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-09.md)
-  - [942071274.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071274.md)
-  - [942071276.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071276.md)
+  - [2026.md](<../Wiki/Timeline/2026.md>)
+  - [일-진로-창업.md](<../Wiki/Themes/일-진로-창업.md>)
+  - [2026-04-08.md](<../Daily/2026/2026-04-08.md>)
+  - [2026-04-09.md](<../Daily/2026/2026-04-09.md>)
+  - [942071274.md](<../Inbox/Telegram/2026-04-09/942071274.md>)
+  - [942071276.md](<../Inbox/Telegram/2026-04-09/942071276.md>)
 
 ### 출력
 
 - `Wiki/Self`
-  - [Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md)
-  - [TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md)
+  - [Current Diagnosis.md](<../Wiki/Self/Current Diagnosis.md>)
+  - [TODO.md](<../Wiki/Self/TODO.md>)
 - `Wiki/Questions`
-  - [미분의-변수-해석.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/%EB%AF%B8%EB%B6%84%EC%9D%98-%EB%B3%80%EC%88%98-%ED%95%B4%EC%84%9D.md)
+  - [미분의-변수-해석.md](<../Wiki/Questions/미분의-변수-해석.md>)
 - 규칙 문서
-  - [README.md](/Users/user/Documents/loglife/loglife-vault/README.md)
-  - [AGENTS.md](/Users/user/Documents/loglife/loglife-vault/AGENTS.md)
-  - [compiler.md](/Users/user/Documents/loglife/loglife-vault/Meta/compiler.md)
-  - [compile-map.yaml](/Users/user/Documents/loglife/loglife-vault/Meta/compile-map.yaml)
-  - [Self/README.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/README.md)
-  - [Self/Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md)
-  - [Questions/README.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/README.md)
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [README.md](<../README.md>)
+  - [AGENTS.md](<../AGENTS.md>)
+  - [compiler.md](<compiler.md>)
+  - [compile-map.yaml](<compile-map.yaml>)
+  - [Self/README.md](<../Wiki/Self/README.md>)
+  - [Self/Map.md](<../Wiki/Self/Map.md>)
+  - [Questions/README.md](<../Wiki/Questions/README.md>)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 
@@ -480,36 +480,36 @@
 ### 입력
 
 - `Inbox/Telegram`
-  - [942071277.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071277.md)
-  - [942071278.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071278.md)
-  - [942071279.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071279.md)
-  - [942071280.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071280.md)
-  - [942071281.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071281.md)
-  - [942071283.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071283.md)
-  - [942071287.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071287.md)
-  - [942071288.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071288.md)
-  - [942071289.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071289.md)
-  - [942071291.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071291.md)
+  - [942071277.md](<../Inbox/Telegram/2026-04-09/942071277.md>)
+  - [942071278.md](<../Inbox/Telegram/2026-04-09/942071278.md>)
+  - [942071279.md](<../Inbox/Telegram/2026-04-09/942071279.md>)
+  - [942071280.md](<../Inbox/Telegram/2026-04-09/942071280.md>)
+  - [942071281.md](<../Inbox/Telegram/2026-04-09/942071281.md>)
+  - [942071283.md](<../Inbox/Telegram/2026-04-09/942071283.md>)
+  - [942071287.md](<../Inbox/Telegram/2026-04-09/942071287.md>)
+  - [942071288.md](<../Inbox/Telegram/2026-04-09/942071288.md>)
+  - [942071289.md](<../Inbox/Telegram/2026-04-10/942071289.md>)
+  - [942071291.md](<../Inbox/Telegram/2026-04-10/942071291.md>)
 - `Daily`
-  - [2026-04-09.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-09.md)
-  - [2026-04-10.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-10.md)
+  - [2026-04-09.md](<../Daily/2026/2026-04-09.md>)
+  - [2026-04-10.md](<../Daily/2026/2026-04-10.md>)
 
 ### 출력
 
 - `Wiki/Timeline`
-  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+  - [2026.md](<../Wiki/Timeline/2026.md>)
 - `Wiki/Themes`
-  - [일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EC%9D%BC-%EC%A7%84%EB%A1%9C-%EC%B0%BD%EC%97%85.md)
-  - [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
+  - [일-진로-창업.md](<../Wiki/Themes/일-진로-창업.md>)
+  - [가족-돌봄.md](<../Wiki/Themes/가족-돌봄.md>)
 - `Wiki/Self`
-  - [Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md)
-  - [TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md)
-  - [Tensions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Tensions.md)
-  - [Open Questions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Open%20Questions.md)
+  - [Current Diagnosis.md](<../Wiki/Self/Current Diagnosis.md>)
+  - [TODO.md](<../Wiki/Self/TODO.md>)
+  - [Tensions.md](<../Wiki/Self/Tensions.md>)
+  - [Open Questions.md](<../Wiki/Self/Open Questions.md>)
 - `Wiki/Questions`
-  - [구매-주기-빈도-프레임.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Questions/구매-주기-빈도-프레임.md)
+  - [구매-주기-빈도-프레임.md](<../Wiki/Questions/구매-주기-빈도-프레임.md>)
 - `Wiki`
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 
@@ -522,37 +522,37 @@
 ### 입력
 
 - `Inbox/Telegram`
-  - [942071294.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-10/942071294.md)
-  - [942071295.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071295.md)
-  - [942071297.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071297.md)
-  - [942071299.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071299.md)
-  - [942071300.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071300.md)
-  - [942071303.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-11/942071303.md)
-  - [942071305.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071305.md)
-  - [942071306.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071306.md)
-  - [942071308.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071308.md)
-  - [942071309.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071309.md)
-  - [942071311.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071311.md)
-  - [942071312.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-13/942071312.md)
-  - [942071313.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-13/942071313.md)
+  - [942071294.md](<../Inbox/Telegram/2026-04-10/942071294.md>)
+  - [942071295.md](<../Inbox/Telegram/2026-04-11/942071295.md>)
+  - [942071297.md](<../Inbox/Telegram/2026-04-11/942071297.md>)
+  - [942071299.md](<../Inbox/Telegram/2026-04-11/942071299.md>)
+  - [942071300.md](<../Inbox/Telegram/2026-04-11/942071300.md>)
+  - [942071303.md](<../Inbox/Telegram/2026-04-11/942071303.md>)
+  - [942071305.md](<../Inbox/Telegram/2026-04-12/942071305.md>)
+  - [942071306.md](<../Inbox/Telegram/2026-04-12/942071306.md>)
+  - [942071308.md](<../Inbox/Telegram/2026-04-12/942071308.md>)
+  - [942071309.md](<../Inbox/Telegram/2026-04-12/942071309.md>)
+  - [942071311.md](<../Inbox/Telegram/2026-04-12/942071311.md>)
+  - [942071312.md](<../Inbox/Telegram/2026-04-13/942071312.md>)
+  - [942071313.md](<../Inbox/Telegram/2026-04-13/942071313.md>)
 - `Daily`
-  - [2026-04-10.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-10.md)
-  - [2026-04-11.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-11.md)
-  - [2026-04-12.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-12.md)
-  - [2026-04-13.md](/Users/user/Documents/loglife/loglife-vault/Daily/2026/2026-04-13.md)
+  - [2026-04-10.md](<../Daily/2026/2026-04-10.md>)
+  - [2026-04-11.md](<../Daily/2026/2026-04-11.md>)
+  - [2026-04-12.md](<../Daily/2026/2026-04-12.md>)
+  - [2026-04-13.md](<../Daily/2026/2026-04-13.md>)
 
 ### 출력
 
 - `Wiki/Timeline`
-  - [2026.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/2026.md)
+  - [2026.md](<../Wiki/Timeline/2026.md>)
 - `Wiki/Themes`
-  - [가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B0%80%EC%A1%B1-%EB%8F%8C%EB%B4%84.md)
-  - [건강.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/%EA%B1%B4%EA%B0%95.md)
+  - [가족-돌봄.md](<../Wiki/Themes/가족-돌봄.md>)
+  - [건강.md](<../Wiki/Themes/건강.md>)
 - `Wiki/Self`
-  - [Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md)
-  - [TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md)
+  - [Current Diagnosis.md](<../Wiki/Self/Current Diagnosis.md>)
+  - [TODO.md](<../Wiki/Self/TODO.md>)
 - `Wiki`
-  - [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md)
+  - [index.md](<../Wiki/index.md>)
 
 ### 메모
 

@@ -4,9 +4,9 @@
 
 ## 시작점
 
-- [index.md](/Users/user/Documents/loglife/loglife-vault/Wiki/index.md):
+- [index.md](<index.md>):
   현재까지 컴파일된 자기지식의 요약 목차
-- [Self/Map.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Map.md):
+- [Self/Map.md](<Self/Map.md>):
   자기지식 중심 지도
 
 ## 목적

@@ -4,34 +4,34 @@
 
 ## 핵심 노드
 
-- [Profile.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Profile.md):
+- [Profile.md](<Profile.md>):
   비교적 안정적인 자기서술, 욕구, 강점, 제약
-- [Current Diagnosis.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Current%20Diagnosis.md):
+- [Current Diagnosis.md](<Current Diagnosis.md>):
   최근 3~7일 기록 기준 현재 상태 진단
-- [TODO.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/TODO.md):
+- [TODO.md](<TODO.md>):
   최근 기록과 진단에서 나온 다음 행동
-- [Career.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Career.md):
+- [Career.md](<Career.md>):
   이력서 기반 직업 정체성과 대표 성과
-- [Speaking.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Speaking.md):
+- [Speaking.md](<Speaking.md>):
   외부 강연과 발표에서 반복되는 주제와 설명 방식
-- [Tensions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Tensions.md):
+- [Tensions.md](<Tensions.md>):
   자주 부딪히는 내적 충돌과 모순
-- [Open Questions.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Self/Open%20Questions.md):
+- [Open Questions.md](<Open Questions.md>):
   아직 풀리지 않은 질문
 
 ## 연결 주제
 
-- [Themes/건강.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/건강.md)
-- [Themes/생각의-변화.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/생각의-변화.md)
-- [Themes/가족-돌봄.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/가족-돌봄.md)
-- [Themes/일-진로-창업.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/일-진로-창업.md)
-- [Themes/도전-좌절-성장.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Themes/도전-좌절-성장.md)
+- [Themes/건강.md](<../Themes/건강.md>)
+- [Themes/생각의-변화.md](<../Themes/생각의-변화.md>)
+- [Themes/가족-돌봄.md](<../Themes/가족-돌봄.md>)
+- [Themes/일-진로-창업.md](<../Themes/일-진로-창업.md>)
+- [Themes/도전-좌절-성장.md](<../Themes/도전-좌절-성장.md>)
 
 ## 연결 프로젝트와 타임라인
 
-- [Projects/하이레시스.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Projects/하이레시스.md)
-- [Timeline/전환점.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/전환점.md)
-- [Timeline/커리어.md](/Users/user/Documents/loglife/loglife-vault/Wiki/Timeline/커리어.md)
+- [Projects/하이레시스.md](<../Projects/하이레시스.md>)
+- [Timeline/전환점.md](<../Timeline/전환점.md>)
+- [Timeline/커리어.md](<../Timeline/커리어.md>)
 
 ## 컴파일 규칙
 

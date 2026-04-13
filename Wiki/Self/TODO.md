@@ -5,29 +5,29 @@
 ## 현재 할 일
 
 - `헤일메리 프로젝트` 독후감 초안을 짧게라도 쓴다.
-  근거: [942071262.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-07/942071262.md)
+  근거: [942071262.md](<../../Inbox/Telegram/2026-04-07/942071262.md>)
 - 지금 붙잡고 있는 일 문제 하나를 골라 `x`, `y`, `dy/dx`로 다시 적어본다.
-  근거: [942071274.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071274.md)
-  근거: [942071276.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071276.md)
+  근거: [942071274.md](<../../Inbox/Telegram/2026-04-09/942071274.md>)
+  근거: [942071276.md](<../../Inbox/Telegram/2026-04-09/942071276.md>)
 - `기상`, `몸무게`, `수면 상태`, `활동(예: 조깅)`을 최소 1주일 같은 포맷으로 모은 뒤 한 번 더 컴파일한다.
-  근거: [942071272.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071272.md)
-  근거: [942071273.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071273.md)
-  근거: [942071275.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071275.md)
-  근거: [942071305.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071305.md)
-  근거: [942071306.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071306.md)
+  근거: [942071272.md](<../../Inbox/Telegram/2026-04-09/942071272.md>)
+  근거: [942071273.md](<../../Inbox/Telegram/2026-04-09/942071273.md>)
+  근거: [942071275.md](<../../Inbox/Telegram/2026-04-09/942071275.md>)
+  근거: [942071305.md](<../../Inbox/Telegram/2026-04-12/942071305.md>)
+  근거: [942071306.md](<../../Inbox/Telegram/2026-04-12/942071306.md>)
 - 링크만 남기는 메모는 당일에 한 줄 요약을 같이 남긴다.
-  근거: [942071276.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071276.md)
+  근거: [942071276.md](<../../Inbox/Telegram/2026-04-09/942071276.md>)
 - `네이버 플레이스 크롤링` 신규 등록 업체 확인 메모를 실행 가능한 작업 단위로 쪼개어 적는다.
-  근거: [942071287.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071287.md)
+  근거: [942071287.md](<../../Inbox/Telegram/2026-04-09/942071287.md>)
 - `주기 정의 -> 주기 단축 -> 구매 타이밍 점유` 프레임을 현재 다루는 서비스 1개에 적용해 가설 1개와 지표 1개를 정한다.
-  근거: [942071277.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071277.md)
-  근거: [942071283.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071283.md)
+  근거: [942071277.md](<../../Inbox/Telegram/2026-04-09/942071277.md>)
+  근거: [942071283.md](<../../Inbox/Telegram/2026-04-09/942071283.md>)
 - 이번 주 업무에서 `혼자 처리` 대신 최소 1회는 명시적으로 협업 요청을 남긴다.
-  근거: [942071278.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071278.md)
-  근거: [942071280.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-09/942071280.md)
+  근거: [942071278.md](<../../Inbox/Telegram/2026-04-09/942071278.md>)
+  근거: [942071280.md](<../../Inbox/Telegram/2026-04-09/942071280.md>)
 - 민하 수면 이슈가 있던 날은 다음날 컨디션 메모를 한 줄 같이 남겨 원인-결과를 연결한다.
-  근거: [942071305.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071305.md)
-  근거: [942071308.md](/Users/user/Documents/loglife/loglife-vault/Inbox/Telegram/2026-04-12/942071308.md)
+  근거: [942071305.md](<../../Inbox/Telegram/2026-04-12/942071305.md>)
+  근거: [942071308.md](<../../Inbox/Telegram/2026-04-12/942071308.md>)
 
 ## 최근 완료
 
