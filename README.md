@@ -71,20 +71,20 @@
 - 외부 웹 링크만 `https://...` 절대 URL을 유지한다.
 - 이 규칙을 지키면 Obsidian에서 바로 열리고, Mac과 Windows 사이에서도 링크 형식이 깨지지 않는다.
 
-## 수동 TODO 알림
+## Post-Compile
 
 - compile 결과 중 `오늘 한 가지`는 `scripts/compile-today-focus.sh`로 `Wiki/Self/Today.md`에 만든다.
-- 컴파일을 수동으로 끝낸 뒤 `scripts/send-post-compile-todo.sh`를 실행하면 `Wiki/Self/TODO.md`의 `현재 할 일`만 텔레그램으로 보낼 수 있다.
-- 실제 전송 전에는 `scripts/send-post-compile-todo.sh --dry-run`으로 메시지를 먼저 확인한다.
-- 전송에는 `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`가 필요하다.
+- compile 이후 기본 후속 동작은 [Meta/post-compile.md](<Meta/post-compile.md>)를 따른다.
+- `scripts/post-compile.sh`는 아래를 한 번에 처리한다.
+  `Today` 갱신, TODO 텔레그램 전송, 캘린더 후보 리포트 생성
+- TODO 전송에는 `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`가 필요하다.
 - 로컬에서는 [`.env.local`](</Users/user/Documents/loglife/loglife-vault/.env.local>) 파일에 넣는 방식을 기본으로 쓴다.
 - 예시는 [`.env.example`](</Users/user/Documents/loglife/loglife-vault/.env.example>) 에 있다.
-- 일반적인 흐름은 아래와 같다.
+- 캘린더 후보는 `Meta/calendar-candidates.md`에 쓰고, 날짜/시간이 모호하면 사용자에게 질문한다.
 
 ```bash
-scripts/compile-today-focus.sh
-scripts/send-post-compile-todo.sh --dry-run
-scripts/send-post-compile-todo.sh
+scripts/post-compile.sh --dry-run
+scripts/post-compile.sh
 ```
 
 ## Windows 호환 규칙

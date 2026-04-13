@@ -612,3 +612,30 @@
 - `942071317`의 `[x] 헤일메리 프로젝트 듁후감 완료.`는 완료 신호로 반영해 `최근 완료`로 옮겼다.
 - `942071316`의 `이 내용들 투두에서 삭제하자.`는 명시 삭제 지시로 해석해 해당 번호의 TODO들을 `최근 완료`로 옮기지 않고 `현재 할 일`에서 제거했다.
 - `942071318`과 `942071319`는 합쳐서 `옥상 렉산 주문`을 새 현재 할 일로 올렸다.
+
+## 2026-04-13 Run 022
+
+### 입력
+
+- 사용자 요청
+  - compile 이후 동작 정리
+  - TODO 텔레그램 전달
+  - 약속 로그 캘린더 반영 규칙
+
+### 출력
+
+- `scripts`
+  - [post-compile.sh](<../scripts/post-compile.sh>)
+  - [build-calendar-candidates.sh](<../scripts/build-calendar-candidates.sh>)
+- `Meta`
+  - [post-compile.md](<post-compile.md>)
+  - [compiler.md](<compiler.md>)
+  - [README.md](<README.md>)
+- 루트
+  - [README.md](<../README.md>)
+
+### 메모
+
+- post-compile 기본 진입점을 `scripts/post-compile.sh`로 정리했다.
+- TODO 전송은 기존 텔레그램 스크립트를 재사용한다.
+- 약속 로그는 당일 Daily에서 먼저 추려 `Meta/calendar-candidates.md`로 모으고, 명확하면 캘린더 추가, 불명확하면 질문하는 흐름으로 정의했다.

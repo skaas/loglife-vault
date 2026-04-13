@@ -20,3 +20,4 @@
 - 공개 프로필의 톤과 용어를 맞출 때 기준 문서 역할도 한다.
 - 사용자가 직접 수정하는 워딩 승인 파일은 `wording-conflicts.md`다.
 - 수동 post-compile TODO 알림 스크립트도 이 운영 규칙을 따른다.
+- compile 이후 후속 동작 정의는 `post-compile.md`에 둔다.

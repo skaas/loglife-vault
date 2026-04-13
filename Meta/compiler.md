@@ -199,13 +199,16 @@
 - 외부 사이트로 나갈 때만 `https://` 절대 URL을 사용한다.
 - 이유는 단순하다. 이 형식만 Obsidian에서 바로 열리고, Mac과 Windows에서도 동일하게 유지된다.
 
-## 수동 post-compile TODO 알림
+## 수동 post-compile 동작
 
-- compile 직후 `scripts/compile-today-focus.sh`로 `Wiki/Self/Today.md`를 갱신한다.
-- 자동화 전 단계에서는 compile 자체는 계속 수동으로 돌린다.
-- compile 직후 `scripts/send-post-compile-todo.sh`를 실행해 `Wiki/Self/TODO.md`의 `현재 할 일`만 텔레그램으로 보낸다.
-- 메시지 생성은 `scripts/build-todo-digest.sh`, 전송은 `scripts/send-telegram-message.sh`가 담당한다.
-- 실제 전송 전에는 `--dry-run`으로 메시지를 먼저 확인한다.
+- compile 직후 `scripts/post-compile.sh`를 기본 진입점으로 쓴다.
+- 이 스크립트는 `Today` 갱신, TODO 텔레그램 전송, 캘린더 후보 리포트 생성을 순서대로 실행한다.
+- TODO 메시지 생성은 `scripts/build-todo-digest.sh`, 전송은 `scripts/send-telegram-message.sh`가 담당한다.
+- 약속 후보 추출은 `scripts/build-calendar-candidates.sh`가 담당한다.
+- 캘린더 후보는 `Meta/calendar-candidates.md`에 쓴다.
+- 날짜와 시간이 충분히 명확하면 캘린더에 추가하고 공유한다.
+- 날짜나 시간이 빠지면 그 항목만 사용자에게 질문한다.
+- 실제 전송 전에는 `scripts/post-compile.sh --dry-run`으로 확인한다.
 - 토큰과 채팅 ID는 커밋하지 않고 `.env.local` 또는 쉘 환경 변수로만 넣는다.
 
 ## 컴파일 예시
