@@ -152,14 +152,19 @@ link_handling:
 task_markers:
   open:
     - "TODO:"
+    - "[ ]"
+    - "[]"
     - "- [ ]"
   done:
     - "DONE:"
+    - "[x]"
     - "- [x]"
   completion_policy:
     - only explicit done markers close a task
     - move matched task from current todo to completed section
     - preserve completion note when available
+  deletion_policy:
+    - explicit removal instructions may delete listed tasks without marking them done
 
 merge_policy:
   prefer_update_existing_page: true
