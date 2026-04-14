@@ -639,3 +639,35 @@
 - post-compile 기본 진입점을 `scripts/post-compile.sh`로 정리했다.
 - TODO 전송은 기존 텔레그램 스크립트를 재사용한다.
 - 약속 로그는 당일 Daily에서 먼저 추려 `Meta/calendar-candidates.md`로 모으고, 명확하면 캘린더 추가, 불명확하면 질문하는 흐름으로 정의했다.
+
+## 2026-04-14 Run 023
+
+### 입력
+
+- `Inbox/Telegram`
+  - [942071324.md](<../Inbox/Telegram/2026-04-14/942071324.md>)
+  - [942071325.md](<../Inbox/Telegram/2026-04-14/942071325.md>)
+  - [942071326.md](<../Inbox/Telegram/2026-04-14/942071326.md>)
+  - [942071327.md](<../Inbox/Telegram/2026-04-14/942071327.md>)
+- `Daily`
+  - [2026-04-14.md](<../Daily/2026/2026-04-14.md>)
+
+### 출력
+
+- `Wiki/Timeline`
+  - [2026.md](<../Wiki/Timeline/2026.md>)
+- `Wiki/Themes`
+  - [건강.md](<../Wiki/Themes/건강.md>)
+- `Wiki/Self`
+  - [Current Diagnosis.md](<../Wiki/Self/Current Diagnosis.md>)
+  - [Today.md](<../Wiki/Self/Today.md>)
+- `Wiki`
+  - [index.md](<../Wiki/index.md>)
+- `Meta`
+  - [calendar-candidates.md](<calendar-candidates.md>)
+
+### 메모
+
+- `월드팀 쫑파티 -> 다음날 기상/체중/출근` 흐름을 하나의 평일 복귀 신호로 묶어 타임라인과 진단에 반영했다.
+- 체중 로그는 한 점 더 늘었지만, 이번에는 `아침 안먹음`이 함께 기록돼 식사 변수까지 같이 봐야 한다는 쪽으로 해석을 보강했다.
+- post-compile을 다시 실행해 `Today`를 2026-04-14 기준으로 갱신하고, 당일 약속 후보를 `calendar-candidates.md`에 다시 썼다.
