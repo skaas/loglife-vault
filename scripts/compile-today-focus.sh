@@ -2,7 +2,7 @@
 set -euo pipefail
 
 usage() {
-  echo "usage: scripts/compile-today-focus.sh [--stdout] [--today-file PATH]" >&2
+  echo "usage: scripts/compile-today-focus.sh [--stdout] [--today-file PATH] [--todo-file PATH] [--skip-todo-writing-topic]" >&2
 }
 
 repo_root="$(git rev-parse --show-toplevel)"
@@ -11,6 +11,7 @@ todo_file="${repo_root}/Wiki/Self/TODO.md"
 questions_file="${repo_root}/Wiki/Self/Open Questions.md"
 diagnosis_file="${repo_root}/Wiki/Self/Current Diagnosis.md"
 stdout_mode=0
+sync_todo_writing_topic=1
 today_date="$(TZ="${LOGLIFE_NOTIFY_TZ:-Asia/Seoul}" date +%F)"
 
 while [[ $# -gt 0 ]]; do
@@ -26,6 +27,18 @@ while [[ $# -gt 0 ]]; do
       }
       today_file="$2"
       shift 2
+      ;;
+    --todo-file)
+      [[ $# -ge 2 ]] || {
+        usage
+        exit 2
+      }
+      todo_file="$2"
+      shift 2
+      ;;
+    --skip-todo-writing-topic)
+      sync_todo_writing_topic=0
+      shift
       ;;
     *)
       usage
@@ -93,12 +106,46 @@ extract_evidence_lines() {
   printf '%s\n' "$1" | sed -n '2,$p'
 }
 
+replace_or_insert_section() {
+  local file="$1"
+  local section_title="$2"
+  local new_section="$3"
+
+  python3 - "$file" "$section_title" "$new_section" <<'PY'
+import pathlib
+import re
+import sys
+
+file_path = pathlib.Path(sys.argv[1])
+section_title = sys.argv[2]
+new_section = sys.argv[3].rstrip("\n")
+
+text = file_path.read_text(encoding="utf-8")
+pattern = re.compile(rf"(?ms)^## {re.escape(section_title)}\n.*?(?=^## |\Z)")
+
+if pattern.search(text):
+    updated = pattern.sub(new_section + "\n\n", text, count=1)
+else:
+    marker = "\n## 최근 완료\n"
+    if marker in text:
+        updated = text.replace(marker, "\n" + new_section + "\n\n## 최근 완료\n", 1)
+    else:
+        updated = text.rstrip() + "\n\n" + new_section + "\n"
+
+file_path.write_text(updated, encoding="utf-8")
+PY
+}
+
 today_mode=""
 today_source_label=""
 today_source_link=""
 today_reason=""
 today_prompts=""
 focus_block=""
+writing_source_label=""
+writing_source_link=""
+writing_reason=""
+writing_block=""
 
 if [[ -f "$todo_file" ]]; then
   focus_block="$(extract_first_block "$todo_file" "현재 할 일")"
@@ -141,8 +188,34 @@ if [[ -z "$focus_block" ]]; then
   today_prompts=$'- 사실 1개를 먼저 적는다.\n- 왜 기억에 남는지 해석 1개를 적는다.\n- 이어서 보고 싶은 질문 1개를 남긴다.'
 fi
 
+if [[ -f "$questions_file" ]]; then
+  writing_block="$(extract_first_block "$questions_file" "현재 열린 질문")"
+fi
+
+if [[ -n "$writing_block" ]]; then
+  writing_source_label="Open Questions.md"
+  writing_source_link="Open Questions.md"
+  writing_reason='현재 `TODO`와 별개로, 짧게라도 생각을 쌓을 글쓰기 주제는 열린 질문에서 먼저 고른다.'
+elif [[ -f "$diagnosis_file" ]]; then
+  writing_block="$(extract_first_diagnosis_block "$diagnosis_file")"
+  if [[ -n "$writing_block" ]]; then
+    writing_source_label="Current Diagnosis.md"
+    writing_source_link="Current Diagnosis.md"
+    writing_reason='열린 질문이 비어 있으면 최근 진단의 첫 문제 후보를 글쓰기 주제로 사용한다.'
+  fi
+fi
+
+if [[ -z "$writing_block" ]]; then
+  writing_source_label="Map.md"
+  writing_source_link="Map.md"
+  writing_reason="열린 질문과 진단이 비어 있으면, 오늘 가장 오래 붙잡고 있던 생각을 새 글쓰기 근거로 만든다."
+  writing_block="- 오늘 가장 오래 붙잡고 있던 생각 하나를 5줄 안에 적는다."
+fi
+
 focus_text="$(extract_text_line "$focus_block")"
 evidence_lines="$(extract_evidence_lines "$focus_block")"
+writing_text="$(extract_text_line "$writing_block")"
+writing_evidence_lines="$(extract_evidence_lines "$writing_block")"
 
 output="$(
   cat <<EOF
@@ -182,3 +255,21 @@ if [[ "$stdout_mode" -eq 1 ]]; then
 fi
 
 printf '%s' "$output" >"$today_file"
+
+if [[ "$sync_todo_writing_topic" -eq 1 && -f "$todo_file" ]]; then
+  todo_writing_section="$(
+    cat <<EOF
+## 오늘 글쓰기 주제
+
+- ${writing_text}
+  source: [${writing_source_label}](<${writing_source_link}>)
+EOF
+  )"
+
+  if [[ -n "$writing_evidence_lines" ]]; then
+    todo_writing_section="${todo_writing_section}"$'\n'"${writing_evidence_lines}"
+  fi
+
+  todo_writing_section="${todo_writing_section}"$'\n'"  메모: ${writing_reason}"
+  replace_or_insert_section "$todo_file" "오늘 글쓰기 주제" "$todo_writing_section"
+fi

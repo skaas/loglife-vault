@@ -671,3 +671,34 @@
 - `월드팀 쫑파티 -> 다음날 기상/체중/출근` 흐름을 하나의 평일 복귀 신호로 묶어 타임라인과 진단에 반영했다.
 - 체중 로그는 한 점 더 늘었지만, 이번에는 `아침 안먹음`이 함께 기록돼 식사 변수까지 같이 봐야 한다는 쪽으로 해석을 보강했다.
 - post-compile을 다시 실행해 `Today`를 2026-04-14 기준으로 갱신하고, 당일 약속 후보를 `calendar-candidates.md`에 다시 썼다.
+
+## 2026-04-14 Run 024
+
+### 입력
+
+- 사용자 요청
+  - `Today` 갱신은 `scripts/compile-today-focus.sh` 책임으로 유지
+  - compile 기본 진입점 추가
+  - `TODO`에 오늘 글쓰기 주제 포함
+
+### 출력
+
+- `scripts`
+  - [compile.sh](<../scripts/compile.sh>)
+  - [compile-today-focus.sh](<../scripts/compile-today-focus.sh>)
+  - [build-todo-digest.sh](<../scripts/build-todo-digest.sh>)
+  - [post-compile.sh](<../scripts/post-compile.sh>)
+- `Wiki/Self`
+  - [TODO.md](<../Wiki/Self/TODO.md>)
+- `Meta`
+  - [compiler.md](<compiler.md>)
+  - [post-compile.md](<post-compile.md>)
+  - [README.md](<README.md>)
+- 루트
+  - [README.md](<../README.md>)
+
+### 메모
+
+- `scripts/compile.sh`를 추가해 compile 가능한 단계를 한 곳에서 실행하게 했다.
+- `scripts/compile-today-focus.sh`가 이제 `Today.md`뿐 아니라 `TODO.md`의 `오늘 글쓰기 주제` 섹션도 함께 갱신한다.
+- `scripts/build-todo-digest.sh`는 현재 할 일 뒤에 오늘 글쓰기 주제를 같이 실어 텔레그램 TODO 메시지에도 포함되게 했다.

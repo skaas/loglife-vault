@@ -42,7 +42,7 @@
 4. 하루 단위 요약과 맥락은 `Daily`에 반영한다.
 5. 실행할 일은 `TODO:`, `[ ]`, `[]`, `- [ ]` 같은 표식으로 적는다.
 6. 완료한 일은 `DONE:`, `[x]`, `- [x]` 같은 표식으로 적는다.
-7. 컴파일할 때는 `Wiki/Self/Today.md`에 오늘 한 가지 TODO 또는 짧은 글쓰기 프롬프트 1개를 만든다.
+7. 컴파일할 때는 `Wiki/Self/Today.md`에 오늘 한 가지 TODO 또는 짧은 글쓰기 프롬프트 1개를 만들고, `Wiki/Self/TODO.md`에는 `오늘 글쓰기 주제`를 같이 갱신한다.
 8. 반복되는 인물, 사건, 주제, 질문은 `Wiki` 문서로 승격한다.
 9. 필요하면 최근 진단, 다음 행동, 개념 정리와 추가 질문도 `Wiki`에 함께 남긴다.
 10. 공개해도 되는 자기소개 정보만 골라 `site/index.html` 같은 공개용 산출물로 다시 컴파일한다.
@@ -73,16 +73,18 @@
 
 ## Post-Compile
 
-- compile 결과 중 `오늘 한 가지`는 `scripts/compile-today-focus.sh`로 `Wiki/Self/Today.md`에 만든다.
+- compile 기본 진입점은 `scripts/compile.sh`다.
+- 이 스크립트는 현재 `scripts/compile-today-focus.sh`를 호출해 `Wiki/Self/Today.md`와 `Wiki/Self/TODO.md`의 `오늘 글쓰기 주제`를 함께 갱신한다.
 - compile 이후 기본 후속 동작은 [Meta/post-compile.md](<Meta/post-compile.md>)를 따른다.
 - `scripts/post-compile.sh`는 아래를 한 번에 처리한다.
-  `Today` 갱신, TODO 텔레그램 전송, 캘린더 후보 리포트 생성
+  compile 실행, TODO 텔레그램 전송, 캘린더 후보 리포트 생성
 - TODO 전송에는 `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`가 필요하다.
 - 로컬에서는 [`.env.local`](</Users/user/Documents/loglife/loglife-vault/.env.local>) 파일에 넣는 방식을 기본으로 쓴다.
 - 예시는 [`.env.example`](</Users/user/Documents/loglife/loglife-vault/.env.example>) 에 있다.
 - 캘린더 후보는 `Meta/calendar-candidates.md`에 쓰고, 날짜/시간이 모호하면 사용자에게 질문한다.
 
 ```bash
+scripts/compile.sh
 scripts/post-compile.sh --dry-run
 scripts/post-compile.sh
 ```

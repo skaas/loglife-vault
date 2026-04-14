@@ -42,6 +42,18 @@ items="$(
   ' "$todo_file"
 )"
 
+writing_topic="$(
+  awk '
+    /^## 오늘 글쓰기 주제/ { in_section = 1; next }
+    /^## / && in_section { exit }
+    in_section && /^- / {
+      sub(/^- /, "", $0)
+      print
+      exit
+    }
+  ' "$todo_file"
+)"
+
 normalize_line() {
   printf '%s' "$1" |
     sed -E 's/\[([^]]+)\]\(<[^>]+>\)/\1/g; s/`//g'
@@ -56,6 +68,9 @@ fi
 
 if [[ "${count}" == "0" ]]; then
   printf '[loglife] %s compile 후 TODO\n현재 할 일 없음\n' "$today"
+  if [[ -n "$writing_topic" ]]; then
+    printf '\n오늘 글쓰기 주제\n- %s\n' "$(normalize_line "$writing_topic")"
+  fi
   exit 0
 fi
 
@@ -68,3 +83,7 @@ while IFS= read -r raw_line; do
   printf '%s. %s\n' "$index" "$line"
   index=$((index + 1))
 done <<<"$items"
+
+if [[ -n "$writing_topic" ]]; then
+  printf '\n오늘 글쓰기 주제\n- %s\n' "$(normalize_line "$writing_topic")"
+fi

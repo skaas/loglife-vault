@@ -159,6 +159,7 @@
 - 열린 질문도 비어 있으면 `Current Diagnosis`의 첫 문제 후보나 관찰 포인트를 짧은 기록 프롬프트로 쓴다.
 - 결과는 `Wiki/Self/Today.md`에 모은다.
 - 이 문서는 하루에 하나만 잡는 실행점 또는 사고점이어야 한다.
+- 별도로 `Wiki/Self/TODO.md`에는 `오늘 글쓰기 주제` 섹션을 둬, 실행 TODO와 별개로 짧게 쓸 질문 1개를 항상 같이 보이게 한다.
 
 ### 해야 할 일
 
@@ -199,10 +200,12 @@
 - 외부 사이트로 나갈 때만 `https://` 절대 URL을 사용한다.
 - 이유는 단순하다. 이 형식만 Obsidian에서 바로 열리고, Mac과 Windows에서도 동일하게 유지된다.
 
-## 수동 post-compile 동작
+## 수동 compile / post-compile 동작
 
-- compile 직후 `scripts/post-compile.sh`를 기본 진입점으로 쓴다.
-- 이 스크립트는 `Today` 갱신, TODO 텔레그램 전송, 캘린더 후보 리포트 생성을 순서대로 실행한다.
+- compile 기본 진입점은 `scripts/compile.sh`다.
+- 현재 이 스크립트는 `scripts/compile-today-focus.sh`를 호출해 `Today`와 `TODO`의 `오늘 글쓰기 주제`를 함께 갱신한다.
+- compile 직후 후속 동작은 `scripts/post-compile.sh`를 쓴다.
+- 이 스크립트는 compile 실행, TODO 텔레그램 전송, 캘린더 후보 리포트 생성을 순서대로 실행한다.
 - TODO 메시지 생성은 `scripts/build-todo-digest.sh`, 전송은 `scripts/send-telegram-message.sh`가 담당한다.
 - 약속 후보 추출은 `scripts/build-calendar-candidates.sh`가 담당한다.
 - 캘린더 후보는 `Meta/calendar-candidates.md`에 쓴다.

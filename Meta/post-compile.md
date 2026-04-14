@@ -10,12 +10,13 @@
 
 ## 기본 흐름
 
-1. `scripts/compile-today-focus.sh`로 `Wiki/Self/Today.md`를 갱신한다.
-2. `scripts/send-post-compile-todo.sh`로 `Wiki/Self/TODO.md`의 `현재 할 일`을 텔레그램 봇으로 보낸다.
-3. `scripts/build-calendar-candidates.sh`로 당일 `Daily/YYYY/YYYY-MM-DD.md`에서 약속 후보를 추린다.
-4. 결과는 `Meta/calendar-candidates.md`에 쓴다.
-5. 후보가 충분히 명확하면 캘린더에 추가하고 공유한다.
-6. 날짜나 시간이 부족하면 그 항목만 사용자에게 질문한다.
+1. `scripts/compile.sh`로 compile 가능한 산출물을 먼저 갱신한다.
+2. 현재 compile 단계에서는 `scripts/compile-today-focus.sh`가 `Wiki/Self/Today.md`와 `Wiki/Self/TODO.md`의 `오늘 글쓰기 주제`를 함께 갱신한다.
+3. `scripts/send-post-compile-todo.sh`로 `Wiki/Self/TODO.md`의 `현재 할 일`과 `오늘 글쓰기 주제`를 텔레그램 봇으로 보낸다.
+4. `scripts/build-calendar-candidates.sh`로 당일 `Daily/YYYY/YYYY-MM-DD.md`에서 약속 후보를 추린다.
+5. 결과는 `Meta/calendar-candidates.md`에 쓴다.
+6. 후보가 충분히 명확하면 캘린더에 추가하고 공유한다.
+7. 날짜나 시간이 부족하면 그 항목만 사용자에게 질문한다.
 
 ## 캘린더 후보 규칙
 
@@ -46,6 +47,7 @@
 ## 실행 예시
 
 ```bash
+scripts/compile.sh
 scripts/post-compile.sh --dry-run
 scripts/post-compile.sh
 ```

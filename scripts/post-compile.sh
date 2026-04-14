@@ -44,7 +44,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-"${repo_root}/scripts/compile-today-focus.sh"
+"${repo_root}/scripts/compile.sh"
 
 if [[ "$skip_telegram" -ne 1 ]]; then
   if [[ "$dry_run" -eq 1 ]]; then
