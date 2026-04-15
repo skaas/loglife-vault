@@ -70,14 +70,18 @@ if [[ ! -f "$daily_file" ]]; then
 fi
 
 candidates="$(
-  python3 - "$daily_file" <<'PY'
+  python3 - "$daily_file" "$timezone" <<'PY'
 import pathlib
 import re
 import sys
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 daily_file = pathlib.Path(sys.argv[1])
+timezone = ZoneInfo(sys.argv[2])
 text = daily_file.read_text(encoding="utf-8")
 lines = text.splitlines()
+now = datetime.now(timezone)
 
 date_key = ""
 for line in lines:
@@ -85,7 +89,7 @@ for line in lines:
         date_key = line[2:].strip()
         break
 
-keyword_re = re.compile(r"(약속|미팅|회의|점심|저녁|파티|만나|방문|병원|생일|출발|예약)")
+keyword_re = re.compile(r"(약속|미팅|회의|파티|만나|방문|병원|생일|출발|예약|제사)")
 date_re = re.compile(r"(\d{4}-\d{2}-\d{2}|\d{1,2}/\d{1,2}|오늘|내일|모레|다음주|이번주|월요일|화요일|수요일|목요일|금요일|토요일|일요일)")
 time_re = re.compile(r"(\b\d{1,2}:\d{2}\b|\b\d{1,2}시(?:\s*\d{1,2}분)?\b|아침|점심|저녁)")
 
@@ -134,6 +138,19 @@ for start_line, block in blocks:
         reasons.append("time hint 없음")
         questions.append("몇 시에 시작하는지 확인 필요")
 
+    if status == "ready" and date_key:
+        line_match = re.match(r"-\s+(\d{1,2}):(\d{2})", block[0].strip())
+        if line_match:
+            hour = int(line_match.group(1))
+            minute = int(line_match.group(2))
+            try:
+                candidate_at = datetime.fromisoformat(date_key).replace(hour=hour, minute=minute, tzinfo=timezone)
+                if candidate_at <= now:
+                    status = "past"
+                    reasons.append("현재 시각 기준 이미 지난 일정")
+            except ValueError:
+                pass
+
     print(f"STATUS\t{status}")
     print(f"LINE\t{start_line}")
     print(f"TITLE\t{title}")
@@ -146,6 +163,7 @@ PY
 )"
 
 ready_items=""
+past_items=""
 question_items=""
 
 if [[ -n "$candidates" ]]; then
@@ -194,6 +212,12 @@ ${text}
       else
         ready_items="${item}"
       fi
+    elif [[ "$status" == "past" ]]; then
+      if [[ -n "$past_items" ]]; then
+        past_items="${past_items}"$'\n'"${item}"
+      else
+        past_items="${item}"
+      fi
     else
       if [[ -n "$question_items" ]]; then
         question_items="${question_items}"$'\n'"${item}"
@@ -205,23 +229,31 @@ ${text}
 fi
 
 [[ -n "$ready_items" ]] || ready_items="- 아직 없음"
+[[ -n "$past_items" ]] || past_items="- 아직 없음"
 [[ -n "$question_items" ]] || question_items="- 아직 없음"
 
 output="# Calendar Candidates
 
 이 문서는 post-compile 이후 캘린더로 검토할 약속 후보를 모은다.
+현재 shell compile은 실제 Google Calendar 추가를 자동으로 실행하지 않고, 후보/질문 필요/이미 지난 일정 상태만 정리한다.
 
 ## 기준
 
 - source daily: [$(basename "$daily_file")](<../${daily_file#${repo_root}/}>)
 - ready:
-  날짜 힌트와 시간 힌트가 함께 있어 캘린더 추가를 바로 검토할 수 있는 항목
+  날짜 힌트와 시간 힌트가 함께 있고 현재 시각 기준 아직 지나지 않아 캘린더 추가를 바로 검토할 수 있는 항목
+- past:
+  날짜와 시간이 보이지만 현재 시각 기준 이미 지나가 자동 추가하지 않은 항목
 - needs_question:
   날짜나 시간이 빠져 있어 사용자 확인 질문이 필요한 항목
 
 ## 바로 캘린더에 넣을 후보
 
 ${ready_items}
+
+## 지나가서 추가하지 않은 후보
+
+${past_items}
 
 ## 질문이 필요한 후보
 

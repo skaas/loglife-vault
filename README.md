@@ -74,17 +74,20 @@
 ## Post-Compile
 
 - compile 기본 진입점은 `scripts/compile.sh`다.
-- 이 스크립트는 현재 `scripts/compile-today-focus.sh`를 호출해 `Wiki/Self/Today.md`와 `Wiki/Self/TODO.md`의 `오늘 글쓰기 주제`를 함께 갱신한다.
+- 이 스크립트는 먼저 저장소에서 최신 변경을 `pull --rebase --autostash`로 반영한 뒤, `TODO` 상태를 raw 로그에서 갱신하고 `Today.md`와 `TODO.md`의 `오늘 글쓰기 주제`를 다시 계산한다.
 - compile 이후 기본 후속 동작은 [Meta/post-compile.md](<Meta/post-compile.md>)를 따른다.
-- `scripts/post-compile.sh`는 아래를 한 번에 처리한다.
-  compile 실행, TODO 텔레그램 전송, 캘린더 후보 리포트 생성
+- `scripts/compile.sh`는 아래를 한 번에 처리한다.
+  pull, TODO/Today compile, TODO 텔레그램 전송, 캘린더 후보 리포트 생성
+- `scripts/post-compile.sh`는 기존 이름을 유지하기 위한 호환용 별칭이다.
 - TODO 전송에는 `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`가 필요하다.
 - 로컬에서는 [`.env.local`](</Users/user/Documents/loglife/loglife-vault/.env.local>) 파일에 넣는 방식을 기본으로 쓴다.
 - 예시는 [`.env.example`](</Users/user/Documents/loglife/loglife-vault/.env.example>) 에 있다.
-- 캘린더 후보는 `Meta/calendar-candidates.md`에 쓰고, 날짜/시간이 모호하면 사용자에게 질문한다.
+- 캘린더 후보는 `Meta/calendar-candidates.md`에 쓰고, `추가 가능/이미 지난 일정/질문 필요`를 구분해 남긴다.
+- 현재 shell compile은 실제 Google Calendar 추가까지 자동으로 하지는 않는다.
 
 ```bash
 scripts/compile.sh
+scripts/compile.sh --skip-pull
 scripts/post-compile.sh --dry-run
 scripts/post-compile.sh
 ```

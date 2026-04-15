@@ -702,3 +702,62 @@
 - `scripts/compile.sh`를 추가해 compile 가능한 단계를 한 곳에서 실행하게 했다.
 - `scripts/compile-today-focus.sh`가 이제 `Today.md`뿐 아니라 `TODO.md`의 `오늘 글쓰기 주제` 섹션도 함께 갱신한다.
 - `scripts/build-todo-digest.sh`는 현재 할 일 뒤에 오늘 글쓰기 주제를 같이 실어 텔레그램 TODO 메시지에도 포함되게 했다.
+
+## 2026-04-14 Run 025
+
+### 입력
+
+- 사용자 요청
+  - compile 전에 저장소 pull
+  - 그 다음 compile
+
+### 출력
+
+- `scripts`
+  - [compile.sh](<../scripts/compile.sh>)
+- `Meta`
+  - [compiler.md](<compiler.md>)
+  - [post-compile.md](<post-compile.md>)
+  - [README.md](<README.md>)
+- 루트
+  - [README.md](<../README.md>)
+
+### 메모
+
+- `scripts/compile.sh` 기본 동작을 `pull -> compile` 순서로 바꿨다.
+- pull은 우선 upstream 브랜치를 사용하고, upstream이 없으면 현재 브랜치 이름으로 `origin/<branch>`를 당긴다.
+- 추후 로컬 상태만 기준으로 다시 계산하고 싶을 때를 위해 `--skip-pull` 옵션을 남겼다.
+
+## 2026-04-14 Run 026
+
+### 입력
+
+- 사용자 피드백
+  - compile 후 TODO 텔레그램 전송이 안 됨
+  - `[x]` 로그가 TODO/글쓰기 완료 처리로 안 이어짐
+  - 캘린더 추가 로직 상태가 불명확함
+
+### 출력
+
+- `scripts`
+  - [compile.sh](<../scripts/compile.sh>)
+  - [compile-todo-state.sh](<../scripts/compile-todo-state.sh>)
+  - [compile-today-focus.sh](<../scripts/compile-today-focus.sh>)
+  - [build-calendar-candidates.sh](<../scripts/build-calendar-candidates.sh>)
+  - [post-compile.sh](<../scripts/post-compile.sh>)
+- `Wiki/Self`
+  - [TODO.md](<../Wiki/Self/TODO.md>)
+- `Meta`
+  - [calendar-candidates.md](<calendar-candidates.md>)
+  - [compiler.md](<compiler.md>)
+  - [post-compile.md](<post-compile.md>)
+  - [README.md](<README.md>)
+- 루트
+  - [README.md](<../README.md>)
+
+### 메모
+
+- `scripts/compile.sh`를 실제 파이프라인 진입점으로 바꿔, 기본 실행에서 pull 뒤에 TODO/Today 갱신, 텔레그램 전송, 캘린더 후보 리포트 생성을 같이 처리하게 했다.
+- 새 `scripts/compile-todo-state.sh`를 추가해 raw `[]`, `[x]`, `투두에서 삭제하자`, `오타 A->B` 신호를 `TODO.md`의 현재 할 일과 최근 완료에 반영하게 했다.
+- `글쓰기 완료`가 들어간 `[x]`는 최근 완료에 남기고, 다음 compile에서 `오늘 글쓰기 주제`가 다음 열린 질문으로 넘어가게 맞췄다.
+- 캘린더는 아직 shell에서 실제 Google Calendar 생성까지는 하지 않고, `추가 가능/이미 지난 일정/질문 필요` 상태를 분리해 왜 추가되지 않았는지 보이도록 리포트를 바꿨다.

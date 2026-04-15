@@ -73,6 +73,91 @@ extract_first_block() {
   ' "$file"
 }
 
+extract_first_open_question_block() {
+  local questions_file="$1"
+  local todo_file="$2"
+
+  python3 - "$questions_file" "$todo_file" <<'PY'
+import pathlib
+import re
+import sys
+from difflib import SequenceMatcher
+
+questions_file = pathlib.Path(sys.argv[1])
+todo_file = pathlib.Path(sys.argv[2])
+
+
+def normalize(text: str) -> str:
+    value = text
+    value = re.sub(r"https?://\S+", " ", value)
+    value = value.replace("`", " ")
+    value = re.sub(r"글쓰기\s*초안을\s*저장했다\.?", " ", value)
+    value = re.sub(r"\b완료\b", " ", value)
+    value = re.sub(r"[^0-9A-Za-z가-힣]+", "", value.lower())
+    return value
+
+
+def matches(left: str, right: str) -> bool:
+    a = normalize(left)
+    b = normalize(right)
+    if not a or not b:
+        return False
+    if a in b or b in a:
+        return True
+    return SequenceMatcher(None, a, b).ratio() >= 0.55
+
+
+todo_text = todo_file.read_text(encoding="utf-8") if todo_file.exists() else ""
+completed = []
+in_completed = False
+for line in todo_text.splitlines():
+    if line.startswith("## "):
+        in_completed = line.strip() == "## 최근 완료"
+        continue
+    if in_completed and line.startswith("- "):
+        completed.append(line[2:].strip())
+
+question_text = questions_file.read_text(encoding="utf-8")
+lines = question_text.splitlines()
+in_section = False
+current = []
+
+def emit(block):
+    print("\n".join(block))
+
+for line in lines:
+    if line.startswith("## "):
+        if in_section and current:
+            title = current[0][2:].strip()
+            if not any(matches(title, item) for item in completed):
+                emit(current)
+                sys.exit(0)
+            current = []
+        in_section = line.strip() == "## 현재 열린 질문"
+        continue
+
+    if not in_section:
+        continue
+
+    if line.startswith("- "):
+        if current:
+            title = current[0][2:].strip()
+            if not any(matches(title, item) for item in completed):
+                emit(current)
+                sys.exit(0)
+        current = [line]
+        continue
+
+    if current and line.startswith("  "):
+        current.append(line)
+
+if in_section and current:
+    title = current[0][2:].strip()
+    if not any(matches(title, item) for item in completed):
+        emit(current)
+PY
+}
+
 extract_first_diagnosis_block() {
   local file="$1"
 
@@ -158,7 +243,7 @@ if [[ -n "$focus_block" ]]; then
   today_reason='현재 `TODO` 목록의 첫 항목이다. 지금 구조에서는 목록의 앞쪽을 오늘 가장 먼저 밀어야 할 항목으로 본다.'
   today_prompts=$'- 오늘 이걸 10~20분 안에 어디까지 밀 수 있는가.\n- 막히는 지점이 있다면 정확히 무엇이 막히는가.\n- 다음 컴파일에 남길 사실 1개는 무엇인가.'
 elif [[ -f "$questions_file" ]]; then
-  focus_block="$(extract_first_block "$questions_file" "현재 열린 질문")"
+  focus_block="$(extract_first_open_question_block "$questions_file" "$todo_file")"
   if [[ -n "$focus_block" ]]; then
     today_mode="writing_prompt"
     today_source_label="Open Questions.md"
@@ -189,7 +274,7 @@ if [[ -z "$focus_block" ]]; then
 fi
 
 if [[ -f "$questions_file" ]]; then
-  writing_block="$(extract_first_block "$questions_file" "현재 열린 질문")"
+  writing_block="$(extract_first_open_question_block "$questions_file" "$todo_file")"
 fi
 
 if [[ -n "$writing_block" ]]; then

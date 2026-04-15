@@ -175,6 +175,7 @@
 - `Inbox/Text`와 `Inbox/Telegram`에서 `[x]`, `- [x]`를 발견하면 `완료 신호`로 본다.
 - 완료 신호는 새 일을 만드는 것이 아니라 기존 할 일을 닫는 쪽을 우선한다.
 - 같은 일을 가리키는 것으로 보이면 [TODO.md](<../Wiki/Self/TODO.md>) 의 `현재 할 일`에서 내리고 `최근 완료`에 옮긴다.
+- `글쓰기 완료`가 포함된 `[x]` 신호는 `오늘 글쓰기 주제`와 비교해 맞으면 최근 완료로 남기고 다음 글쓰기 주제로 넘어간다.
 - 원문이 번호나 목록으로 기존 TODO를 가리키며 `투두에서 삭제하자`처럼 명시 삭제를 지시하면 해당 항목은 `최근 완료`로 옮기지 않고 `현재 할 일`에서만 제거한다.
 - 완료 메모가 있으면 `최근 완료` 항목에 한 줄로 덧붙인다.
 - 추측만으로 완료 처리하지 않는다. `DONE:`, `[x]`, `- [x]` 같은 명시 신호가 있을 때만 완료로 본다.
@@ -203,15 +204,17 @@
 ## 수동 compile / post-compile 동작
 
 - compile 기본 진입점은 `scripts/compile.sh`다.
-- 현재 이 스크립트는 `scripts/compile-today-focus.sh`를 호출해 `Today`와 `TODO`의 `오늘 글쓰기 주제`를 함께 갱신한다.
-- compile 직후 후속 동작은 `scripts/post-compile.sh`를 쓴다.
-- 이 스크립트는 compile 실행, TODO 텔레그램 전송, 캘린더 후보 리포트 생성을 순서대로 실행한다.
+- 현재 이 스크립트는 먼저 저장소에 `git pull --rebase --autostash`를 수행한 뒤, `scripts/compile-todo-state.sh`로 `TODO` 상태를 갱신하고 `scripts/compile-today-focus.sh`로 `Today`를 갱신한다.
+- 같은 실행 안에서 TODO 텔레그램 전송과 캘린더 후보 리포트 생성도 같이 처리한다.
+- `scripts/post-compile.sh`는 기존 이름을 유지하기 위한 호환용 별칭이다.
 - TODO 메시지 생성은 `scripts/build-todo-digest.sh`, 전송은 `scripts/send-telegram-message.sh`가 담당한다.
 - 약속 후보 추출은 `scripts/build-calendar-candidates.sh`가 담당한다.
 - 캘린더 후보는 `Meta/calendar-candidates.md`에 쓴다.
-- 날짜와 시간이 충분히 명확하면 캘린더에 추가하고 공유한다.
+- 캘린더 리포트는 `추가 가능`, `이미 지난 일정`, `질문 필요`를 구분해 쓴다.
+- 현재 shell compile은 실제 Google Calendar 이벤트 생성까지 자동으로 실행하지 않는다.
 - 날짜나 시간이 빠지면 그 항목만 사용자에게 질문한다.
-- 실제 전송 전에는 `scripts/post-compile.sh --dry-run`으로 확인한다.
+- 실제 전송 전에는 `scripts/compile.sh --dry-run` 또는 `scripts/post-compile.sh --dry-run`으로 확인한다.
+- 로컬 변경만 기준으로 다시 계산하고 싶을 때는 `scripts/compile.sh --skip-pull`을 쓴다.
 - 토큰과 채팅 ID는 커밋하지 않고 `.env.local` 또는 쉘 환경 변수로만 넣는다.
 
 ## 컴파일 예시
