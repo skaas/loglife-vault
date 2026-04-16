@@ -21,3 +21,10 @@ date: 2026-04-09
 time: 
 title: 저스트 댄스 관련 회의를 영어로 함. With max 두 번째. 힘들다....
 comment:
+
+## tg:update_id:942071339
+action: 
+date: 2026-04-14
+time: 
+title: 사진: 할아버지 제사. 발렌타인21 모임주
+comment:
