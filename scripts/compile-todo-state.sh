@@ -6,6 +6,8 @@ usage() {
 }
 
 repo_root="$(git rev-parse --show-toplevel)"
+# shellcheck disable=SC1091
+source "${repo_root}/scripts/script-lib.sh"
 todo_file="${repo_root}/Wiki/Self/TODO.md"
 telegram_root="${repo_root}/Inbox/Telegram"
 text_root="${repo_root}/Inbox/Text"
@@ -43,7 +45,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-python3 - "$todo_file" "$telegram_root" "$text_root" <<'PY'
+run_python - "$todo_file" "$telegram_root" "$text_root" <<'PY'
 from __future__ import annotations
 
 from dataclasses import dataclass, field

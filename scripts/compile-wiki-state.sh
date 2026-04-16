@@ -6,6 +6,8 @@ usage() {
 }
 
 repo_root="$(git rev-parse --show-toplevel)"
+# shellcheck disable=SC1091
+source "${repo_root}/scripts/script-lib.sh"
 coverage_file="${repo_root}/Meta/wiki-coverage.md"
 queue_file="${repo_root}/Meta/wiki-compile-queue.md"
 decisions_file="${repo_root}/Meta/wiki-compile-decisions.md"
@@ -52,7 +54,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-python3 - "$repo_root" "$coverage_file" "$queue_file" "$decisions_file" "$index_file" <<'PY'
+run_python - "$repo_root" "$coverage_file" "$queue_file" "$decisions_file" "$index_file" <<'PY'
 from __future__ import annotations
 
 from collections import defaultdict

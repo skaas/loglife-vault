@@ -6,6 +6,8 @@ usage() {
 }
 
 repo_root="$(git rev-parse --show-toplevel)"
+# shellcheck disable=SC1091
+source "${repo_root}/scripts/script-lib.sh"
 timezone="${LOGLIFE_NOTIFY_TZ:-Asia/Seoul}"
 daily_file=""
 report_file="${repo_root}/Meta/calendar-candidates.md"
@@ -89,7 +91,7 @@ if [[ "${#daily_files[@]}" -eq 0 ]]; then
 fi
 
 candidates="$(
-  python3 - "$timezone" "$repo_root" "${daily_files[@]}" <<'PY'
+  run_python - "$timezone" "$repo_root" "${daily_files[@]}" <<'PY'
 import pathlib
 import re
 import sys

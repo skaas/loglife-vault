@@ -6,6 +6,8 @@ usage() {
 }
 
 repo_root="$(git rev-parse --show-toplevel)"
+# shellcheck disable=SC1091
+source "${repo_root}/scripts/script-lib.sh"
 today_file="${repo_root}/Wiki/Self/Today.md"
 todo_file="${repo_root}/Wiki/Self/TODO.md"
 questions_file="${repo_root}/Wiki/Self/Open Questions.md"
@@ -77,7 +79,7 @@ extract_first_open_question_block() {
   local questions_file="$1"
   local todo_file="$2"
 
-  python3 - "$questions_file" "$todo_file" <<'PY'
+  run_python - "$questions_file" "$todo_file" <<'PY'
 import pathlib
 import re
 import sys
@@ -196,7 +198,7 @@ replace_or_insert_section() {
   local section_title="$2"
   local new_section="$3"
 
-  python3 - "$file" "$section_title" "$new_section" <<'PY'
+  run_python - "$file" "$section_title" "$new_section" <<'PY'
 import pathlib
 import re
 import sys

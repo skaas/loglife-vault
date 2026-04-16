@@ -135,7 +135,7 @@
 - 승인되지 않은 용어 충돌은 `Meta/wording-conflicts.md`에 남긴다.
 - 단어 충돌은 후처리 메모가 아니라 `컴파일 warning`으로 본다.
 - 자동 승격이 애매하면 queue로 남기고 사람 판단을 기다린다.
-- 커밋 전에는 `scripts/check-windows-paths.sh --staged`가 통과해야 한다.
+- 커밋 전에는 `scripts/check-windows-paths.sh --staged` 또는 Windows 래퍼 `scripts\check-windows-paths.cmd --staged`가 통과해야 한다.
 
 ## 비목표
 

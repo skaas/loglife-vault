@@ -214,9 +214,11 @@
 ## 수동 compile / post-compile 동작
 
 - compile 기본 진입점은 `scripts/compile.sh`다.
+- Windows 래퍼 진입점은 `scripts\compile.cmd`다.
 - 현재 이 스크립트는 먼저 저장소에 `git pull --rebase --autostash`를 수행한 뒤, `scripts/compile-wiki-state.sh`로 `Inbox -> Daily -> Wiki` 반영 상태와 자동 반영 후 추가 판단이 필요한 큐를 갱신하고, 이어서 `scripts/compile-todo-state.sh`로 `TODO` 상태를 갱신하고 `scripts/compile-today-focus.sh`로 `Today`를 갱신한다.
 - 같은 실행 안에서 TODO 텔레그램 전송과 캘린더 후보 리포트 생성도 같이 처리한다.
 - `scripts/post-compile.sh`는 기존 이름을 유지하기 위한 호환용 별칭이다.
+- Windows에서는 `compile.cmd`, `post-compile.cmd`, `check-windows-paths.cmd` 같은 래퍼를 통해 같은 파이프라인을 실행한다.
 - 위키 반영 상태는 `Meta/wiki-coverage.md`에 쓰고, 자동 반영 후에도 사람 판단이 필요한 source는 `Meta/wiki-compile-queue.md`에 모은다.
 - 사람 판단은 `Meta/wiki-compile-decisions.md`에 기록하고, 다음 compile에서 `promote`, `hold`, `ignore`를 반영한다.
 - TODO 메시지 생성은 `scripts/build-todo-digest.sh`, 전송은 `scripts/send-telegram-message.sh`가 담당한다.
@@ -232,6 +234,7 @@
 - 날짜나 시간이 빠지면 그 항목만 사용자에게 질문한다.
 - 실제 전송 전에는 `scripts/compile.sh --dry-run` 또는 `scripts/post-compile.sh --dry-run`으로 확인한다.
 - 로컬 변경만 기준으로 다시 계산하고 싶을 때는 `scripts/compile.sh --skip-pull`을 쓴다.
+- Python 실행은 `python3`, `python`, `py -3` 순서로 자동 탐색한다.
 - 토큰과 채팅 ID는 커밋하지 않고 `.env.local` 또는 쉘 환경 변수로만 넣는다.
 
 ## 컴파일 예시

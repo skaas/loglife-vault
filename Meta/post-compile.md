@@ -69,3 +69,10 @@ scripts/compile.sh --dry-run
 scripts/compile.sh --skip-pull
 scripts/post-compile.sh --dry-run
 ```
+
+```bat
+scripts\compile.cmd
+scripts\compile.cmd --dry-run
+scripts\compile.cmd --skip-pull
+scripts\post-compile.cmd --dry-run
+```

@@ -89,11 +89,13 @@
 ## Post-Compile
 
 - compile 기본 진입점은 `scripts/compile.sh`다.
+- Windows에서는 같은 진입점을 `scripts\\compile.cmd`로 쓴다.
 - 이 스크립트는 먼저 저장소에서 최신 변경을 `pull --rebase --autostash`로 반영한 뒤, `Inbox -> Daily -> Wiki` 반영 상태를 다시 계산하고 `TODO` 상태와 `Today.md`를 갱신한다.
 - compile 이후 기본 후속 동작은 [Meta/post-compile.md](<Meta/post-compile.md>)를 따른다.
 - `scripts/compile.sh`는 아래를 한 번에 처리한다.
   pull, Wiki 상태/큐 compile, TODO/Today compile, 캘린더 후보 리포트 생성, TODO 전송, review 1건 전송
 - `scripts/post-compile.sh`는 기존 이름을 유지하기 위한 호환용 별칭이다.
+- Windows에서는 `scripts\\post-compile.cmd`, `scripts\\check-windows-paths.cmd`, `scripts\\send-next-review.cmd` 같은 `.cmd` 래퍼를 쓴다.
 - TODO 전송에는 `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`가 필요하다.
 - 로컬에서는 [`.env.local`](</Users/user/Documents/loglife/loglife-vault/.env.local>) 파일에 넣는 방식을 기본으로 쓴다.
 - 예시는 [`.env.example`](</Users/user/Documents/loglife/loglife-vault/.env.example>) 에 있다.
@@ -112,6 +114,21 @@ scripts/compile.sh --skip-pull
 scripts/post-compile.sh --dry-run
 scripts/post-compile.sh
 ```
+
+```bat
+scripts\compile.cmd
+scripts\compile.cmd --skip-pull
+scripts\post-compile.cmd --dry-run
+scripts\check-windows-paths.cmd --staged
+```
+
+## Windows 실행
+
+- 기준 환경은 `Git for Windows`와 `Python 3`다.
+- `.cmd` 래퍼는 내부적으로 `bash.exe`를 찾아 `.sh` 스크립트를 실행한다.
+- Python 호출은 `python3`, `python`, `py -3` 순서로 자동 탐색한다.
+- `.gitattributes`로 `*.sh`와 `*.py`는 LF, `*.cmd`는 CRLF를 강제한다.
+- `.env`와 `.env.local`은 CRLF로 저장돼도 읽을 수 있게 처리한다.
 
 ## Windows 호환 규칙
 
