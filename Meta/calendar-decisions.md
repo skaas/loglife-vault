@@ -14,3 +14,10 @@ date: 2026-04-07
 time: 
 title: 재윤님은 청담에 오피스텔이있다. 재윤님과 5월에 옥상 파티를 하기로했다
 comment:
+
+## tg:update_id:942071284
+action: 
+date: 2026-04-09
+time: 
+title: 저스트 댄스 관련 회의를 영어로 함. With max 두 번째. 힘들다....
+comment:
