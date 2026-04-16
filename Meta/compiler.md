@@ -56,6 +56,8 @@
   `Wiki/Themes/*.md`
 - 공부한 개념 정리와 확장 질문:
   `Wiki/Questions/*.md`
+- 창작/게임/세계관 아이디어:
+  `Wiki/Ideas/*.md`
 - 공개용 프로필:
   `site/index.html`
 
@@ -117,6 +119,14 @@
 5. `approved`면 `selected`를 사용한다.
 6. `keep_distinct`면 합치지 않는다.
 7. `open`이면 경고 상태로 컴파일을 계속한다.
+
+## 링크 요약 처리
+
+- 링크가 들어 있는 source는 원문 URL을 보존한다.
+- compile은 우선 직접 페이지를 읽고 제목과 설명을 뽑으려 시도한다.
+- 직접 fetch가 막히면 읽기 가능한 대체 경로를 best-effort로 시도한다.
+- 그래도 실패하면 링크는 queue에 남기고, source 주변 문맥만으로 임시 코멘트를 남긴다.
+- 링크에서 얻은 내용은 source를 덮어쓰지 않고 queue 코멘트나 관련 Wiki 근거로만 쓴다.
 
 ### 처리 규칙
 
@@ -204,13 +214,20 @@
 ## 수동 compile / post-compile 동작
 
 - compile 기본 진입점은 `scripts/compile.sh`다.
-- 현재 이 스크립트는 먼저 저장소에 `git pull --rebase --autostash`를 수행한 뒤, `scripts/compile-todo-state.sh`로 `TODO` 상태를 갱신하고 `scripts/compile-today-focus.sh`로 `Today`를 갱신한다.
+- 현재 이 스크립트는 먼저 저장소에 `git pull --rebase --autostash`를 수행한 뒤, `scripts/compile-wiki-state.sh`로 `Inbox -> Daily -> Wiki` 반영 상태와 자동 반영 후 추가 판단이 필요한 큐를 갱신하고, 이어서 `scripts/compile-todo-state.sh`로 `TODO` 상태를 갱신하고 `scripts/compile-today-focus.sh`로 `Today`를 갱신한다.
 - 같은 실행 안에서 TODO 텔레그램 전송과 캘린더 후보 리포트 생성도 같이 처리한다.
 - `scripts/post-compile.sh`는 기존 이름을 유지하기 위한 호환용 별칭이다.
+- 위키 반영 상태는 `Meta/wiki-coverage.md`에 쓰고, 자동 반영 후에도 사람 판단이 필요한 source는 `Meta/wiki-compile-queue.md`에 모은다.
+- 사람 판단은 `Meta/wiki-compile-decisions.md`에 기록하고, 다음 compile에서 `promote`, `hold`, `ignore`를 반영한다.
 - TODO 메시지 생성은 `scripts/build-todo-digest.sh`, 전송은 `scripts/send-telegram-message.sh`가 담당한다.
 - 약속 후보 추출은 `scripts/build-calendar-candidates.sh`가 담당한다.
+- review 통합 큐 생성은 `scripts/build-review-state.sh`가 담당한다.
+- review 개별 전송은 `scripts/send-next-review.sh`, 답장 반영은 `scripts/apply-review-reply.sh`가 담당한다.
+- 기본값은 `Daily` 전체를 읽고, 필요하면 특정 daily 파일만 다시 볼 수 있다.
 - 캘린더 후보는 `Meta/calendar-candidates.md`에 쓴다.
-- 캘린더 리포트는 `추가 가능`, `이미 지난 일정`, `질문 필요`를 구분해 쓴다.
+- 캘린더 판단 파일은 `Meta/calendar-decisions.md`다.
+- 통합 review 파일은 `Meta/review.md`다.
+- 캘린더 리포트는 `추가 가능`, `지난 일정 로그`, `질문 필요`를 구분해 쓴다.
 - 현재 shell compile은 실제 Google Calendar 이벤트 생성까지 자동으로 실행하지 않는다.
 - 날짜나 시간이 빠지면 그 항목만 사용자에게 질문한다.
 - 실제 전송 전에는 `scripts/compile.sh --dry-run` 또는 `scripts/post-compile.sh --dry-run`으로 확인한다.

@@ -134,21 +134,28 @@ if [[ "$pull_enabled" -eq 1 ]]; then
   pull_latest
 fi
 
+"${repo_root}/scripts/compile-wiki-state.sh"
 "${repo_root}/scripts/compile-todo-state.sh" --todo-file "$todo_file"
 run_today_compile
-
-if [[ "$skip_telegram" -ne 1 ]]; then
-  if [[ "$dry_run" -eq 1 ]]; then
-    "${repo_root}/scripts/send-post-compile-todo.sh" --dry-run --todo-file "$todo_file"
-  else
-    "${repo_root}/scripts/send-post-compile-todo.sh" --todo-file "$todo_file"
-  fi
-fi
 
 if [[ "$skip_calendar" -ne 1 ]]; then
   run_calendar_compile
   if [[ "$dry_run" -eq 1 ]]; then
     printf '\n[compile] calendar candidates\n'
     run_calendar_compile --stdout
+  fi
+fi
+
+"${repo_root}/scripts/build-review-state.sh"
+
+if [[ "$skip_telegram" -ne 1 ]]; then
+  if [[ "$dry_run" -eq 1 ]]; then
+    "${repo_root}/scripts/send-post-compile-todo.sh" --dry-run --todo-file "$todo_file"
+    printf '\n[compile] next review\n'
+    "${repo_root}/scripts/send-next-review.sh" --stdout
+  else
+    "${repo_root}/scripts/send-post-compile-todo.sh" --todo-file "$todo_file"
+    "${repo_root}/scripts/send-next-review.sh"
+    "${repo_root}/scripts/build-review-state.sh"
   fi
 fi

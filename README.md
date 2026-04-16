@@ -1,23 +1,22 @@
 # Loglife Vault
 
-이 저장소의 목표는 삶의 기록을 단순히 보관하는 것이 아니라, 원본 기록을 시간이 지나도 남는 자기지식과 공개 가능한 프로필로 컴파일하는 것이다.
+이 저장소는 삶의 기록을 쌓는 폴더가 아니라, 기록을 근거로 나에 대한 작업 모델을 갱신하는 개인 하네스다.
 
-- `Inbox`에는 원본을 남긴다.
-- `Daily`에는 날짜 맥락을 정리한다.
-- `Wiki`에는 반복되는 자기지식을 축적한다.
-- `Wiki`에는 최근 진단, 해야 할 일, 개념 정리 같은 해석 결과도 함께 축적한다.
-- `Wiki`에는 오늘 하나만 잡는 포커스도 별도 문서로 남긴다.
-- `site`에는 외부 공개 가능한 결과물만 다시 컴파일한다.
-- `Meta`에는 이 과정을 안정적으로 유지하기 위한 규칙을 둔다.
+- `Inbox`는 raw observation을 보존한다.
+- `Daily`는 하루의 맥락을 압축하는 중간 작업 메모리다.
+- `Wiki`는 장기적으로 유지되는 자기 작업 모델이다.
+- `Wiki/Ideas`는 창작과 세계관 아이디어를 간단한 노드로 누적한다.
+- `site`는 외부 공개 가능한 내용만 다시 투영한 결과물이다.
+- `Meta`는 이 하네스를 안정적으로 유지하기 위한 정책과 평가 레이어다.
 
 ## 핵심 목표
 
 - 원본 기록을 잃지 않고 남긴다.
-- 반복되는 생각, 성향, 관계, 경력, 질문을 `Wiki`로 축적한다.
-- 최근 변화, 문제 후보, 다음 행동도 컴파일 결과로 남긴다.
-- 내부 지식과 공개용 자기소개를 분리한다.
+- 반복되는 생각, 성향, 관계, 경력, 질문을 `Wiki`의 작업 모델로 축적한다.
+- 최근 변화, 문제 후보, 다음 행동도 모델 업데이트의 일부로 남긴다.
+- 내부 작업 모델과 외부 공개용 자기소개를 분리한다.
 - 표현 충돌, 파일명 규칙, 근거 링크 같은 품질을 관리한다.
-- 시간이 갈수록 `내가 어떤 사람인지` 더 선명하게 만든다.
+- 시간이 갈수록 `내가 어떤 사람인지`를 더 정확하게 설명할 수 있게 만든다.
 
 ## 비목표
 
@@ -25,12 +24,27 @@
 - 모든 해석을 사실처럼 확정하는 것
 - `Wiki` 전체를 그대로 공개하는 것
 
+## 시스템 구조
+
+- 관찰 계층:
+  `Inbox`
+- 문맥화 계층:
+  `Daily`
+- 모델 계층:
+  `Wiki`
+- 정책과 평가 계층:
+  `Meta`
+- 외부 투영 계층:
+  `site`
+
 ## 기본 원칙
 
 - 원본 입력은 `Inbox/Telegram`과 `Inbox/Text`에 그대로 쌓는다.
 - 사진 공유 링크와 웹 링크는 별도 채널로 나누지 않고, 입력 텍스트 안의 링크로 함께 다룬다.
 - 하루 단위 맥락은 `Daily`에서 정리한다.
 - 사람, 사건, 주제, 질문 같은 연결 가능한 지식은 `Wiki`에 누적한다.
+- 창작, 세계관, 게임 아이디어는 `Wiki/Ideas`에 짧게 정리한다.
+- `Wiki`는 완성된 설명서가 아니라, 사용자와 에이전트가 함께 갱신하는 살아 있는 작업 모델이다.
 - 공개 가능한 자기소개와 포트폴리오 성격의 결과물은 `site`에 별도로 만든다.
 - 운영 규칙과 점검 메모는 `Meta`에 둔다.
 
@@ -60,8 +74,9 @@
 ## 링크 처리 원칙
 
 - 링크가 포함된 기록은 원문 링크를 보존한다.
-- 링크 요약은 원본을 대체하지 않고, 원본 이해를 돕는 보조 메모로 남긴다.
+- 링크 요약은 원본을 대체하지 않고, 원본 이해를 돕는 파생 해석 메모로 남긴다.
 - 요약에는 가능한 한 링크의 주제, 핵심 주장, 기록과의 관련성을 짧게 적는다.
+- 직접 fetch가 막히면 읽기 가능한 대체 경로를 best-effort로 시도한다.
 
 ## Vault 링크 규칙
 
@@ -74,15 +89,21 @@
 ## Post-Compile
 
 - compile 기본 진입점은 `scripts/compile.sh`다.
-- 이 스크립트는 먼저 저장소에서 최신 변경을 `pull --rebase --autostash`로 반영한 뒤, `TODO` 상태를 raw 로그에서 갱신하고 `Today.md`와 `TODO.md`의 `오늘 글쓰기 주제`를 다시 계산한다.
+- 이 스크립트는 먼저 저장소에서 최신 변경을 `pull --rebase --autostash`로 반영한 뒤, `Inbox -> Daily -> Wiki` 반영 상태를 다시 계산하고 `TODO` 상태와 `Today.md`를 갱신한다.
 - compile 이후 기본 후속 동작은 [Meta/post-compile.md](<Meta/post-compile.md>)를 따른다.
 - `scripts/compile.sh`는 아래를 한 번에 처리한다.
-  pull, TODO/Today compile, TODO 텔레그램 전송, 캘린더 후보 리포트 생성
+  pull, Wiki 상태/큐 compile, TODO/Today compile, 캘린더 후보 리포트 생성, TODO 전송, review 1건 전송
 - `scripts/post-compile.sh`는 기존 이름을 유지하기 위한 호환용 별칭이다.
 - TODO 전송에는 `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`가 필요하다.
 - 로컬에서는 [`.env.local`](</Users/user/Documents/loglife/loglife-vault/.env.local>) 파일에 넣는 방식을 기본으로 쓴다.
 - 예시는 [`.env.example`](</Users/user/Documents/loglife/loglife-vault/.env.example>) 에 있다.
+- `Meta/wiki-coverage.md`는 `Inbox -> Daily -> Wiki` 연결 상태를 요약한다.
+- `Meta/wiki-compile-queue.md`는 자동 반영 후에도 추가 판단이 필요한 source만 모은다.
+- `Meta/wiki-compile-decisions.md`는 queue warning에 대한 사람 판단을 기록하고, 다음 compile에서 `promote/hold/ignore`를 반영한다.
 - 캘린더 후보는 `Meta/calendar-candidates.md`에 쓰고, `추가 가능/이미 지난 일정/질문 필요`를 구분해 남긴다.
+- 캘린더 판단 기록은 `Meta/calendar-decisions.md`에 남긴다.
+- 통합 검토 큐는 `Meta/review.md`에 다시 모은다.
+- `scripts/send-next-review.sh`는 아직 보내지 않은 열린 review를 각각 별도 텔레그램 메시지로 보내고, 답장은 각 메시지에 직접 달면 된다. 로컬 반영은 `scripts/apply-review-reply.sh --review-id ... --reply "..."` 형식으로도 할 수 있다.
 - 현재 shell compile은 실제 Google Calendar 추가까지 자동으로 하지는 않는다.
 
 ```bash
@@ -101,7 +122,7 @@ scripts/post-compile.sh
 
 ## 공개 프로필 원칙
 
-- `Wiki`는 내부 지식 베이스이고, 그대로 공개하지 않는다.
+- `Wiki`는 내부 작업 모델이고, 그대로 공개하지 않는다.
 - 공개 페이지는 `site/index.html`처럼 별도 산출물로 만든다.
 - 공개 페이지에는 경력, 강연, 선택된 프로젝트, 작업 방식처럼 외부에 보여도 되는 내용만 넣는다.
 - 가족, 건강, 미완성 질문, 내적 충돌, 원본 `Inbox` 텍스트는 공개 산출물에서 제외한다.

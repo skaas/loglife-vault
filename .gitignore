@@ -2,3 +2,5 @@
 .env
 .env.local
 .env.*.local
+Meta/review-dispatch.json
+Meta/review-state.json
