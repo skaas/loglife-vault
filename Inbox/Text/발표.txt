@@ -1,0 +1,93 @@
+# Ludic loop
+- 즐거움의 고리. (연속성의 고리)
+
+Natasha Dow Schul 
+'중독'을 주제로 연구.
+책은 주로 라스베거스의 슬롯머신이 어떻게 사람을 중독시키게 설계되었나를 설명
+
+Addiction by design
+중독이 되도록 설계
+
+어떻게 중독이 되도록 설계를 했는가?
+
+카펫 패턴, 거울이 없음, 시계가 없음
+[TOD] Time on device: 의자 각도, 레버의 각도
+
+But 이 발표는 기술의 발전을 중심으로..
+
+같은 도박 중독자들도 블랙젝 보다 훨씬 더 많은 사람들이 슬롯머신에 중독된다.
+슬롯 머신의 룰이 보다 중독성 있는 방향으로 발전(?)했다.
+
+[슬롯머신] 더블유 게임즈. '12월 한달 매출 매출 1400만불'
+
+[the zone] - 도박 중독자들의 제로의 영역
+실제의 공간에서 벗어나 게임과 자신만 있는 공간을 만든다. 
+게임에서의 몰입감. 같은 개념.
+
+슬롯 머신에서 어떻게 사람들을 The Zone으로 유도하는가?
+(슬롯 머신에서 어떻게 몰입감을 느끼가 하는가?)
+
+- Rapid -> 바로 시작할 수 있게.
+- solitary -> Zone으로 유도
+- continuous -> 연속적으로.
+
+플레이어 카드를 넣으면 바로 시작할 수 있게 편함함을 늘렸다. (쉽게)
+시작하면 버튼으로 레버를 대신한다. (손을 들지도 않게 만드는 방법)
+
+중독을 두 가지 조건은
+1. 행위에 대한 빠른 피드백
+2. 간헐적이고 예측할 수 없는 보상 
+
+스키너 박스 - 정석적이면 학습을 하지만 예측이 안되면 중독이 된다.
+
+간단한 행위로 피드백이 빠르면서 결과를 알 수 없는 보상이 반복되기 사작하면 (많은 행위를 하면)
+사람들은 이 '행위'에 안정감을 느끼면서 the zone으로 진입한다.
+그리고 지속적인 행위로 보상을 받으면서 행위에 중독된다.
+
+Gambling/slot machine addicts don’t play to win. They play to keep playing.
+도박 중독자들은 이기기 위해 하지 않는다. 계속 플레이를 하기 위해 한다.
+
+-
+한 게임에 3.5초를 넘기지 말아야 한다.
+-
+
+////
+stoping cue를 없앤다.
+손실을 인지하게 만들지 않는다.
+
+성공과 실패의 2분법이 아니라
+성공, 성공의 실패, 실패로 나누었다.
+
+과거 슬롯 머신의 그래프는...
+그러나 현재 슬롯머신의 그래프는 서서히 잃어간다.
+줄을 늘리고, 판정을 늘리면서 자산을 서서히 감소 시켜서 장벽을 낮춘다. (HP? 난이도?)
+
+
+(on slot machines) The allure of winning is part of the hook, but the allure of the zone is the hold.
+승리의 매력은 이끌림의 일부이지만, 더 큰 매력은 앉아 있는 것이다.
+
+플레이 시간을 늘리는 기술이 늘어났다.
+
+
+===============
+중독성 있는 앱을 디자인하는 방법은 간단하다. 레버를 당기는 것과 같은 유저의 행동을 "예측할 수 없는 보상"과 연결 시키면 된다. 
+레버를 당기는 순간 플레이어는 매력적인 보상을 받거나 아무런 보상을 받지 않는다. 보상을 예측하기 어려울 수록 중독성은 높아진다. 
+===============
+
+
+
+
+
+Unpredictable payout schedules (variable rewards) and false wins (i.e. where there’s a net loss) are very very powerful, especially when you can play lots of games and get fast feedback (e.g. slot machines, Facebook photos, Pinterest scrolling, etc)
+예측할 수 없는 payout schedules (다양한 리워드), 승리의 실패(실제 '손실'이 있는)은 매우 강력합니다. 득히 많은 게임을하고 빠른 피트백이 있을 때
+
+중독을 유발하는 가장 큰 요소
+- 행위는 반복, 상황도 반복
+    - 행위가 반복되면 그 안에서 안정감을 느끼기 시작함.
+- 보상은 알 수 없음.
+    - 시기
+    - 정도
+
+
+Schüll eventually associated her ludic loop to popular smart phone games, such as Candy Crush. In an interview with NPR she characterised the game in this way: “It’s you and the machine… there’s no real character development or narrative arc. Kill the monster; kill the monster again; kill the monster again. You never know when you’re going to get the reward [or] how much the reward will be. It’s these little ludic loops.”
+

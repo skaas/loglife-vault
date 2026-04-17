@@ -761,3 +761,59 @@
 - 새 `scripts/compile-todo-state.sh`를 추가해 raw `[]`, `[x]`, `투두에서 삭제하자`, `오타 A->B` 신호를 `TODO.md`의 현재 할 일과 최근 완료에 반영하게 했다.
 - `글쓰기 완료`가 들어간 `[x]`는 최근 완료에 남기고, 다음 compile에서 `오늘 글쓰기 주제`가 다음 열린 질문으로 넘어가게 맞췄다.
 - 캘린더는 아직 shell에서 실제 Google Calendar 생성까지는 하지 않고, `추가 가능/이미 지난 일정/질문 필요` 상태를 분리해 왜 추가되지 않았는지 보이도록 리포트를 바꿨다.
+
+## 2026-04-15 Run 027
+
+### 입력
+
+- 사용자 정의 수정
+  - compile은 운영 산출물만이 아니라 `Inbox` 내용을 확인해 `Wiki` 상태까지 갱신하는 작업이어야 함
+
+### 출력
+
+- `scripts`
+  - [compile.sh](<../scripts/compile.sh>)
+  - [compile-wiki-state.sh](<../scripts/compile-wiki-state.sh>)
+- `Meta`
+  - [wiki-coverage.md](<wiki-coverage.md>)
+  - [wiki-compile-queue.md](<wiki-compile-queue.md>)
+  - [compiler.md](<compiler.md>)
+  - [post-compile.md](<post-compile.md>)
+  - [README.md](<README.md>)
+- `Wiki`
+  - [index.md](<../Wiki/index.md>)
+- 루트
+  - [README.md](<../README.md>)
+
+### 메모
+
+- `scripts/compile-wiki-state.sh`를 추가해 `Inbox -> Daily -> Wiki` 반영 상태를 계산하고, 자동 반영 뒤에도 추가 판단이 필요한 source만 `Meta/wiki-compile-queue.md`에 모으게 했다.
+- `Wiki/index.md`에는 새 `컴파일 상태` 섹션을 넣어 현재 source 총량, Daily/Wiki 연결 수, 승격 대기 큐 링크, 최근 queue source를 바로 보이게 했다.
+- `scripts/compile.sh`는 이제 pull 뒤에 위키 상태 컴파일도 함께 실행한다.
+
+## 2026-04-15 Run 028
+
+### 입력
+
+- 사용자 정의 수정
+  - queue는 generated warning으로 보고, 사용자는 별도 md 파일에 코멘트만 남긴 뒤 다시 compile하고 싶음
+
+### 출력
+
+- `scripts`
+  - [compile-wiki-state.sh](<../scripts/compile-wiki-state.sh>)
+- `Meta`
+  - [wiki-compile-decisions.md](<wiki-compile-decisions.md>)
+  - [wiki-compile-queue.md](<wiki-compile-queue.md>)
+  - [wiki-coverage.md](<wiki-coverage.md>)
+  - [README.md](<README.md>)
+  - [compiler.md](<compiler.md>)
+  - [post-compile.md](<post-compile.md>)
+- 루트
+  - [README.md](<../README.md>)
+
+### 메모
+
+- `Meta/wiki-compile-queue.md`는 계속 generated warning 리포트로 두고, 사람 입력은 `Meta/wiki-compile-decisions.md`로 분리했다.
+- `scripts/compile-wiki-state.sh`는 이제 decisions 파일의 `promote`, `hold`, `ignore`를 읽어 `Wiki` 문서의 `수동 승인 반영` 섹션을 갱신하고, unresolved만 queue에 남긴다.
+- `hold`와 `ignore`는 queue에서 제외되며, `promote`는 실제 `Wiki` 문서 링크로 반영되어 다음 compile의 반영 상태에 포함된다.

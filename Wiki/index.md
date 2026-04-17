@@ -13,6 +13,14 @@
 - 최근 5일 기록에서는 가족 일정 실행 뒤에 팀 저녁 모임과 평일 복귀가 붙고, 생활 루틴 추적(기상/체중/식사)이 계속 이어진다.
 - 창작에서는 논리, 철학, 자기이해의 한계를 서사로 길게 탐구하는 성향이 보인다.
 
+## 컴파일 상태
+
+- source total: 141 / Daily 연결: 101 / Wiki 연결: 91
+- Daily에서 종료: 24 / queue: 0 / 보류·무시: 14
+- 상태 상세: [Meta/wiki-coverage.md](<../Meta/wiki-coverage.md>)
+- 승격 대기 큐: [Meta/wiki-compile-queue.md](<../Meta/wiki-compile-queue.md>)
+- 결정 파일: [Meta/wiki-compile-decisions.md](<../Meta/wiki-compile-decisions.md>)
+
 ## 핵심 목차
 
 - [../site/index.html](<../site/index.html>):
@@ -59,6 +67,21 @@
   미분을 시간 대신 변수 간 반응과 민감도로 해석한 개념 메모
 - [Questions/구매-주기-빈도-프레임.md](<Questions/구매-주기-빈도-프레임.md>):
   구매 주기, 빈도, 타이밍을 액션 프레임으로 정리한 메모
+
+## 아이디어 보기
+
+- [Ideas/README.md](<Ideas/README.md>):
+  창작, 세계관, 게임 아이디어를 짧게 모아 보는 시작점
+- [Ideas/나는-용사였던-기억을.md](<Ideas/나는-용사였던-기억을.md>):
+  노년의 용사, 치매, 기록, 마왕의 반전이 섞인 판타지 아이디어
+- [Ideas/블러드-던전-tv.md](<Ideas/블러드-던전-tv.md>):
+  던전 생존 예능과 로그라이트 구조를 결합한 게임 아이디어
+- [Ideas/무한-동물원.md](<Ideas/무한-동물원.md>):
+  먹이, 생존, 흥행이 맞물리는 동물원 운영 아이디어
+- [Ideas/동물-인권.md](<Ideas/동물-인권.md>):
+  언어를 가진 동물과 권리 문제를 다루는 세계관 메모
+- [Ideas/영생-vs-자유.md](<Ideas/영생-vs-자유.md>):
+  영생과 자유의 충돌을 축으로 한 세계관 메모
 
 ## 시간 흐름
 

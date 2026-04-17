@@ -4,3 +4,5 @@
 .env.*.local
 Meta/review-dispatch.json
 Meta/review-state.json
+__pycache__/
+*.py[cod]
