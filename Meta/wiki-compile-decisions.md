@@ -136,3 +136,7 @@ comment: 식사 로그로 종료한다.
 action: promote
 target: Wiki/Self/Open Questions.md, Wiki/Timeline/2026.md
 comment: 소설을 장면화하며 읽는 습관을 만들겠다는 자기 관찰로 본다.
+
+## Inbox/Text/돈이되는것.markdown
+action: promote
+target: Wiki/Self/Tensions.md
