@@ -1,4 +1,5 @@
 const selectedIntensity = "mid";
+const finishPassword = "9804";
 
 const commonRoutine = [
   {
@@ -177,6 +178,10 @@ const el = {
   videoTitle: document.getElementById("video-title"),
   videoFrameWrap: document.getElementById("video-frame-wrap"),
   videoFallback: document.getElementById("video-fallback"),
+  passwordModal: document.getElementById("password-modal"),
+  passwordForm: document.getElementById("password-form"),
+  finishPassword: document.getElementById("finish-password"),
+  passwordError: document.getElementById("password-error"),
 };
 
 function todayKey() {
@@ -268,6 +273,21 @@ function closeVideo() {
   el.videoModal.classList.remove("open");
   el.videoModal.setAttribute("aria-hidden", "true");
   el.videoFrameWrap.innerHTML = "";
+  document.body.classList.remove("modal-open");
+}
+
+function openPasswordModal() {
+  el.passwordError.textContent = "";
+  el.finishPassword.value = "";
+  el.passwordModal.classList.add("open");
+  el.passwordModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  window.setTimeout(() => el.finishPassword.focus(), 0);
+}
+
+function closePasswordModal() {
+  el.passwordModal.classList.remove("open");
+  el.passwordModal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-open");
 }
 
@@ -364,6 +384,14 @@ function markRoutineComplete() {
   renderRoutine();
 }
 
+function completeAndShare() {
+  el.finishWorkout.disabled = true;
+  el.finishStatus.textContent = "텔레그램 공유창 여는 중";
+  markRoutineComplete();
+  const text = completionText();
+  window.location.href = telegramShareUrl(text);
+}
+
 el.routineList.addEventListener("change", (event) => {
   const state = loadDayState();
   const target = event.target;
@@ -380,12 +408,8 @@ el.routineList.addEventListener("click", (event) => {
   openVideo(button.dataset.videoTitle, button.dataset.videoUrl);
 });
 
-el.finishWorkout.addEventListener("click", async () => {
-  el.finishWorkout.disabled = true;
-  el.finishStatus.textContent = "텔레그램 공유창 여는 중";
-  markRoutineComplete();
-  const text = completionText();
-  window.location.href = telegramShareUrl(text);
+el.finishWorkout.addEventListener("click", () => {
+  openPasswordModal();
 });
 
 el.videoModal.addEventListener("click", (event) => {
@@ -394,9 +418,30 @@ el.videoModal.addEventListener("click", (event) => {
   }
 });
 
+el.passwordModal.addEventListener("click", (event) => {
+  if (event.target.closest("[data-close-password]")) {
+    closePasswordModal();
+  }
+});
+
+el.passwordForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (el.finishPassword.value.trim() !== finishPassword) {
+    el.passwordError.textContent = "비밀번호가 맞지 않습니다.";
+    el.finishPassword.select();
+    return;
+  }
+  closePasswordModal();
+  completeAndShare();
+});
+
 window.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && el.videoModal.classList.contains("open")) {
     closeVideo();
+    return;
+  }
+  if (event.key === "Escape" && el.passwordModal.classList.contains("open")) {
+    closePasswordModal();
   }
 });
 

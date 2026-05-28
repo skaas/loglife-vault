@@ -419,6 +419,93 @@ summary::marker {
   text-decoration: none;
 }
 
+.password-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 21;
+  display: none;
+  padding: 18px;
+}
+
+.password-modal.open {
+  display: grid;
+  place-items: center;
+}
+
+.password-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 18, 16, 0.68);
+}
+
+.password-dialog {
+  position: relative;
+  width: min(360px, 100%);
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.password-dialog h2 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+.password-dialog input {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  background: var(--surface-strong);
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.password-dialog input:focus {
+  outline: 2px solid rgba(22, 101, 52, 0.28);
+  outline-offset: 2px;
+}
+
+.password-error {
+  min-height: 1.25em;
+  margin: 0;
+  color: var(--red);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.password-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.password-cancel,
+.password-submit {
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.password-cancel {
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  background: transparent;
+}
+
+.password-submit {
+  border: 0;
+  color: #10231a;
+  background: #b7f0c8;
+}
+
 @media (max-width: 680px) {
   .app-shell {
     width: min(100% - 20px, 760px);
@@ -447,5 +534,9 @@ summary::marker {
 
   .video-modal {
     padding: 10px;
+  }
+
+  .password-modal {
+    padding: 12px;
   }
 }
