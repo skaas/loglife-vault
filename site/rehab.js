@@ -209,25 +209,29 @@ function getRoutine() {
   return allExercisesForDay(day);
 }
 
-function checkKey(exerciseId, index) {
-  return `${exerciseId}:check:${index}`;
-}
-
 function exerciseKey(exerciseId) {
   return `${exerciseId}:done`;
+}
+
+function youtubeVideoId(url) {
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname.includes("youtu.be")) {
+      return parsed.pathname.split("/").filter(Boolean)[0] || "";
+    }
+    if (parsed.pathname.includes("/shorts/")) {
+      return parsed.pathname.split("/shorts/")[1]?.split("/")[0] || "";
+    }
+    return parsed.searchParams.get("v") || "";
+  } catch {
+    return "";
+  }
 }
 
 function youtubeEmbedUrl(url) {
   try {
     const parsed = new URL(url);
-    let id = "";
-    if (parsed.hostname.includes("youtu.be")) {
-      id = parsed.pathname.split("/").filter(Boolean)[0] || "";
-    } else if (parsed.pathname.includes("/shorts/")) {
-      id = parsed.pathname.split("/shorts/")[1]?.split("/")[0] || "";
-    } else {
-      id = parsed.searchParams.get("v") || "";
-    }
+    const id = youtubeVideoId(url);
     if (!id) return "";
     const start = parsed.searchParams.get("t") || "";
     const seconds = start.endsWith("s") ? start.slice(0, -1) : start;
@@ -239,6 +243,11 @@ function youtubeEmbedUrl(url) {
   } catch {
     return "";
   }
+}
+
+function youtubeThumbnailUrl(url) {
+  const id = youtubeVideoId(url);
+  return id ? `https://img.youtube.com/vi/${id}/hqdefault.jpg` : "";
 }
 
 function openVideo(title, url) {
@@ -268,29 +277,33 @@ function renderRoutine() {
   el.todayLabel.textContent = `${todayKey()} · ${day.tab}요일`;
 
   el.routineList.innerHTML = routine
-    .map((item, index) => {
+    .map((item) => {
       const isDone = Boolean(state[exerciseKey(item.id)]);
       const checks = item.checks
         .map((text) => `<li>${text}</li>`)
         .join("");
-      const video = item.video ? `<button class="video-link" type="button" data-video-url="${item.video}" data-video-title="${item.title}">영상</button>` : "";
+      const thumbnail = item.video ? youtubeThumbnailUrl(item.video) : "";
+      const thumbnailButton = thumbnail
+        ? `<button class="exercise-thumb" type="button" data-video-url="${item.video}" data-video-title="${item.title}" aria-label="${item.title} 영상 보기">
+            <img src="${thumbnail}" alt="" loading="lazy" />
+            <span>영상 보기</span>
+          </button>`
+        : "";
       const note = item.note ? `<p class="note">${item.note}</p>` : "";
       return `
-        <article class="exercise-card ${isDone ? "done" : ""}">
+        <article class="exercise-card ${thumbnail ? "has-thumb" : ""} ${isDone ? "done" : ""}">
+          ${thumbnailButton}
           <label class="exercise-main">
             <input class="done-check" type="checkbox" aria-label="${item.title} 완료" data-exercise="${item.id}" ${isDone ? "checked" : ""} />
             <div>
-              <p class="exercise-kicker">${String(index + 1).padStart(2, "0")}</p>
               <h3 class="exercise-title">${item.title}</h3>
               <div class="exercise-meta">
                 <span class="dose">${item.dose[selectedIntensity]}</span>
-                <span class="done-label">${isDone ? "완료" : "대기"}</span>
               </div>
               ${note}
             </div>
           </label>
           <div class="exercise-actions">
-            ${video}
             <details class="help-panel">
               <summary>도움말</summary>
               <ul class="help-list">
