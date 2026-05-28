@@ -1,8 +1,4 @@
-const intensities = {
-  low: "저",
-  mid: "중",
-  high: "고",
-};
+const selectedIntensity = "mid";
 
 const commonRoutine = [
   {
@@ -172,7 +168,6 @@ const quick = ["short-foot", "short-bridge", "wall-hinge", "calf-raise"];
 const storagePrefix = "morning-rehab-v1";
 
 let selectedDay = days[(new Date().getDay() + 6) % 7].key;
-let selectedIntensity = localStorage.getItem(`${storagePrefix}:intensity`) || "mid";
 
 const el = {
   todayLabel: document.getElementById("today-label"),
@@ -181,7 +176,6 @@ const el = {
   progressPercent: document.getElementById("progress-percent"),
   progressCount: document.getElementById("progress-count"),
   nextExercise: document.getElementById("next-exercise"),
-  intensityOptions: document.getElementById("intensity-options"),
   resetDay: document.getElementById("reset-day"),
   weekTabs: document.getElementById("week-tabs"),
   routineSummary: document.getElementById("routine-summary"),
@@ -224,12 +218,6 @@ function allExercisesForDay(day) {
 function getRoutine() {
   const day = days.find((item) => item.key === selectedDay);
   return allExercisesForDay(day);
-}
-
-function renderIntensity() {
-  el.intensityOptions.innerHTML = Object.entries(intensities)
-    .map(([key, label]) => `<button class="segment-button ${key === selectedIntensity ? "active" : ""}" type="button" role="radio" aria-checked="${key === selectedIntensity}" data-intensity="${key}">${label}</button>`)
-    .join("");
 }
 
 function renderTabs() {
@@ -301,7 +289,7 @@ function renderRoutine() {
   el.dayTitle.textContent = day.title;
   el.dayGoal.textContent = day.note ? `${day.goal} · ${day.note}` : day.goal;
   el.nextExercise.textContent = next ? `다음 운동: ${next.title}` : "오늘 루틴 완료";
-  el.routineSummary.textContent = `${intensities[selectedIntensity]}강도 · ${done}개 완료, ${total - done}개 남음`;
+  el.routineSummary.textContent = `${done}개 완료 · ${total - done}개 남음`;
   el.progressPercent.textContent = `${Math.round((done / total) * 100) || 0}%`;
   el.progressCount.textContent = `${done} / ${total}`;
 
@@ -371,20 +359,11 @@ function renderWeeklyRecord() {
 }
 
 function render() {
-  renderIntensity();
   renderTabs();
   renderRoutine();
   renderQuickList();
   renderWeeklyRecord();
 }
-
-el.intensityOptions.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-intensity]");
-  if (!button) return;
-  selectedIntensity = button.dataset.intensity;
-  localStorage.setItem(`${storagePrefix}:intensity`, selectedIntensity);
-  render();
-});
 
 el.weekTabs.addEventListener("click", (event) => {
   const button = event.target.closest("[data-day]");
