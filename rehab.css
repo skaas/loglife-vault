@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   color: var(--ink);
   background:
-    linear-gradient(180deg, #111816 0, #111816 220px, rgba(247, 241, 231, 0.98) 221px, rgba(242, 232, 217, 0.98) 100%),
+    linear-gradient(180deg, #111816 0, #111816 92px, rgba(247, 241, 231, 0.98) 93px, rgba(242, 232, 217, 0.98) 100%),
     repeating-linear-gradient(90deg, rgba(20, 33, 28, 0.04) 0 1px, transparent 1px 32px);
   font-family: "Manrope", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
 }
@@ -57,7 +57,7 @@ a {
 .app-shell {
   width: min(820px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 14px 0 42px;
+  padding: 10px 0 42px;
 }
 
 .eyebrow {
@@ -83,8 +83,6 @@ h1 {
   letter-spacing: 0;
 }
 
-.day-goal,
-.routine-summary,
 details p,
 li {
   color: var(--muted);
@@ -122,58 +120,9 @@ li {
 }
 
 .today-label {
-  margin-bottom: 7px;
+  margin: 0;
   color: rgba(248, 255, 249, 0.78);
   font-size: 0.84rem;
-  font-weight: 800;
-}
-
-.day-goal {
-  max-width: 42rem;
-  margin-bottom: 22px;
-  color: rgba(248, 255, 249, 0.72);
-}
-
-.next-exercise {
-  display: inline-flex;
-  margin: 0 0 6px;
-  padding: 7px 10px;
-  border-radius: var(--radius-sm);
-  color: #10231a;
-  background: #b7f0c8;
-  font-size: 0.9rem;
-  font-weight: 900;
-}
-
-.routine-summary {
-  margin: 0;
-  color: rgba(248, 255, 249, 0.72);
-  font-size: 0.9rem;
-  font-weight: 800;
-}
-
-.progress-box {
-  display: grid;
-  place-items: center;
-  width: 86px;
-  height: 86px;
-  border: 8px solid rgba(255, 255, 255, 0.16);
-  border-top-color: #b7f0c8;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  color: #f8fff9;
-}
-
-.progress-box span {
-  font-size: 1.2rem;
-  font-weight: 900;
-  line-height: 1;
-}
-
-.progress-box p {
-  margin: 4px 0 0;
-  color: rgba(248, 255, 249, 0.7);
-  font-size: 0.72rem;
   font-weight: 800;
 }
 
@@ -247,11 +196,13 @@ ul {
   box-shadow: none;
 }
 
-.workout-hero {
-  min-height: 286px;
-  display: grid;
-  align-content: end;
-  padding: 18px;
+.workout-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  min-height: 58px;
+  padding: 10px 12px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-lg);
   color: #f8fff9;
@@ -262,31 +213,10 @@ ul {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
 }
 
-.hero-topline {
+.toolbar-actions {
   display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  align-items: flex-start;
-  margin-bottom: auto;
-}
-
-.workout-hero h1 {
-  max-width: 13ch;
-  margin: 54px 0 10px;
-  color: #f8fff9;
-  font-size: clamp(2.25rem, 8vw, 4.3rem);
-  line-height: 0.98;
-}
-
-.start-row {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 16px;
-  align-items: end;
-}
-
-.hero-actions {
-  margin-top: 18px;
+  gap: 8px;
+  align-items: center;
 }
 
 .routine-list {
@@ -416,28 +346,16 @@ ul {
   font-size: 0.9rem;
 }
 
-.check-panel {
-  display: grid;
-  gap: 2px;
-  padding: 0 12px 12px;
-}
-
-.check-item {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 9px;
-  align-items: start;
-  min-height: 30px;
+.help-list {
+  margin: 0;
+  padding: 0 12px 12px 28px;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.45;
 }
 
-.check-item input {
-  width: 20px;
-  height: 20px;
-  margin-top: 1px;
-  accent-color: var(--green);
+.help-list li {
+  margin: 5px 0;
 }
 
 .quick-list,
@@ -561,17 +479,8 @@ ul {
     padding-top: 10px;
   }
 
-  .workout-hero {
-    min-height: 360px;
-    padding: 16px;
-  }
-
-  .workout-hero h1 {
-    margin-top: 72px;
-  }
-
-  .start-row {
-    grid-template-columns: 1fr auto;
+  .workout-toolbar {
+    min-height: 54px;
   }
 
   .small-link {

@@ -14,30 +14,16 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./rehab.css?v=20260528-ui4" />
+    <link rel="stylesheet" href="./rehab.css?v=20260528-ui5" />
   </head>
   <body>
     <main class="app-shell">
       <section class="routine-section">
-        <div class="workout-hero" aria-live="polite">
-          <div class="hero-topline">
-            <p id="today-label" class="today-label"></p>
+        <div class="workout-toolbar" aria-live="polite">
+          <p id="today-label" class="today-label"></p>
+          <div class="toolbar-actions">
+            <button id="reset-day" class="ghost-button" type="button">초기화</button>
             <a class="small-link" href="./index.html">Home</a>
-          </div>
-          <h1 id="day-title">오늘의 운동</h1>
-          <p id="day-goal" class="day-goal"></p>
-          <div class="start-row">
-            <div>
-              <p id="next-exercise" class="next-exercise"></p>
-              <p id="routine-summary" class="routine-summary"></p>
-            </div>
-            <div class="progress-box">
-              <span id="progress-percent">0%</span>
-              <p id="progress-count">0 / 0</p>
-            </div>
-          </div>
-          <div class="hero-actions">
-            <button id="reset-day" class="ghost-button" type="button">오늘 체크 초기화</button>
           </div>
         </div>
 
@@ -75,6 +61,6 @@
       </section>
     </div>
 
-    <script type="module" src="./rehab.js?v=20260528-ui4"></script>
+    <script type="module" src="./rehab.js?v=20260528-ui5"></script>
   </body>
 </html>
