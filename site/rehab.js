@@ -171,14 +171,8 @@ let selectedDay = days[(new Date().getDay() + 6) % 7].key;
 
 const el = {
   todayLabel: document.getElementById("today-label"),
-  dayTitle: document.getElementById("day-title"),
-  dayGoal: document.getElementById("day-goal"),
-  progressPercent: document.getElementById("progress-percent"),
-  progressCount: document.getElementById("progress-count"),
-  nextExercise: document.getElementById("next-exercise"),
   resetDay: document.getElementById("reset-day"),
   weekTabs: document.getElementById("week-tabs"),
-  routineSummary: document.getElementById("routine-summary"),
   routineList: document.getElementById("routine-list"),
   quickList: document.getElementById("quick-list"),
   weeklyRecord: document.getElementById("weekly-record"),
@@ -281,26 +275,14 @@ function renderRoutine() {
   const day = days.find((item) => item.key === selectedDay);
   const state = loadDayState();
   const routine = getRoutine();
-  const total = routine.length;
-  const done = routine.filter((item) => state[exerciseKey(item.id)]).length;
-  const next = routine.find((item) => !state[exerciseKey(item.id)]);
 
   el.todayLabel.textContent = `${todayKey()} · ${day.tab}요일`;
-  el.dayTitle.textContent = day.title;
-  el.dayGoal.textContent = day.note ? `${day.goal} · ${day.note}` : day.goal;
-  el.nextExercise.textContent = next ? `다음 운동: ${next.title}` : "오늘 루틴 완료";
-  el.routineSummary.textContent = `${done}개 완료 · ${total - done}개 남음`;
-  el.progressPercent.textContent = `${Math.round((done / total) * 100) || 0}%`;
-  el.progressCount.textContent = `${done} / ${total}`;
 
   el.routineList.innerHTML = routine
     .map((item, index) => {
       const isDone = Boolean(state[exerciseKey(item.id)]);
       const checks = item.checks
-        .map((text, index) => {
-          const key = checkKey(item.id, index);
-          return `<label class="check-item"><input type="checkbox" data-check="${key}" ${state[key] ? "checked" : ""} /><span>${text}</span></label>`;
-        })
+        .map((text) => `<li>${text}</li>`)
         .join("");
       const video = item.video ? `<button class="video-link" type="button" data-video-url="${item.video}" data-video-title="${item.title}">영상</button>` : "";
       const note = item.note ? `<p class="note">${item.note}</p>` : "";
@@ -322,9 +304,9 @@ function renderRoutine() {
             ${video}
             <details class="help-panel">
               <summary>도움말</summary>
-              <div class="check-panel">
+              <ul class="help-list">
                 ${checks}
-              </div>
+              </ul>
             </details>
           </div>
         </article>
@@ -378,9 +360,6 @@ el.routineList.addEventListener("change", (event) => {
   const target = event.target;
   if (target.matches("[data-exercise]")) {
     state[exerciseKey(target.dataset.exercise)] = target.checked;
-  }
-  if (target.matches("[data-check]")) {
-    state[target.dataset.check] = target.checked;
   }
   saveDayState(state);
   renderRoutine();
