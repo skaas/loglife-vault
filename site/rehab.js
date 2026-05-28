@@ -167,7 +167,6 @@ const days = [
 const storagePrefix = "morning-rehab-v1";
 
 let selectedDay = days[(new Date().getDay() + 6) % 7].key;
-let vaultHandle = null;
 
 const el = {
   todayLabel: document.getElementById("today-label"),
@@ -199,10 +198,6 @@ function loadDayState() {
 
 function saveDayState(state) {
   localStorage.setItem(storageKey(), JSON.stringify(state));
-}
-
-function completionFileName() {
-  return `${todayKey()}_운동기록.md`;
 }
 
 function allExercisesForDay(day) {
@@ -328,60 +323,36 @@ function render() {
   renderRoutine();
 }
 
-function completionMarkdown() {
+function completionText() {
   const day = days.find((item) => item.key === selectedDay);
   const state = loadDayState();
   const routine = getRoutine();
   const doneItems = routine.filter((item) => state[exerciseKey(item.id)]);
   const lines = [
-    "---",
-    `type: rehab-complete`,
-    `date: ${todayKey()}`,
-    `day: ${day.tab}`,
-    `completed: ${doneItems.length}`,
-    `total: ${routine.length}`,
-    "---",
+    "DONE: 오전 재활 완료",
     "",
-    `# 오전 재활 완료 - ${todayKey()} ${day.tab}요일`,
+    `날짜: ${todayKey()} ${day.tab}요일`,
     "",
-    "## 완료한 운동",
+    "운동:",
     ...doneItems.map((item) => `- ${item.title} (${item.dose[selectedIntensity]})`),
-    "",
   ];
 
   if (doneItems.length < routine.length) {
-    lines.push("## 미완료 운동");
-    lines.push(...routine.filter((item) => !state[exerciseKey(item.id)]).map((item) => `- ${item.title}`));
     lines.push("");
+    lines.push("미완료:");
+    lines.push(...routine.filter((item) => !state[exerciseKey(item.id)]).map((item) => `- ${item.title}`));
   }
 
   return lines.join("\n");
 }
 
-async function getOrCreateDirectory(root, path) {
-  let current = root;
-  for (const segment of path) {
-    current = await current.getDirectoryHandle(segment, { create: true });
-  }
-  return current;
-}
-
-async function uploadCompletion(markdown) {
-  if (!("showDirectoryPicker" in window)) {
-    throw new Error("unsupported-file-system");
-  }
-  if (!vaultHandle) {
-    vaultHandle = await window.showDirectoryPicker({ mode: "readwrite" });
-  }
-  const inbox = await getOrCreateDirectory(vaultHandle, ["Inbox", "Text"]);
-  const file = await inbox.getFileHandle(completionFileName(), { create: true });
-  const writable = await file.createWritable();
-  await writable.write(markdown);
-  await writable.close();
-}
-
-async function copyCompletion(markdown) {
-  await navigator.clipboard.writeText(markdown);
+function telegramShareUrl(text) {
+  const cleanPageUrl = `${window.location.origin}${window.location.pathname}`;
+  const params = new URLSearchParams({
+    url: cleanPageUrl,
+    text,
+  });
+  return `https://t.me/share/url?${params.toString()}`;
 }
 
 function markRoutineComplete() {
@@ -411,24 +382,10 @@ el.routineList.addEventListener("click", (event) => {
 
 el.finishWorkout.addEventListener("click", async () => {
   el.finishWorkout.disabled = true;
-  el.finishStatus.textContent = "완료 기록 생성 중";
+  el.finishStatus.textContent = "텔레그램 공유창 여는 중";
   markRoutineComplete();
-  const markdown = completionMarkdown();
-
-  try {
-    await uploadCompletion(markdown);
-    el.finishStatus.textContent = `Loglife Inbox/Text/${completionFileName()} 저장 완료`;
-  } catch (error) {
-    try {
-      await copyCompletion(markdown);
-      el.finishStatus.textContent = "파일 업로드가 안 되는 환경이라 완료 기록을 클립보드에 복사함";
-    } catch {
-      localStorage.setItem(`${storagePrefix}:last-completion`, markdown);
-      el.finishStatus.textContent = "완료 기록을 이 브라우저에 저장함";
-    }
-  } finally {
-    el.finishWorkout.disabled = false;
-  }
+  const text = completionText();
+  window.location.href = telegramShareUrl(text);
 });
 
 el.videoModal.addEventListener("click", (event) => {
