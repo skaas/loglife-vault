@@ -201,14 +201,8 @@ function saveDayState(state) {
   localStorage.setItem(storageKey(), JSON.stringify(state));
 }
 
-function timestampCompact(date = new Date()) {
-  const y = date.getFullYear();
-  const mo = String(date.getMonth() + 1).padStart(2, "0");
-  const d = String(date.getDate()).padStart(2, "0");
-  const h = String(date.getHours()).padStart(2, "0");
-  const mi = String(date.getMinutes()).padStart(2, "0");
-  const s = String(date.getSeconds()).padStart(2, "0");
-  return `${y}${mo}${d}-${h}${mi}${s}`;
+function completionFileName() {
+  return `${todayKey()}_운동기록.md`;
 }
 
 function allExercisesForDay(day) {
@@ -380,7 +374,7 @@ async function uploadCompletion(markdown) {
     vaultHandle = await window.showDirectoryPicker({ mode: "readwrite" });
   }
   const inbox = await getOrCreateDirectory(vaultHandle, ["Inbox", "Text"]);
-  const file = await inbox.getFileHandle(`rehab-complete-${timestampCompact()}.md`, { create: true });
+  const file = await inbox.getFileHandle(completionFileName(), { create: true });
   const writable = await file.createWritable();
   await writable.write(markdown);
   await writable.close();
@@ -423,7 +417,7 @@ el.finishWorkout.addEventListener("click", async () => {
 
   try {
     await uploadCompletion(markdown);
-    el.finishStatus.textContent = "Loglife Inbox/Text에 업로드 완료";
+    el.finishStatus.textContent = `Loglife Inbox/Text/${completionFileName()} 저장 완료`;
   } catch (error) {
     try {
       await copyCompletion(markdown);
