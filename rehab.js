@@ -180,6 +180,7 @@ const el = {
   dayGoal: document.getElementById("day-goal"),
   progressPercent: document.getElementById("progress-percent"),
   progressCount: document.getElementById("progress-count"),
+  nextExercise: document.getElementById("next-exercise"),
   intensityOptions: document.getElementById("intensity-options"),
   resetDay: document.getElementById("reset-day"),
   weekTabs: document.getElementById("week-tabs"),
@@ -187,6 +188,10 @@ const el = {
   routineList: document.getElementById("routine-list"),
   quickList: document.getElementById("quick-list"),
   weeklyRecord: document.getElementById("weekly-record"),
+  videoModal: document.getElementById("video-modal"),
+  videoTitle: document.getElementById("video-title"),
+  videoFrameWrap: document.getElementById("video-frame-wrap"),
+  videoFallback: document.getElementById("video-fallback"),
 };
 
 function todayKey() {
@@ -241,22 +246,67 @@ function exerciseKey(exerciseId) {
   return `${exerciseId}:done`;
 }
 
+function youtubeEmbedUrl(url) {
+  try {
+    const parsed = new URL(url);
+    let id = "";
+    if (parsed.hostname.includes("youtu.be")) {
+      id = parsed.pathname.split("/").filter(Boolean)[0] || "";
+    } else if (parsed.pathname.includes("/shorts/")) {
+      id = parsed.pathname.split("/shorts/")[1]?.split("/")[0] || "";
+    } else {
+      id = parsed.searchParams.get("v") || "";
+    }
+    if (!id) return "";
+    const start = parsed.searchParams.get("t") || "";
+    const seconds = start.endsWith("s") ? start.slice(0, -1) : start;
+    const query = new URLSearchParams({ autoplay: "1", rel: "0" });
+    if (seconds && Number.isFinite(Number(seconds))) {
+      query.set("start", seconds);
+    }
+    return `https://www.youtube.com/embed/${id}?${query.toString()}`;
+  } catch {
+    return "";
+  }
+}
+
+function openVideo(title, url) {
+  const embedUrl = youtubeEmbedUrl(url);
+  el.videoTitle.textContent = title;
+  el.videoFallback.href = url;
+  el.videoFrameWrap.innerHTML = embedUrl
+    ? `<iframe src="${embedUrl}" title="${title} 참고 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+    : `<div class="video-empty">이 영상은 페이지 안에서 바로 열 수 없습니다.</div>`;
+  el.videoModal.classList.add("open");
+  el.videoModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeVideo() {
+  el.videoModal.classList.remove("open");
+  el.videoModal.setAttribute("aria-hidden", "true");
+  el.videoFrameWrap.innerHTML = "";
+  document.body.classList.remove("modal-open");
+}
+
 function renderRoutine() {
   const day = days.find((item) => item.key === selectedDay);
   const state = loadDayState();
   const routine = getRoutine();
   const total = routine.length;
   const done = routine.filter((item) => state[exerciseKey(item.id)]).length;
+  const next = routine.find((item) => !state[exerciseKey(item.id)]);
 
   el.todayLabel.textContent = `${todayKey()} · ${day.tab}요일`;
   el.dayTitle.textContent = day.title;
   el.dayGoal.textContent = day.note ? `${day.goal} · ${day.note}` : day.goal;
-  el.routineSummary.textContent = `${intensities[selectedIntensity]}강도 · ${routine.map((item) => item.title).join(" → ")}`;
+  el.nextExercise.textContent = next ? `다음 운동: ${next.title}` : "오늘 루틴 완료";
+  el.routineSummary.textContent = `${intensities[selectedIntensity]}강도 · ${done}개 완료, ${total - done}개 남음`;
   el.progressPercent.textContent = `${Math.round((done / total) * 100) || 0}%`;
   el.progressCount.textContent = `${done} / ${total}`;
 
   el.routineList.innerHTML = routine
-    .map((item) => {
+    .map((item, index) => {
       const isDone = Boolean(state[exerciseKey(item.id)]);
       const checks = item.checks
         .map((text, index) => {
@@ -264,22 +314,30 @@ function renderRoutine() {
           return `<label class="check-item"><input type="checkbox" data-check="${key}" ${state[key] ? "checked" : ""} /><span>${text}</span></label>`;
         })
         .join("");
-      const video = item.video ? `<a class="video-link" href="${item.video}" target="_blank" rel="noreferrer">영상</a>` : "";
+      const video = item.video ? `<button class="video-link" type="button" data-video-url="${item.video}" data-video-title="${item.title}">영상</button>` : "";
       const note = item.note ? `<p class="note">${item.note}</p>` : "";
       return `
         <article class="exercise-card ${isDone ? "done" : ""}">
-          <div class="exercise-main">
+          <label class="exercise-main">
             <input class="done-check" type="checkbox" aria-label="${item.title} 완료" data-exercise="${item.id}" ${isDone ? "checked" : ""} />
             <div>
+              <p class="exercise-kicker">${String(index + 1).padStart(2, "0")}</p>
               <h3 class="exercise-title">${item.title}</h3>
-              <span class="dose">${item.dose[selectedIntensity]}</span>
+              <div class="exercise-meta">
+                <span class="dose">${item.dose[selectedIntensity]}</span>
+                <span class="done-label">${isDone ? "완료" : "대기"}</span>
+              </div>
               ${note}
             </div>
+          </label>
+          <div class="exercise-actions">
             ${video}
-          </div>
-          <div class="check-panel">
-            <h4>체크</h4>
-            ${checks}
+            <details class="help-panel">
+              <summary>도움말</summary>
+              <div class="check-panel">
+                ${checks}
+              </div>
+            </details>
           </div>
         </article>
       `;
@@ -296,7 +354,7 @@ function renderQuickList() {
   el.quickList.innerHTML = quick
     .map((id, index) => {
       const item = byId.get(id);
-      const video = item.video ? `<a class="video-link" href="${item.video}" target="_blank" rel="noreferrer">영상</a>` : "";
+      const video = item.video ? `<button class="video-link" type="button" data-video-url="${item.video}" data-video-title="${item.title}">영상</button>` : "";
       return `<div class="quick-item"><strong>${index + 1}</strong><strong>${item.title}</strong>${video}</div>`;
     })
     .join("");
@@ -349,6 +407,18 @@ el.routineList.addEventListener("change", (event) => {
   renderRoutine();
 });
 
+el.routineList.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-video-url]");
+  if (!button) return;
+  openVideo(button.dataset.videoTitle, button.dataset.videoUrl);
+});
+
+el.quickList.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-video-url]");
+  if (!button) return;
+  openVideo(button.dataset.videoTitle, button.dataset.videoUrl);
+});
+
 el.weeklyRecord.addEventListener("change", (event) => {
   const target = event.target;
   if (!target.matches("[data-check]")) return;
@@ -361,6 +431,18 @@ el.resetDay.addEventListener("click", () => {
   if (!window.confirm("오늘 선택한 요일의 체크를 모두 지울까요?")) return;
   localStorage.removeItem(storageKey());
   render();
+});
+
+el.videoModal.addEventListener("click", (event) => {
+  if (event.target.closest("[data-close-video]")) {
+    closeVideo();
+  }
+});
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && el.videoModal.classList.contains("open")) {
+    closeVideo();
+  }
 });
 
 render();
