@@ -167,10 +167,13 @@ const days = [
 const storagePrefix = "morning-rehab-v1";
 
 let selectedDay = days[(new Date().getDay() + 6) % 7].key;
+let vaultHandle = null;
 
 const el = {
   todayLabel: document.getElementById("today-label"),
   routineList: document.getElementById("routine-list"),
+  finishWorkout: document.getElementById("finish-workout"),
+  finishStatus: document.getElementById("finish-status"),
   videoModal: document.getElementById("video-modal"),
   videoTitle: document.getElementById("video-title"),
   videoFrameWrap: document.getElementById("video-frame-wrap"),
@@ -196,6 +199,16 @@ function loadDayState() {
 
 function saveDayState(state) {
   localStorage.setItem(storageKey(), JSON.stringify(state));
+}
+
+function timestampCompact(date = new Date()) {
+  const y = date.getFullYear();
+  const mo = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  const h = String(date.getHours()).padStart(2, "0");
+  const mi = String(date.getMinutes()).padStart(2, "0");
+  const s = String(date.getSeconds()).padStart(2, "0");
+  return `${y}${mo}${d}-${h}${mi}${s}`;
 }
 
 function allExercisesForDay(day) {
@@ -321,6 +334,71 @@ function render() {
   renderRoutine();
 }
 
+function completionMarkdown() {
+  const day = days.find((item) => item.key === selectedDay);
+  const state = loadDayState();
+  const routine = getRoutine();
+  const doneItems = routine.filter((item) => state[exerciseKey(item.id)]);
+  const lines = [
+    "---",
+    `type: rehab-complete`,
+    `date: ${todayKey()}`,
+    `day: ${day.tab}`,
+    `completed: ${doneItems.length}`,
+    `total: ${routine.length}`,
+    "---",
+    "",
+    `# 오전 재활 완료 - ${todayKey()} ${day.tab}요일`,
+    "",
+    "## 완료한 운동",
+    ...doneItems.map((item) => `- ${item.title} (${item.dose[selectedIntensity]})`),
+    "",
+  ];
+
+  if (doneItems.length < routine.length) {
+    lines.push("## 미완료 운동");
+    lines.push(...routine.filter((item) => !state[exerciseKey(item.id)]).map((item) => `- ${item.title}`));
+    lines.push("");
+  }
+
+  return lines.join("\n");
+}
+
+async function getOrCreateDirectory(root, path) {
+  let current = root;
+  for (const segment of path) {
+    current = await current.getDirectoryHandle(segment, { create: true });
+  }
+  return current;
+}
+
+async function uploadCompletion(markdown) {
+  if (!("showDirectoryPicker" in window)) {
+    throw new Error("unsupported-file-system");
+  }
+  if (!vaultHandle) {
+    vaultHandle = await window.showDirectoryPicker({ mode: "readwrite" });
+  }
+  const inbox = await getOrCreateDirectory(vaultHandle, ["Inbox", "Text"]);
+  const file = await inbox.getFileHandle(`rehab-complete-${timestampCompact()}.md`, { create: true });
+  const writable = await file.createWritable();
+  await writable.write(markdown);
+  await writable.close();
+}
+
+async function copyCompletion(markdown) {
+  await navigator.clipboard.writeText(markdown);
+}
+
+function markRoutineComplete() {
+  const state = loadDayState();
+  for (const item of getRoutine()) {
+    state[exerciseKey(item.id)] = true;
+  }
+  saveDayState(state);
+  renderRoutine();
+}
+
 el.routineList.addEventListener("change", (event) => {
   const state = loadDayState();
   const target = event.target;
@@ -335,6 +413,28 @@ el.routineList.addEventListener("click", (event) => {
   const button = event.target.closest("[data-video-url]");
   if (!button) return;
   openVideo(button.dataset.videoTitle, button.dataset.videoUrl);
+});
+
+el.finishWorkout.addEventListener("click", async () => {
+  el.finishWorkout.disabled = true;
+  el.finishStatus.textContent = "완료 기록 생성 중";
+  markRoutineComplete();
+  const markdown = completionMarkdown();
+
+  try {
+    await uploadCompletion(markdown);
+    el.finishStatus.textContent = "Loglife Inbox/Text에 업로드 완료";
+  } catch (error) {
+    try {
+      await copyCompletion(markdown);
+      el.finishStatus.textContent = "파일 업로드가 안 되는 환경이라 완료 기록을 클립보드에 복사함";
+    } catch {
+      localStorage.setItem(`${storagePrefix}:last-completion`, markdown);
+      el.finishStatus.textContent = "완료 기록을 이 브라우저에 저장함";
+    }
+  } finally {
+    el.finishWorkout.disabled = false;
+  }
 });
 
 el.videoModal.addEventListener("click", (event) => {
