@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오전 재활 루틴</title>
+    <meta
+      name="description"
+      content="왼발 접지, 왼쪽 둔근, 골반 안정성 회복을 위한 오전 재활 체크리스트"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./rehab.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Morning Rehab</p>
+          <h1>오전 재활 루틴</h1>
+          <p class="goal">
+            왼발이 땅을 제대로 누르고, 왼쪽 둔근이 골반을 잡고, 허리가 보상하지
+            않는 패턴 만들기
+          </p>
+        </div>
+        <a class="small-link" href="./index.html">Home</a>
+      </header>
+
+      <section class="today-panel" aria-live="polite">
+        <div>
+          <p id="today-label" class="today-label"></p>
+          <h2 id="day-title"></h2>
+          <p id="day-goal" class="day-goal"></p>
+        </div>
+        <div class="progress-box">
+          <span id="progress-percent">0%</span>
+          <p id="progress-count">0 / 0</p>
+        </div>
+      </section>
+
+      <section class="controls">
+        <div>
+          <p class="control-label">오늘 강도</p>
+          <div id="intensity-options" class="segmented" role="radiogroup" aria-label="강도 선택"></div>
+        </div>
+        <button id="reset-day" class="ghost-button" type="button">오늘 체크 초기화</button>
+      </section>
+
+      <section class="criteria">
+        <details>
+          <summary>강도 선택 기준</summary>
+          <div class="criteria-grid">
+            <article>
+              <h3>저강도</h3>
+              <p>통증이 있거나 몸이 뻣뻣한 날.</p>
+              <ul>
+                <li>러닝 없음</li>
+                <li>세트 수 1~2세트</li>
+                <li>버티기 10~20초</li>
+                <li>통증 없는 범위만</li>
+              </ul>
+            </article>
+            <article>
+              <h3>중강도</h3>
+              <p>기본값. 대부분 이걸로 한다.</p>
+              <ul>
+                <li>러닝 20~30분</li>
+                <li>세트 수 2~3세트</li>
+                <li>버티기 30초</li>
+                <li>통증 0~2/10 유지</li>
+              </ul>
+            </article>
+            <article>
+              <h3>고강도</h3>
+              <p>전날/당일 통증이 거의 없고 움직임이 좋은 날.</p>
+              <ul>
+                <li>러닝 30~40분</li>
+                <li>세트 수 3~4세트</li>
+                <li>버티기 40~45초</li>
+                <li>허리 보상 나오면 즉시 중강도</li>
+              </ul>
+            </article>
+          </div>
+        </details>
+      </section>
+
+      <nav id="week-tabs" class="week-tabs" aria-label="요일 선택"></nav>
+
+      <section class="routine-section">
+        <div class="section-head">
+          <h2>운동 순서</h2>
+          <p id="routine-summary"></p>
+        </div>
+        <div id="routine-list" class="routine-list"></div>
+      </section>
+
+      <section class="quick-section">
+        <details>
+          <summary>시간 없으면 제일 중요한 4개</summary>
+          <div id="quick-list" class="quick-list"></div>
+        </details>
+      </section>
+
+      <section class="rules-section">
+        <details>
+          <summary>강도 올리기 / 낮추기 기준</summary>
+          <div class="rules-grid">
+            <article>
+              <h3>강도 올려도 되는 기준</h3>
+              <p>아래 5개 중 4개 이상이면 다음 주에 강도 올려도 된다.</p>
+              <ul>
+                <li>러닝 다음 날 허리 통증 증가 없음</li>
+                <li>20분 서 있어도 통증 2/10 이하</li>
+                <li>왼쪽 싱글 카프레이즈 5회 가능</li>
+                <li>스텝다운 중 무릎이 안쪽으로 무너지지 않음</li>
+                <li>왼쪽 엄지 관절 통증 없음</li>
+              </ul>
+            </article>
+            <article>
+              <h3>강도 낮춰야 하는 기준</h3>
+              <p>아래 중 하나라도 있으면 그날은 저강도다.</p>
+              <ul>
+                <li>허리 통증 3/10 이상</li>
+                <li>왼쪽 광배가 운동 중 계속 긴장</li>
+                <li>왼쪽 엄지 관절 통증</li>
+                <li>다리 저림</li>
+                <li>발목 힘 빠짐</li>
+                <li>전날보다 허리 통증 증가</li>
+              </ul>
+            </article>
+          </div>
+        </details>
+      </section>
+
+      <section class="weekly-section">
+        <details>
+          <summary>일요일 주간 기록</summary>
+          <div id="weekly-record" class="weekly-record"></div>
+        </details>
+      </section>
+    </main>
+
+    <script type="module" src="./rehab.js"></script>
+  </body>
+</html>
