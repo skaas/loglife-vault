@@ -31,10 +31,11 @@
       </header>
 
       <section class="today-panel" aria-live="polite">
-        <div>
+        <div class="today-copy">
           <p id="today-label" class="today-label"></p>
           <h2 id="day-title"></h2>
           <p id="day-goal" class="day-goal"></p>
+          <p id="next-exercise" class="next-exercise"></p>
         </div>
         <div class="progress-box">
           <span id="progress-percent">0%</span>
@@ -92,7 +93,7 @@
 
       <section class="routine-section">
         <div class="section-head">
-          <h2>운동 순서</h2>
+          <h2>오늘의 운동</h2>
           <p id="routine-summary"></p>
         </div>
         <div id="routine-list" class="routine-list"></div>
@@ -143,6 +144,20 @@
         </details>
       </section>
     </main>
+
+    <div id="video-modal" class="video-modal" aria-hidden="true">
+      <div class="video-backdrop" data-close-video></div>
+      <section class="video-dialog" role="dialog" aria-modal="true" aria-labelledby="video-title">
+        <div class="video-head">
+          <h2 id="video-title">참고 영상</h2>
+          <button class="icon-button" type="button" aria-label="영상 닫기" data-close-video>닫기</button>
+        </div>
+        <div id="video-frame-wrap" class="video-frame-wrap"></div>
+        <a id="video-fallback" class="video-fallback" href="#" target="_blank" rel="noreferrer">
+          YouTube에서 열기
+        </a>
+      </section>
+    </div>
 
     <script type="module" src="./rehab.js"></script>
   </body>
