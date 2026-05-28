@@ -306,6 +306,38 @@ summary::marker {
   margin: 5px 0;
 }
 
+.finish-card {
+  margin-top: 14px;
+  padding: 16px;
+  border: 1px solid rgba(20, 33, 28, 0.1);
+  border-radius: var(--radius-md);
+  background: #111816;
+}
+
+.finish-button {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: #10231a;
+  background: #b7f0c8;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.finish-button:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.finish-status {
+  margin: 10px 0 0;
+  color: rgba(248, 255, 249, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 .video-modal {
   position: fixed;
   inset: 0;
