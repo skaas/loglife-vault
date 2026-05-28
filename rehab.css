@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   color: var(--ink);
   background:
-    linear-gradient(180deg, #111816 0, #111816 92px, rgba(247, 241, 231, 0.98) 93px, rgba(242, 232, 217, 0.98) 100%),
+    linear-gradient(180deg, #111816 0, #111816 76px, rgba(247, 241, 231, 0.98) 77px, rgba(242, 232, 217, 0.98) 100%),
     repeating-linear-gradient(90deg, rgba(20, 33, 28, 0.04) 0 1px, transparent 1px 32px);
   font-family: "Manrope", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
 }
@@ -89,9 +89,7 @@ li {
   line-height: 1.55;
 }
 
-.small-link,
-.video-link,
-.ghost-button {
+.video-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -102,16 +100,7 @@ li {
   text-decoration: none;
 }
 
-.small-link {
-  padding: 0 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #f8fff9;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.routine-section,
-.quick-section,
-.weekly-section {
+.routine-section {
   margin-top: 14px;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -124,14 +113,6 @@ li {
   color: rgba(248, 255, 249, 0.78);
   font-size: 0.84rem;
   font-weight: 800;
-}
-
-.ghost-button {
-  padding: 0 13px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  color: #f8fff9;
-  background: rgba(255, 255, 255, 0.08);
-  cursor: pointer;
 }
 
 details {
@@ -149,43 +130,6 @@ summary {
 
 summary::marker {
   color: var(--blue);
-}
-
-ul {
-  margin: 8px 0 0;
-  padding-left: 18px;
-}
-
-.week-tabs {
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 6px;
-  margin: 16px 0;
-  padding: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: var(--radius-lg);
-  background: rgba(17, 24, 22, 0.92);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
-  backdrop-filter: blur(12px);
-}
-
-.day-tab {
-  min-height: 42px;
-  border: 1px solid transparent;
-  border-radius: var(--radius-sm);
-  color: rgba(248, 255, 249, 0.62);
-  background: transparent;
-  font-weight: 900;
-  cursor: pointer;
-}
-
-.day-tab.active {
-  border-color: rgba(183, 240, 200, 0.34);
-  color: #10231a;
-  background: #b7f0c8;
 }
 
 .routine-section {
@@ -213,15 +157,10 @@ ul {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
 }
 
-.toolbar-actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
 .routine-list {
   display: grid;
   gap: 10px;
+  margin-top: 14px;
 }
 
 .exercise-card {
@@ -358,13 +297,6 @@ ul {
   margin: 5px 0;
 }
 
-.quick-list,
-.weekly-record {
-  display: grid;
-  gap: 10px;
-  padding: 0 16px 16px;
-}
-
 .video-modal {
   position: fixed;
   inset: 0;
@@ -446,33 +378,6 @@ ul {
   text-decoration: none;
 }
 
-.quick-item,
-.record-item {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 10px;
-  align-items: center;
-  padding: 13px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: var(--surface-strong);
-}
-
-.quick-item strong,
-.record-item span {
-  line-height: 1.4;
-}
-
-.record-item {
-  grid-template-columns: auto 1fr;
-}
-
-.record-item input {
-  width: 22px;
-  height: 22px;
-  accent-color: var(--green);
-}
-
 @media (max-width: 680px) {
   .app-shell {
     width: min(100% - 20px, 760px);
@@ -481,28 +386,6 @@ ul {
 
   .workout-toolbar {
     min-height: 54px;
-  }
-
-  .small-link {
-    width: max-content;
-  }
-
-  .ghost-button {
-    width: auto;
-  }
-
-  .week-tabs {
-    gap: 4px;
-    padding: 6px;
-  }
-
-  .day-tab {
-    min-height: 38px;
-    font-size: 0.86rem;
-  }
-
-  .section-head p {
-    text-align: left;
   }
 
   .exercise-main {

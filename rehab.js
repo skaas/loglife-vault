@@ -161,21 +161,16 @@ const days = [
   { key: "thu", tab: "목", title: "목요일: 회복 + 서기 통증 개선", goal: "오래 서 있으면 아픈 패턴 직접 개선", extra: ["splitStand", "calfRaise", "hinge", "standTest"], note: "이 날은 절대 무리하지 않는다. 회복일이지만 중요한 날이다." },
   { key: "fri", tab: "금", title: "금요일: 러닝 + 싱글 카프레이즈 테스트", goal: "왼쪽 카프레이즈 복귀 여부 확인", extra: ["run", "calfRaise", "singleCalf", "hinge"] },
   { key: "sat", tab: "토", title: "토요일: 강화일", goal: "왼쪽 발-둔근-골반 라인에 직접 자극 주기", extra: ["clam", "hinge", "stepdown", "splitSquat", "calfRaise", "sidePlank", "deadbug"], note: "러닝은 하지 않는 쪽을 추천한다." },
-  { key: "sun", tab: "일", title: "일요일: 회복 + 점검", goal: "다음 주 강도 조절 결정", extra: ["walk", "shortFootExtra", "bridgeAgain", "standTest", "weekly"] },
+  { key: "sun", tab: "일", title: "일요일: 회복 + 점검", goal: "다음 주 강도 조절 결정", extra: ["walk", "shortFootExtra", "bridgeAgain", "standTest"] },
 ];
 
-const quick = ["short-foot", "short-bridge", "wall-hinge", "calf-raise"];
 const storagePrefix = "morning-rehab-v1";
 
 let selectedDay = days[(new Date().getDay() + 6) % 7].key;
 
 const el = {
   todayLabel: document.getElementById("today-label"),
-  resetDay: document.getElementById("reset-day"),
-  weekTabs: document.getElementById("week-tabs"),
   routineList: document.getElementById("routine-list"),
-  quickList: document.getElementById("quick-list"),
-  weeklyRecord: document.getElementById("weekly-record"),
   videoModal: document.getElementById("video-modal"),
   videoTitle: document.getElementById("video-title"),
   videoFrameWrap: document.getElementById("video-frame-wrap"),
@@ -212,12 +207,6 @@ function allExercisesForDay(day) {
 function getRoutine() {
   const day = days.find((item) => item.key === selectedDay);
   return allExercisesForDay(day);
-}
-
-function renderTabs() {
-  el.weekTabs.innerHTML = days
-    .map((day) => `<button class="day-tab ${day.key === selectedDay ? "active" : ""}" type="button" data-day="${day.key}">${day.tab}</button>`)
-    .join("");
 }
 
 function checkKey(exerciseId, index) {
@@ -315,45 +304,9 @@ function renderRoutine() {
     .join("");
 }
 
-function renderQuickList() {
-  const byId = [...commonRoutine, ...Object.values(exercises)].reduce((map, item) => {
-    map.set(item.id, item);
-    return map;
-  }, new Map());
-
-  el.quickList.innerHTML = quick
-    .map((id, index) => {
-      const item = byId.get(id);
-      const video = item.video ? `<button class="video-link" type="button" data-video-url="${item.video}" data-video-title="${item.title}">영상</button>` : "";
-      return `<div class="quick-item"><strong>${index + 1}</strong><strong>${item.title}</strong>${video}</div>`;
-    })
-    .join("");
-}
-
-function renderWeeklyRecord() {
-  const state = loadDayState();
-  el.weeklyRecord.innerHTML = exercises.weekly.checks
-    .map((text, index) => {
-      const key = checkKey("weekly-record", index);
-      return `<label class="record-item"><input type="checkbox" data-check="${key}" ${state[key] ? "checked" : ""} /><span>${text}</span></label>`;
-    })
-    .join("");
-}
-
 function render() {
-  renderTabs();
   renderRoutine();
-  renderQuickList();
-  renderWeeklyRecord();
 }
-
-el.weekTabs.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-day]");
-  if (!button) return;
-  selectedDay = button.dataset.day;
-  render();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
 
 el.routineList.addEventListener("change", (event) => {
   const state = loadDayState();
@@ -369,26 +322,6 @@ el.routineList.addEventListener("click", (event) => {
   const button = event.target.closest("[data-video-url]");
   if (!button) return;
   openVideo(button.dataset.videoTitle, button.dataset.videoUrl);
-});
-
-el.quickList.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-video-url]");
-  if (!button) return;
-  openVideo(button.dataset.videoTitle, button.dataset.videoUrl);
-});
-
-el.weeklyRecord.addEventListener("change", (event) => {
-  const target = event.target;
-  if (!target.matches("[data-check]")) return;
-  const state = loadDayState();
-  state[target.dataset.check] = target.checked;
-  saveDayState(state);
-});
-
-el.resetDay.addEventListener("click", () => {
-  if (!window.confirm("오늘 선택한 요일의 체크를 모두 지울까요?")) return;
-  localStorage.removeItem(storageKey());
-  render();
 });
 
 el.videoModal.addEventListener("click", (event) => {
