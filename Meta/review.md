@@ -10,9 +10,9 @@
 
 ## 요약
 
-- pending total: 25
+- pending total: 27
 - calendar: 0
-- wiki: 25
+- wiki: 27
 - wording: 0
 - active dispatch: 없음
 
@@ -34,6 +34,19 @@
 ### rvw_8772e6b184 [wiki]
 - source: [Inbox/Telegram/2026-05-11/942071403.md](<../Inbox/Telegram/2026-05-11/942071403.md>)
 - summary: 매일 자주 하는게 생각보다 어렵다
+- reason: 자기이해 성격의 메모지만 자동 대상 문서를 단정하기 어렵다.
+- suggested: `accept` -> promote -> Wiki/Self/Tensions.md
+- reply:
+  - `accept(승인)`
+  - `hold(보류)`
+  - `ignore(무시)`
+  - `retarget: Wiki/...`
+  - `comment: ...`
+- queue targets: [Wiki/Self/Tensions.md](<../Wiki/Self/Tensions.md>), [Wiki/Self/Open Questions.md](<../Wiki/Self/Open Questions.md>), [Wiki/Timeline/2026.md](<../Wiki/Timeline/2026.md>)
+
+### rvw_96f2844ab9 [wiki]
+- source: [Inbox/Telegram/2026-08-06/942071408.md](<../Inbox/Telegram/2026-08-06/942071408.md>)
+- summary: 이게 계속 쓰는게 어렵네. 다시시작.
 - reason: 자기이해 성격의 메모지만 자동 대상 문서를 단정하기 어렵다.
 - suggested: `accept` -> promote -> Wiki/Self/Tensions.md
 - reply:
@@ -333,6 +346,19 @@
 ### rvw_7158221357 [wiki]
 - source: [Inbox/Telegram/2026-05-15/942071407.md](<../Inbox/Telegram/2026-05-15/942071407.md>)
 - summary: 나의 꿈은 스케이트 보드를 잘 타는 것이다.
+- reason: Daily에는 반영됐지만 승격 대상이 아직 모호하다.
+- suggested: `accept` -> promote -> Wiki/Timeline/2026.md
+- reply:
+  - `accept(승인)`
+  - `hold(보류)`
+  - `ignore(무시)`
+  - `retarget: Wiki/...`
+  - `comment: ...`
+- queue targets: [Wiki/Timeline/2026.md](<../Wiki/Timeline/2026.md>)
+
+### rvw_1712b69119 [wiki]
+- source: [Inbox/Telegram/2026-08-06/942071409.md](<../Inbox/Telegram/2026-08-06/942071409.md>)
+- summary: 겸손이란 무엇인가? / 관찰이란 무엇인기?
 - reason: Daily에는 반영됐지만 승격 대상이 아직 모호하다.
 - suggested: `accept` -> promote -> Wiki/Timeline/2026.md
 - reply:

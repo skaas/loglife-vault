@@ -15,17 +15,17 @@
 
 ## 컴파일 상태
 
-- source total: 197 / Daily 연결: 157 / Wiki 연결: 104
-- Daily에서 종료: 43 / queue: 26 / 보류·무시: 12
+- source total: 199 / Daily 연결: 159 / Wiki 연결: 104
+- Daily에서 종료: 43 / queue: 28 / 보류·무시: 12
 - 상태 상세: [Meta/wiki-coverage.md](<../Meta/wiki-coverage.md>)
 - 승격 대기 큐: [Meta/wiki-compile-queue.md](<../Meta/wiki-compile-queue.md>)
 - 결정 파일: [Meta/wiki-compile-decisions.md](<../Meta/wiki-compile-decisions.md>)
 - 최근 queue source:
+  - [Inbox/Telegram/2026-08-06/942071409.md](<../Inbox/Telegram/2026-08-06/942071409.md>)
+  - [Inbox/Telegram/2026-08-06/942071408.md](<../Inbox/Telegram/2026-08-06/942071408.md>)
   - [Inbox/Text/스마트 드롭 시스템.txt](<../Inbox/Text/스마트 드롭 시스템.txt>)
   - [Inbox/Text/여름.txt](<../Inbox/Text/여름.txt>)
   - [Inbox/Text/영생 vs 자유.txt](<../Inbox/Text/영생 vs 자유.txt>)
-  - [Inbox/Text/동물 인권.txt](<../Inbox/Text/동물 인권.txt>)
-  - [Inbox/Text/무한 동물원.txt](<../Inbox/Text/무한 동물원.txt>)
 
 ## 핵심 목차
 

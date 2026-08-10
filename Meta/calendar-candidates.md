@@ -5,7 +5,7 @@
 
 ## 기준
 
-- source daily: Daily 전체 (31 files)
+- source daily: Daily 전체 (32 files)
 - ready:
   날짜와 시간이 함께 잡혀 있고 현재 시각 기준 아직 지나지 않아 캘린더 추가를 바로 검토할 수 있는 항목
 - past:

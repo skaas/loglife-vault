@@ -5,9 +5,9 @@
 
 ## 요약
 
-- source total: 197
+- source total: 199
 - Daily에서 종료: 43
-- queue total: 26
+- queue total: 28
 - 결정 파일로 보류/무시: 12
 - 자세한 상태: [wiki-coverage.md](<wiki-coverage.md>)
 
@@ -77,6 +77,12 @@
 - [Inbox/Telegram/2026-05-11/942071403.md](<../Inbox/Telegram/2026-05-11/942071403.md>)
   상태: needs_self_triage
   Daily 근거: [2026-05-11.md](<../Daily/2026/2026-05-11.md>)
+  추천 대상: [Wiki/Self/Tensions.md](<../Wiki/Self/Tensions.md>), [Wiki/Self/Open Questions.md](<../Wiki/Self/Open Questions.md>), [Wiki/Timeline/2026.md](<../Wiki/Timeline/2026.md>)
+  이유: 자기이해 성격의 메모지만 자동 대상 문서를 단정하기 어렵다.
+  참고: 자기 긴장이나 감정 해석 단서가 보인다. / 닫히지 않은 질문으로 이어질 수 있다. / 당일 맥락은 우선 연표에 반영할 수 있다.
+- [Inbox/Telegram/2026-08-06/942071408.md](<../Inbox/Telegram/2026-08-06/942071408.md>)
+  상태: needs_self_triage
+  Daily 근거: [2026-08-06.md](<../Daily/2026/2026-08-06.md>)
   추천 대상: [Wiki/Self/Tensions.md](<../Wiki/Self/Tensions.md>), [Wiki/Self/Open Questions.md](<../Wiki/Self/Open Questions.md>), [Wiki/Timeline/2026.md](<../Wiki/Timeline/2026.md>)
   이유: 자기이해 성격의 메모지만 자동 대상 문서를 단정하기 어렵다.
   참고: 자기 긴장이나 감정 해석 단서가 보인다. / 닫히지 않은 질문으로 이어질 수 있다. / 당일 맥락은 우선 연표에 반영할 수 있다.
@@ -183,6 +189,12 @@
 - [Inbox/Telegram/2026-05-15/942071407.md](<../Inbox/Telegram/2026-05-15/942071407.md>)
   상태: needs_triage
   Daily 근거: [2026-05-15.md](<../Daily/2026/2026-05-15.md>)
+  추천 대상: [Wiki/Timeline/2026.md](<../Wiki/Timeline/2026.md>)
+  이유: Daily에는 반영됐지만 승격 대상이 아직 모호하다.
+  참고: 당일 맥락은 우선 연표에 반영할 수 있다.
+- [Inbox/Telegram/2026-08-06/942071409.md](<../Inbox/Telegram/2026-08-06/942071409.md>)
+  상태: needs_triage
+  Daily 근거: [2026-08-06.md](<../Daily/2026/2026-08-06.md>)
   추천 대상: [Wiki/Timeline/2026.md](<../Wiki/Timeline/2026.md>)
   이유: Daily에는 반영됐지만 승격 대상이 아직 모호하다.
   참고: 당일 맥락은 우선 연표에 반영할 수 있다.

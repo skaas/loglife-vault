@@ -4,17 +4,17 @@
 
 ## 요약
 
-- Inbox source total: 197
-- Daily까지 연결: 157
+- Inbox source total: 199
+- Daily까지 연결: 159
 - Wiki까지 연결: 104
 - Daily에서 종료된 source: 43
-- 승격/요약 대기 queue: 26
+- 승격/요약 대기 queue: 28
 - 결정 파일로 보류/무시된 source: 12
 - 아직 raw 상태: 21
 
 ## 소스 루트별 상태
 
-- `Inbox/Telegram`: total 157, Daily 연결 157, Wiki 연결 85
+- `Inbox/Telegram`: total 159, Daily 연결 159, Wiki 연결 85
 - `Inbox/Text`: total 40, Daily 연결 0, Wiki 연결 19
 
 ## source를 많이 참조하는 Wiki 페이지
