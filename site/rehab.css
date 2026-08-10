@@ -1,0 +1,542 @@
+:root {
+  --bg: #f7f1e7;
+  --surface: #fffaf2;
+  --surface-strong: #ffffff;
+  --ink: #14211c;
+  --muted: #65706a;
+  --line: rgba(20, 33, 28, 0.12);
+  --line-strong: rgba(20, 33, 28, 0.22);
+  --green: #166534;
+  --green-soft: rgba(22, 101, 52, 0.12);
+  --blue: #0f5e7a;
+  --blue-soft: rgba(15, 94, 122, 0.12);
+  --red: #a33a1b;
+  --red-soft: rgba(163, 58, 27, 0.12);
+  --yellow: #f4c95d;
+  --shadow: 0 18px 44px rgba(34, 28, 18, 0.12);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, #111816 0, #111816 76px, rgba(247, 241, 231, 0.98) 77px, rgba(242, 232, 217, 0.98) 100%),
+    repeating-linear-gradient(90deg, rgba(20, 33, 28, 0.04) 0 1px, transparent 1px 32px);
+  font-family: "Manrope", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+.app-shell {
+  width: min(820px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 10px 0 42px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--blue);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: clamp(1.9rem, 7vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+details p,
+li {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.routine-section {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 250, 242, 0.95);
+  box-shadow: var(--shadow);
+}
+
+.today-label {
+  margin: 0;
+  color: rgba(248, 255, 249, 0.78);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+details {
+  padding: 0;
+}
+
+summary {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 0 17px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+summary::marker {
+  color: var(--blue);
+}
+
+.routine-section {
+  margin-top: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.workout-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  min-height: 58px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  color: #f8fff9;
+  background:
+    linear-gradient(145deg, rgba(17, 24, 22, 0.92), rgba(17, 24, 22, 0.72)),
+    radial-gradient(circle at 85% 10%, rgba(183, 240, 200, 0.22), transparent 32%),
+    linear-gradient(135deg, #111816, #26362d);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+}
+
+.routine-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.exercise-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-strong);
+  overflow: hidden;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+  transform 160ms ease;
+}
+
+.exercise-card.has-thumb {
+  display: grid;
+  grid-template-columns: minmax(118px, 38%) 1fr;
+}
+
+.exercise-card.done {
+  border-color: rgba(22, 101, 52, 0.28);
+  background: linear-gradient(180deg, #fbfffc, #f4fff6);
+}
+
+.exercise-thumb {
+  position: relative;
+  min-height: 100%;
+  border: 0;
+  border-right: 1px solid var(--line);
+  padding: 0;
+  overflow: hidden;
+  background: #111816;
+  cursor: pointer;
+}
+
+.exercise-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 154px;
+  object-fit: cover;
+}
+
+.exercise-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.64));
+}
+
+.exercise-thumb span {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  z-index: 1;
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  color: #f8fff9;
+  background: rgba(0, 0, 0, 0.58);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.exercise-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 13px;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.done-check {
+  width: 30px;
+  height: 30px;
+  accent-color: var(--green);
+}
+
+.exercise-title {
+  margin-bottom: 4px;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.exercise-card.done .exercise-title {
+  color: var(--muted);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.exercise-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+}
+
+.dose {
+  display: inline-flex;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--blue);
+  background: var(--blue-soft);
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.exercise-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 0 15px 15px 58px;
+}
+
+.exercise-card.has-thumb .exercise-main,
+.exercise-card.has-thumb .exercise-actions {
+  grid-column: 2;
+}
+
+.help-panel {
+  flex: 1 1 220px;
+  min-width: min(100%, 220px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(20, 33, 28, 0.03);
+}
+
+.help-panel summary {
+  min-height: 40px;
+  padding: 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.help-list {
+  margin: 0;
+  padding: 0 12px 12px 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.help-list li {
+  margin: 5px 0;
+}
+
+.finish-card {
+  margin-top: 14px;
+  padding: 16px;
+  border: 1px solid rgba(20, 33, 28, 0.1);
+  border-radius: var(--radius-md);
+  background: #111816;
+}
+
+.finish-button {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: #10231a;
+  background: #b7f0c8;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.finish-button:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.finish-status {
+  margin: 10px 0 0;
+  color: rgba(248, 255, 249, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: none;
+  padding: 18px;
+}
+
+.video-modal.open {
+  display: grid;
+  place-items: center;
+}
+
+.video-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 18, 16, 0.68);
+}
+
+.video-dialog {
+  position: relative;
+  width: min(880px, 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-lg);
+  background: #101815;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.video-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 13px 14px;
+  color: #f8fff9;
+}
+
+.video-head h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.icon-button {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  color: #f8fff9;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.video-frame-wrap {
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.video-frame-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-empty {
+  display: grid;
+  place-items: center;
+  min-height: 240px;
+  color: #f8fff9;
+}
+
+.video-fallback {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  color: #f8fff9;
+  background: rgba(255, 255, 255, 0.06);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.password-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 21;
+  display: none;
+  padding: 18px;
+}
+
+.password-modal.open {
+  display: grid;
+  place-items: center;
+}
+
+.password-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 18, 16, 0.68);
+}
+
+.password-dialog {
+  position: relative;
+  width: min(360px, 100%);
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.password-dialog h2 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+.password-dialog input {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  background: var(--surface-strong);
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.password-dialog input:focus {
+  outline: 2px solid rgba(22, 101, 52, 0.28);
+  outline-offset: 2px;
+}
+
+.password-error {
+  min-height: 1.25em;
+  margin: 0;
+  color: var(--red);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.password-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.password-cancel,
+.password-submit {
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.password-cancel {
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  background: transparent;
+}
+
+.password-submit {
+  border: 0;
+  color: #10231a;
+  background: #b7f0c8;
+}
+
+@media (max-width: 680px) {
+  .app-shell {
+    width: min(100% - 20px, 760px);
+    padding-top: 10px;
+  }
+
+  .workout-toolbar {
+    min-height: 54px;
+  }
+
+  .exercise-main {
+    grid-template-columns: auto 1fr;
+  }
+
+  .exercise-card.has-thumb {
+    grid-template-columns: 124px 1fr;
+  }
+
+  .exercise-thumb img {
+    min-height: 148px;
+  }
+
+  .exercise-actions {
+    padding-left: 15px;
+  }
+
+  .video-modal {
+    padding: 10px;
+  }
+
+  .password-modal {
+    padding: 12px;
+  }
+}

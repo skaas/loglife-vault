@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오전 재활 루틴</title>
+    <meta
+      name="description"
+      content="왼발 접지, 왼쪽 둔근, 골반 안정성 회복을 위한 오전 재활 체크리스트"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./rehab.css?v=20260528-ui11" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="routine-section">
+        <div class="workout-toolbar" aria-live="polite">
+          <p id="today-label" class="today-label"></p>
+        </div>
+
+        <div id="routine-list" class="routine-list"></div>
+
+        <section class="finish-card">
+          <button id="finish-workout" class="finish-button" type="button">완료</button>
+          <p id="finish-status" class="finish-status"></p>
+        </section>
+      </section>
+    </main>
+
+    <div id="video-modal" class="video-modal" aria-hidden="true">
+      <div class="video-backdrop" data-close-video></div>
+      <section class="video-dialog" role="dialog" aria-modal="true" aria-labelledby="video-title">
+        <div class="video-head">
+          <h2 id="video-title">참고 영상</h2>
+          <button class="icon-button" type="button" aria-label="영상 닫기" data-close-video>닫기</button>
+        </div>
+        <div id="video-frame-wrap" class="video-frame-wrap"></div>
+        <a id="video-fallback" class="video-fallback" href="#" target="_blank" rel="noreferrer">
+          YouTube에서 열기
+        </a>
+      </section>
+    </div>
+
+    <div id="password-modal" class="password-modal" aria-hidden="true">
+      <div class="password-backdrop" data-close-password></div>
+      <form id="password-form" class="password-dialog" autocomplete="off">
+        <h2>비밀번호</h2>
+        <input
+          id="finish-password"
+          type="password"
+          inputmode="numeric"
+          pattern="[0-9]*"
+          placeholder="비밀번호 입력"
+          aria-label="비밀번호"
+        />
+        <p id="password-error" class="password-error"></p>
+        <div class="password-actions">
+          <button class="password-cancel" type="button" data-close-password>취소</button>
+          <button class="password-submit" type="submit">확인</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="module" src="./rehab.js?v=20260528-ui11"></script>
+  </body>
+</html>
